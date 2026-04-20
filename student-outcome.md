@@ -4,7 +4,7 @@ Cada participante del equipo debe colaborar a fin de que se redacte como grupo l
 
 | Criterio específico                                          | Acciones realizadas                                          | Conclusiones |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | *AV1*<br />Aleman Romano, Dante Mateo<br />Contreras Peralta, Fabrizio Alessandro<br />Curipaco Huayllani, Neil Aldrin Wilhelm<br />Macavilca Quispe, Ian<br />Paiva Quispe, Josue Gonzalo |              |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | *AV1*<br />Aleman Romano, Dante Mateo<br />Contreras Peralta, Fabrizio Alessandro<br />Curipaco Huayllani, Neil Aldrin Wilhelm<br />Macavilca Quispe, Ian<br />Paiva Quispe, Josue Gonzalo |              |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | *AV1*<br /> |              |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | *AV1*<br /> |              |
 
 
