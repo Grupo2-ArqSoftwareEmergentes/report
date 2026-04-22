@@ -127,8 +127,7 @@ En esta sección se aborda la investigación tomando como base la recolección d
 
 ### 2.2.1. Diseño de entrevistas.
 
-#### Segmento Objetivo #1: Dueños y administradores de licorerías y destilerías
-
+#### Segmento Objetivo #1: Emprededores privados
  Cuénteme cómo empieza su día en la licorería. 
  
  - ¿Qué revisa primero antes de abrir?
@@ -157,8 +156,7 @@ En esta sección se aborda la investigación tomando como base la recolección d
 
 - ¿Conoce a alguien más en el rubro que viva esta misma situación y con quien podamos conversar?
 
-#### Segmento Objetivo #2: Proveedores y distribuidores de insumos para licorerías y destilerías
-
+#### Segmento Objetivo #2: Proveedores y distribuidores de insumos para licorerías
 Cuénteme cómo se organiza hoy para saber qué clientes necesitan reposición esta semana.
 
 - ¿Cuántos pedidos de emergencia recibe al mes y qué tan predecibles son?
