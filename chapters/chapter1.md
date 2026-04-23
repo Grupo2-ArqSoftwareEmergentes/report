@@ -28,7 +28,7 @@ Ser la plataforma de referencia en Latinoamérica para quienes producen bebidas 
 | Foto del estudiante | Nombres y apellidos | Código de estudiante | Descripcion |
 |---|---|---|---|
 | <img src="../assets/members/U202121325.jpg" alt="Ian Macavilca Quispe" width="100"> | Macavilca Quispe, Ian | U202121325 | Soy un estudiante de 21 años, con interes en optimización y diseño de Apps Web/Mobile. Me gusta resolver problemas con ideas creativas. |
-| <img src="../assets/members/.jpg" alt="nombre" width="100"> | Nombre | UXXXXX | . |
+| <img src="../assets/members/U201824550.jpg" alt="Javier Kenyi Mendoza Solis" width="100"> | Mendoza Solis, Javier Kenyi | U201824550 | Soy estudiante de quinto ciclo de Ingeniería de Software. Destaco en razonamiento numérico y creativo, con conocimientos en SQL, C++ y Python. Me considero amable, empático y enfocado en generar confianza para un buen trabajo en equipo. |
 
 
 ## 1.2. Solution Profile
