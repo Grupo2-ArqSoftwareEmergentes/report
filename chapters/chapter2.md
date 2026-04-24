@@ -16,7 +16,7 @@ En esta sección se realiza la identificación y descripción de los principales
     <tbody>
         <tr>
             <td colspan="2">¿Por qué llevar a cabo este análisis?</td>
-            <td colspan="4">Identificar las brechas de las soluciones genéricas de inventario en el mercado peruano y latinoamericano, validando que una plataforma especializada en licorerías y destilerías —con conexión dueño-proveedor y monitoreo ambiental— responde a una demanda insatisfecha de control operativo y trazabilidad.</td>
+            <td colspan="4">Identificar las brechas de las soluciones genéricas de inventario en el mercado peruano, validando que una plataforma especializada en cavas y restaurantes —que integre monitoreo ambiental IoT y analítica de rotación— responde a una demanda insatisfecha de preservación de activos y gestión inteligente de stock.</td>
         </tr>
         <tr>
             <td colspan="2">(En la cabecera colocar por cada competidor nombre y logo)</td>
@@ -28,14 +28,14 @@ En esta sección se realiza la identificación y descripción de los principales
         <tr>
             <td rowspan="2"><strong>Perfil</strong></td>
             <td>Overview</td>
-            <td>Plataforma web especializada en gestión de inventarios para licorerías y destilerías. Centraliza stock, conecta dueños con proveedores y monitorea condiciones ambientales en tiempo real.</td>
+            <td>Plataforma web integrada con sensores IoT para la gestión y preservación de cavas. Centraliza el inventario de botellas, monitorea condiciones ambientales en tiempo real y ofrece analítica de rotación para evitar la pérdida de valor del producto.</td>
             <td>ERP modular de código abierto con gestión de inventario, ventas y compras. Orientado a empresas de diversos tamaños y sectores que buscan una suite integral.</td>
             <td>Software de gestión de inventario en la nube, parte de la suite Zoho. Enfocado en pequeños y medianos negocios con operaciones multicanal.</td>
             <td>Aplicación de inventario visual diseñada para pequeños negocios sin experiencia técnica. Permite catalogar productos con fotos, etiquetas y códigos QR.</td>
         </tr>
         <tr>
             <td>Ventaja competitiva ¿Qué valor ofrece a los clientes?</td>
-            <td>Especialización sectorial, simplicidad para usuarios sin formación técnica, conexión directa dueño-proveedor y alertas de temperatura y humedad integradas.</td>
+            <td>Especialización en la integridad del producto, simplicidad para usuarios sin formación técnica, prevención de daños térmicos mediante alertas inteligentes y reportes de maduración/rotación que optimizan la inversión.</td>
             <td>Integración total de procesos empresariales, alta customización y una comunidad de desarrolladores que permite adaptar el sistema a casi cualquier operación.</td>
             <td>Integración nativa con e-commerce, contabilidad y CRM dentro del ecosistema Zoho; interfaz limpia y buena relación costo-beneficio.</td>
             <td>Extrema simplicidad, enfoque visual con fotografías, implementación inmediata y curva de aprendizaje casi nula para equipos pequeños.</td>
@@ -43,14 +43,14 @@ En esta sección se realiza la identificación y descripción de los principales
         <tr>
             <td rowspan="2"><strong>Perfil de Marketing</strong></td>
             <td>Mercado objetivo</td>
-            <td>Pequeños y medianos dueños de licorerías y destilerías en Perú y Latinoamérica, junto con sus proveedores directos de insumos.</td>
+            <td>Dueños de restaurantes con cavas comerciales y coleccionistas aficionados de vinos y destilados premium en Lima Metropolitana y Latinoamérica.</td>
             <td>Empresas medianas y grandes de cualquier sector que requieren una suite empresarial integral y escalable.</td>
             <td>PYMEs retail, e-commerce y distribuidores que gestionan stock a través de múltiples canales de venta.</td>
             <td>Pequeños negocios, instituciones y equipos de campo que necesitan un trackeo básico sin complejidad técnica.</td>
         </tr>
         <tr>
             <td>Estrategias de marketing</td>
-            <td>Alianzas estratégicas con gremios sectoriales, referidos de usuarios satisfechos, contenido educativo digital y difusión de casos de éxito en licorerías.</td>
+            <td>Alianzas con proveedores de equipos de refrigeración y diseño de cavas, demostraciones en eventos de cata, contenido sobre preservación de vinos y testimonios de sommeliers sobre la reducción de mermas.</td>
             <td>Marketing de contenido técnico, partnerships con implementadores locales, eventos sectoriales y modelo freemium limitado para atraer leads.</td>
             <td>Marketing digital performance, free trial extendido, alianzas con plataformas de e-commerce y programas de partners.</td>
             <td>Marketing de contenido enfocado en usabilidad, free trial, presencia en app stores y testimonios de pequeños negocios.</td>
@@ -58,14 +58,14 @@ En esta sección se realiza la identificación y descripción de los principales
         <tr>
             <td rowspan="3"><strong>Perfil de Producto</strong></td>
             <td>Productos & Servicios</td>
-            <td>Gestión de inventarios con alertas de stock bajo y vencimientos, paneles para proveedores, monitoreo ambiental IoT, reportes automáticos e historial de movimientos.</td>
+            <td>Inventario digital de etiquetas, monitoreo de temperatura y humedad con alertas push, reportes mensuales de rotación de stock, historial de trazabilidad térmica y sugerencias de consumo según maduración.</td>
             <td>Suite ERP con módulos de inventario, CRM, contabilidad, manufactura, compras y punto de venta.</td>
             <td>Gestión de inventario, órdenes de compra y venta, integración con Amazon, Shopify y otros canales de venta.</td>
             <td>Inventario visual, escaneo de códigos QR, carpetas por ubicación, alertas básicas y reportes simples de existencias.</td>
         </tr>
         <tr>
             <td>Precios & Costos</td>
-            <td>Modelo de suscripción mensual escalado según el tamaño del negocio y volumen de operaciones.</td>
+            <td>Modelo de suscripción mensual (SaaS) con un plan básico de monitoreo y un plan Premium que incluye analítica avanzada e informes de gestión.</td>
             <td>Desde aproximadamente $25 por usuario al mes en su versión online; implementación on-premise con costos adicionales de infraestructura y consultoría.</td>
             <td>Plan gratuito con funciones limitadas; planes pagados desde aproximadamente $39 por organización al mes.</td>
             <td>Plan gratuito limitado; planes pagados desde aproximadamente $29 por usuario al mes.</td>
@@ -80,28 +80,28 @@ En esta sección se realiza la identificación y descripción de los principales
         <tr>
             <td rowspan="4"><strong>Análisis SWOT</strong></td>
             <td>Fortalezas</td>
-            <td>Diseño especializado en el nicho de bebidas alcohólicas, interfaz intuitiva para usuarios no técnicos, modelo B2B de conexión directa y bajo costo de adopción inicial.</td>
+            <td>Enfoque único en la salud del activo (el vino), interfaz elegante y minimalista, integración nativa con hardware IoT de bajo costo y facilidad de configuración para el usuario final.</td>
             <td>Robustez técnica, escalabilidad probada, comunidad open source activa y capacidad de integrar múltiples áreas de la empresa en una sola plataforma.</td>
             <td>Ecosistema Zoho maduro, buenas integraciones con terceros, precio accesible para PYMEs e interfaz moderna y estable.</td>
             <td>Facilidad de uso inmediata, enfoque visual que reduce errores de catalogación, excelente experiencia móvil y rápida puesta en marcha.</td>
         </tr>
         <tr>
             <td>Debilidades</td>
-            <td>Marca nueva sin reconocimiento en el mercado, dependencia de la validación inicial en Perú y recursos limitados frente a competidores consolidados.</td>
+            <td>Producto nuevo que requiere educar al usuario sobre el riesgo térmico y recursos limitados para la distribución masiva del hardware inicial.</td>
             <td>Curva de aprendizaje pronunciada, requerimiento de configuración técnica o consultoría especializada, y ausencia de funciones específicas para monitoreo ambiental o cadena de suministro de bebidas.</td>
             <td>Falta de especialización en licorerías y destilerías, ausencia de monitoreo de condiciones ambientales y sin módulo nativo de conexión dueño-proveedor sectorial.</td>
             <td>Funcionalidades limitadas para operaciones complejas, ausencia de gestión de proveedores integrada, sin monitoreo ambiental y baja escalabilidad hacia cadenas de suministro.</td>
         </tr>
         <tr>
             <td>Oportunidades</td>
-            <td>Mercado latinoamericano poco digitalizado en el rubro licorero, resistencia al cambio mitigable con capacitación cercana, y crecimiento del comercio electrónico de bebidas alcohólicas.</td>
+            <td>Creciente cultura vinícola en la región, falta de herramientas digitales accesibles para coleccionistas privados y la necesidad de los restaurantes por tecnificar sus procesos de control de calidad.</td>
             <td>Expansión agresiva en PYMEs latinoamericanas, crecimiento de la adopción cloud y demanda de digitalización post-pandemia.</td>
             <td>Crecimiento sostenido del comercio electrónico, adopción acelerada en mercados emergentes y expansión de integraciones con marketplaces locales.</td>
             <td>Mercado amplio de usuarios no técnicos que rechazan soluciones complejas, y posibilidad de agregar funciones de reporting avanzado para retener usuarios en crecimiento.</td>
         </tr>
         <tr>
             <td>Amenazas</td>
-            <td>Competidores genéricos con presupuestos de marketing masivos, posible replicación de funciones verticales por ERPs establecidos, y crisis económicas que reducen la capacidad de pago de PYMEs.</td>
+            <td>Sistemas de climatización que comiencen a integrar software propio, apps de inventario genéricas de bajo costo y la volatilidad de precios en componentes electrónicos para los sensores.</td>
             <td>Percepción de excesiva complejidad para negocios pequeños, competencia creciente de soluciones verticales más simples y costos ocultos de implementación.</td>
             <td>Saturación del mercado de software de inventario, competencia de nichos verticales mejor adaptados y dependencia del ecosistema Zoho para funciones avanzadas.</td>
             <td>Limitaciones técnicas que expulsan a usuarios en crecimiento hacia plataformas más robustas, y competencia de soluciones gratuitas con funciones similares.</td>
@@ -113,13 +113,13 @@ En esta sección se realiza la identificación y descripción de los principales
 ### 2.1.2. Estrategias y tácticas frente a competidores.
 | Estrategia | Táctica clave | ¿Contra quién? | Diferenciador |
 |:---|:---|:---|:---|
-| **Especialización sectorial** | Profundizar en el nicho licorero: lotes perecederos, estacionalidad, riesgos ambientales. Plantillas preconfiguradas y lenguaje del rubro. | Odoo, Zoho, Sortly | Somos la única plataforma que entiende el negocio de bebidas alcohólicas en lugar de adaptar un ERP genérico. |
-| **Implementación inmediata** | Onboarding de una sola sesión, importación masiva desde Excel, registro del primer inventario en menos de una hora. | Odoo y ERPs complejos | El usuario empieza hoy, sin consultoría ni equipo técnico interno. |
-| **Efecto red dueño-proveedor** | Programa "Proveedor Ancla": beneficios exclusivos a distribuidores clave que arrastren su cartera de clientes a la plataforma. | Todos los competidores genéricos | Conexión nativa B2B que ningún sistema horizontal ofrece; cada nuevo proveedor fortalece la red. |
-| **Monitoreo ambiental sensorial** | Integración de sensores IoT de bajo costo con alertas proactivas de temperatura y humedad fuera de rango. | Zoho Inventory, Sortly | Cuidamos la calidad del producto, no solo contamos cajas. |
-| **Precios que premian la colaboración** | Suscripción escalada por volumen de operaciones, no por cantidad de usuarios. Dueños, administradores y proveedores colaboran sin costos extra. | Odoo (por usuario) y apps simples (por asiento) | Costo total de propiedad predecible y bajo para equipos amplios. |
-| **Acompañamiento como servicio** | Videos de menos 2 min, soporte atendido por especialistas del rubro, visitas de activación y casos de éxito documentados como prueba social. | Inercia del usuario y resistencia al cambio | Convertimos la capacitación en valor percibido, no en fricción. |
-| **Barreras de defensa regulatorias** | Reportes adaptados a auditorías sanitarias locales, normativas de producción de bebidas alcohólicas y comunidades de práctica sectorial. | Futura replicación por competidores horizontales | Cuanto más específico es el valor, más costoso es imitarlo desde una plataforma genérica. |
+| **Protección del Activo** | Enfoque total en la integridad física: alertas preventivas de temperatura y humedad basadas en el tipo de vino/destilado. | Excel, Vivino, Sortly | No solo contamos botellas; aseguramos que el contenido mantenga su valor y sabor original. |
+| **Instalación "Plug & Play"** | Vinculación del sensor IoT en 3 pasos y registro de etiquetas mediante una interfaz minimalista. | Odoo y ERPs complejos | El usuario configura su "cava inteligente" en 5 minutos sin necesidad de un técnico o electricista. |
+| **Analítica de Rotación Inteligente** | Reportes mensuales que identifican botellas con baja rotación o que están llegando a su punto óptimo de consumo. | Inventarios manuales y memoria del dueño | Transformamos datos de stock en decisiones de venta (restaurante) o placer (coleccionista). |
+| **Estatus y Confianza** | Dashboard elegante y visual que permite al dueño mostrar la salud de su cava a clientes o invitados como sello de calidad. | Termómetros simples de pared | Convertimos el monitoreo técnico en un activo de marketing y reputación para el negocio o la colección. |
+| **Monetización por Valor Añadido** | Plan básico gratuito para control de stock y plan Premium para acceso a reportes e historial térmico. | Apps que cobran por cantidad de botellas | Cobramos por la inteligencia y la paz mental que entregamos, no por el tamaño de la lista de vinos. |
+| **Soporte Especializado** | Guías rápidas sobre condiciones ideales de estiba y alertas calibradas por expertos (sommeliers). | Inercia del usuario y termostatos genéricos | Hablamos el lenguaje del vino, no solo el de la tecnología, reduciendo la resistencia al cambio. |
+| **Trazabilidad de Calidad** | Registro histórico de la estabilidad térmica de cada botella desde que entró a la cava hasta su descorche. | Futura replicación por apps genéricas | Creamos un "pedigrí" digital para el vino que garantiza que fue almacenado correctamente, algo imposible para un ERP común. |
 
 ## 2.2. Entrevistas.
 
@@ -127,60 +127,65 @@ En esta sección se aborda la investigación tomando como base la recolección d
 
 ### 2.2.1. Diseño de entrevistas.
 
-#### Segmento Objetivo #1: Emprededores privados
- Cuénteme cómo empieza su día en la licorería. 
+#### Segmento Objetivo #1: Dueños y Administradores de Restaurantes / Cavas Comerciales
+
+- ¿Cómo inicia su rutina de control en la cava antes de abrir el restaurante?
  
- - ¿Qué revisa primero antes de abrir?
+- ¿Qué es lo primero que verifica para asegurarse de que los vinos están listos para el servicio?
 
-- ¿Quién se encarga del inventario aquí y con qué frecuencia lo hacen?
+- ¿Quién es el responsable directo del inventario de botellas y cada cuánto tiempo hace el conteo físico?
 
-- ¿Cuál fue la última vez que un insumo le generó un problema inesperado?
+- ¿Cuál fue la última vez que una falla en el aire acondicionado o una botella dañada le generó un problema con un cliente?
 
-- Cuando se da cuenta de que le falta algo o que algo se venció, ¿qué pasos sigue y  cuánto tiempo le toma resolverlo?
+- Cuando detecta que una botella se ha arruinado por mala temperatura, ¿qué pasos sigue y cuánto dinero estima que pierde al mes por esto?
 
-- ¿Ha tenido que hacer una compra de emergencia? ¿Qué le costó además del dinero?
+- ¿Ha tenido que retirar alguna etiqueta de la carta porque no sabía que se había agotado o deteriorado?
 
-- ¿Cómo se entera hoy de que una condición de almacenamiento no es la adecuada?
+- ¿Cómo se entera hoy, en tiempo real, si la temperatura de su cava sube demasiado un fin de semana o en la madrugada?
 
-- ¿Qué tan seguro está de los números que maneja cuando decide cuánto pedirle a su proveedor?
+- ¿Qué tan confiable considera que es su registro actual de stock para decidir qué botellas nuevas comprar?
 
-- Si una plataforma le avisara automáticamente que un insumo está por vencerse o que la humedad subió demasiado, ¿cambiaría su rutina? ¿De qué manera?
+- Si una alerta en su celular le avisara que la humedad subió o que el stock de un vino premium es crítico, ¿cambiaría su forma de trabajar? ¿Cómo?
 
-- ¿Qué debería pasar en la primera semana de uso para que usted diga que esto le ahorró tiempo o dinero?
+- ¿Qué resultado específico debería ver en la primera semana para sentir que la plataforma realmente le ahorra tiempo y dinero?
 
-- ¿Qué le haría desconfiar de una alerta automática y preferir seguir revisando manualmente?
+- ¿Qué factor le haría dudar de una alerta automática y preferir entrar a la cava a revisar el termómetro manualmente?
 
-- ¿Estaría dispuesto a pagar una suscripción mensual si ve que evita pérdidas? ¿En qué rango cree que estaría ese valor?
+- ¿Estaría dispuesto a pagar una suscripción mensual si el sistema le garantiza evitar la pérdida de botellas de alto valor? ¿En qué rango de precio?
 
-- Si pudiera pedirle una sola mejora a la forma en que controla su inventario hoy, ¿cuál sería?
+- Si pudiera eliminar la tarea más tediosa de gestionar su cava con un solo clic, ¿cuál elegiría?
 
-- ¿Conoce a alguien más en el rubro que viva esta misma situación y con quien podamos conversar?
+- ¿Conoce a algún otro colega o sommelier que sufra con el control de su cava y con quien podamos conversar?
 
-#### Segmento Objetivo #2: Proveedores y distribuidores de insumos para licorerías
-Cuénteme cómo se organiza hoy para saber qué clientes necesitan reposición esta semana.
+#### Segmento Objetivo #2: Coleccionistas y Aficionados de Vinos y Destilados
 
-- ¿Cuántos pedidos de emergencia recibe al mes y qué tan predecibles son?
-- ¿Qué herramienta usa para planificar sus rutas de entrega y su propio stock en almacén?
+- ¿Cómo organiza y clasifica sus botellas actualmente para saber qué tiene en su colección?
 
-- Cuando un cliente le pide algo urgente que no tenía planeado, ¿qué sacrifica usted para cumplir?
+- ¿Qué es lo primero que hace cuando adquiere una botella nueva para su cava personal?
 
-- ¿Ha tenido pérdidas por sobrestock de insumos que luego nadie le compró? ¿Cómo se entera de que eso va a pasar?
+- ¿Cuál es el criterio que utiliza para decidir qué botella descorchar en una ocasión especial?
 
-- ¿Qué tan difícil es coordinar con un cliente nuevo que aún no tiene un ritmo de consumo estable?
+- ¿Ha tenido alguna vez la mala experiencia de abrir una botella valiosa y descubrir que el vino se había arruinado por una mala conservación?
 
-- ¿Qué información le gustaría tener de sus clientes para dejar de depender de llamadas o mensajes informales?
+- ¿Qué tan seguido viaja o pasa tiempo fuera de casa, y quién se queda a cargo de supervisar que su cava mantenga la temperatura ideal?
 
-- Si pudiera ver en tiempo real cuánto stock le queda a cada cliente y cuándo estiman que se acabe, ¿cambiaría la forma en que planifica sus compras a sus propios proveedores?
+- ¿Cómo monitorea hoy las condiciones ambientales (temperatura y humedad) de su lugar de almacenamiento?
 
-- ¿Qué debería pasar para que usted recomiende activamente a sus clientes que usen una plataforma donde usted también esté?
+- ¿Ha olvidado alguna vez que tenía una botella específica y se le pasó su ventana óptima de consumo?
 
-- ¿Qué le preocupa de compartir información de su inventario o el de sus clientes en una plataforma digital?
+- ¿Qué tan difícil le resulta encontrar una botella exacta dentro de su cava cuando tiene invitados o prisa?
 
-- ¿Qué tan dispuesto estaría a pagar por un panel donde gestione su almacén y vea la demanda de sus clientes juntas?
+- Si recibiera una notificación inmediata en su celular advirtiéndole que su cava está fallando mientras usted no está en casa, ¿qué acciones tomaría?
 
-- Si pudiera eliminar una sola molestia de su operación logística hoy, ¿cuál sería?
-- ¿Hay algún cliente suyo que esté particularmente frustrado con su control de inventario y con quien valdría la pena que hablemos?
+- ¿Qué valor le daría a un reporte que le indique qué etiquetas de su colección están entrando en su mejor momento para ser disfrutadas?
 
+- ¿Qué le haría sentir que una aplicación es "demasiado trabajo" y preferiría seguir usando un cuaderno o simplemente su memoria?
+
+- ¿Estaría dispuesto a pagar una suscripción mensual si la plataforma actúa como un "seguro" que garantiza la trazabilidad y salud de sus botellas más caras?
+
+- Si pudiera digitalizar su cava con solo tomar una foto o un escaneo rápido, ¿qué tanto cambiaría su interés por usar una herramienta así?
+
+- ¿Conoce a algún otro coleccionista o amigo aficionado que valore tanto su cava como usted y que nos pueda dar su opinión?
 
 
 ### 2.2.2. Registro de entrevistas.
@@ -223,31 +228,32 @@ Cuénteme cómo se organiza hoy para saber qué clientes necesitan reposición e
 
 A continuación, se presenta la matriz de tareas evaluando la **Frecuencia (F)** y la **Importancia (I)** bajo una escala de: *Baja, Media y Alta*.
 
-| **N°** | **Task Matrix** | **Persona 1: Emprendedores Privados** | **Persona 1: Emprendedores Privados** | **Persona 2: Proveedores y distribuidores de insumos para licorerías** | **Persona 2: Proveedores y distribuidores de insumos para licorerías** |
+| **N°** | **Task Matrix** | **Persona 1: Dueños de Restaurantes** | **Persona 1: Dueños de Restaurantes** | **Persona 2: Coleccionistas / Aficionados** | **Persona 2: Coleccionistas / Aficionados** |
 |:---:|:---|:---:|:---:|:---:|:---:|
 | | | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
-| 1 | Revisar inventario al abrir y cerrar el negocio | Alta | Alta | Alta | Alta |
-| 2 | Registrar entrada de nuevos insumos o mercancía | Media | Alta | Alta | Alta |
-| 3 | Atender alertas de stock bajo o vencimiento próximo | Alta | Alta | Media | Alta |
-| 4 | Monitorear temperatura y humedad del almacén | Media | Alta | Baja | Media |
-| 5 | Coordinar reposición o envío de pedidos | Media | Alta | Alta | Alta |
-| 6 | Registrar salidas, ventas o consumo de insumos | Alta | Alta | Media | Alta |
-| 7 | Revisar demanda y necesidades de reposición por cliente | Baja | Media | Alta | Alta |
-| 8 | Generar o consultar reportes de consumo y movimientos | Media | Media | Media | Media |
-| 9 | Consultar historial de entregas y trazabilidad | Baja | Media | Media | Alta |
-| 10 | Configurar alertas, umbrales o perfiles de producto | Baja | Media | Baja | Media |
+| 1 | Monitorear temperatura y humedad (en tiempo real) | Alta | Alta | Alta | Alta |
+| 2 | Consultar stock disponible para servicio o carta | Media | Alta | Alta | Alta |
+| 3 | Atender alertas de condiciones ambientales fuera de rango | Baja | Alta | Baja | Alta |
+| 4 | Registrar entrada de nuevas etiquetas o lotes de vino | Media | Alta | Baja | Media |
+| 5 | Revisar reportes de rotación de stock (vinos estancados) | Media | Alta | Alta | Alta |
+| 6 | Identificar botellas en su punto óptimo de consumo | Media | Alta | Alta | Alta |
+| 7 | Vincular o calibrar sensor IoT a la red/app | Baja | Media | Baja | Alta |
+| 8 | Actualizar estado de botella (Descorche/Venta) | Media | Media | Media | Media |
+| 9 | Configurar contactos para avisos de emergencia | Baja | Media | Media | Alta |
+| 10 | Consultar historial de alertas recientes | Media | Media | Media | Alta |
+
 
 ### Análisis de la Matriz
 
 Al analizar el cuadro, se identifican coincidencias y diferencias estratégicas entre ambos arquetipos:
 
-**Primero**, la coincidencia en lo esencial. Revisar inventario y registrar movimientos son actividades de frecuencia e importancia altas para ambos. Esto confirma que el núcleo del producto un registro confiable y accesible del stock no puede fallar para ninguno de los dos lados. Si el sistema no agiliza estas tareas diarias, no importa cuántas funciones adicionales tenga: será rechazado.
+**Primero**, la coincidencia en la protección del activo. El monitoreo de temperatura y humedad, junto con la atención a alertas, son las únicas tareas que mantienen una importancia Crítica y una frecuencia Alta para ambos perfiles. Esto confirma que el núcleo de VineVault no es administrativo, sino preventivo. Para ambos usuarios, el sistema no es solo una base de datos, sino un "centinela" cuya función principal es la paz mental.
 
-**Segundo**, la asimetría en el monitoreo ambiental. Para el dueño de licorería, controlar temperatura y humedad es una preocupación constante que puede decidir la calidad de un lote entero. Para el proveedor, esta tarea pasa a segundo plano; le interesa, pero no opera directamente sobre ese espacio físico. Esto sugiere que el módulo IoT debe estar diseñado como una herramienta de tranquilidad para el dueño, no como un feature impuesto al proveedor.
+**Segundo**, la asimetría en la gestión del flujo. Para el dueño de un restaurante, la actualización del estado de las botellas (descorche/venta) es una tarea de alta frecuencia, pues de ello depende la fiabilidad de su carta de vinos ante el cliente. En contraste, para el coleccionista, esta actividad es esporádica; su interacción con la app es más de consulta y deleite que de registro transaccional, lo que sugiere que la interfaz debe permitir un registro rápido para el negocio y una visualización estética para el aficionado.
 
-**Tercero**, la inversión de roles en la planificación. El proveedor vive obsesionado con anticipar la demanda de cada cliente; para él, esa visibilidad es estratégica y diaria. El dueño, en cambio, solo revisa esas proyecciones esporádicamente, cuando ya siente presión por reabastecerse. Esto revela una oportunidad estructural: si la plataforma le da al proveedor datos suficientes para anticiparse, el dueño recibirá pedidos sugeridos antes de sentir la urgencia, transformando una relación reactiva en una proactiva.
+**Tercero**, la importancia de la inteligencia sobre el volumen. La identificación de botellas en su punto óptimo de consumo y la revisión de reportes de rotación son tareas de importancia alta para ambos, pero con motivaciones distintas. Mientras el restaurante busca rentabilidad (evitar que el capital se estanque), el coleccionista busca experiencia (beber el vino en su mejor momento). Esto valida que la función de "Reportes Mensuales" es el puente ideal para la monetización en ambos segmentos.
 
-**Finalmente**, las tareas de configuración y reportes avanzados comparten baja frecuencia en ambos segmentos. Esto no significa que sean prescindibles, sino que deben sentirse invisibles cuando funcionan bien y accesibles solo cuando el usuario las busca intencionalmente. Un panel de reportes que exija atención diaria será ignorado; uno que esté disponible para decisiones puntuales será valorado.
+**Finalmente**, la invisibilidad necesaria del hardware. Las tareas de vinculación de sensores y configuración de contactos tienen la frecuencia más baja de la matriz. Esto revela un requisito de diseño técnico: el proceso de instalación y configuración de las alertas debe ser "Plug & Play". Si la configuración inicial es compleja, se crea una barrera de entrada que invalida el valor preventivo del software, especialmente en usuarios que no son expertos en tecnología.
 
 
 ### 2.3.3. Empathy Mapping.
@@ -261,55 +267,54 @@ Al analizar el cuadro, se identifican coincidencias y diferencias estratégicas 
 <img src="../assets/empathy-maps/EM2.png" alt="segmento 2 Empathy map" width="1000">
 
 ### 2.3.4. As-Is escenario Mapping.
-## As-is Scenario Mapping: Emprendedores Privados
+## As-is Scenario Mapping: Dueños de Restaurantes y Cavas Comerciales
 
 | Fase | Doing | Thinking | Feeling |
 |:---|:---|:---|:---|
-| **Apertura y revisión matutina** | Recorre el almacén visualmente, anota stock en cuaderno o Excel desactualizado. | "¿Tendré suficiente para hoy? Espero no haber olvidado algo ayer." | Ansioso, incierto. |
-| **Recepción de insumos** | Cuenta cajas manualmente, firma notas de remisión y archiva papel en una carpeta. | "¿Coincide lo que pedí con lo que llegó? Lo revisaré después." | Desconfiado, apurado. |
-| **Almacenamiento** | Guarda productos donde hay espacio. No mide temperatura ni humedad del ambiente. | "Mientras estén bajo techo, deberían estar bien." | Pasivo, expuesto. |
-| **Control de vencimientos** | Revisa fechas de caducidad una vez al mes o cuando sospecha un problema. | "¿Cuántos lotes se me vencieron este mes? Otra vez pérdida." | Frustrado, culpable. |
-| **Pedido al proveedor** | Abre WhatsApp, revisa fotos de stock o su memoria, escribe: "Mándame lo de siempre." | "¿Cuánto le pedí la última vez? Ni idea, ojalá no me sobre ni me falte." | Impreciso, dependiente. |
-| **Cierre y registro** | Suma mentalmente las ventas del día o traslada números a una hoja compartida. | "Mañana repetiré lo mismo y espero que nada se me escape." | Cansado, abrumado. |
+| **Apertura y revisión de cava** | de cava	Entra físicamente a la cava para sentir si el aire está frío o mira el termómetro de pared si tiene uno. | "Espero que el aire acondicionado no haya fallado anoche. Siento la cava un poco caliente." | Preocupado, vigilante. |
+| **Control de inventario (Stock)** | Cruza información del POS con lo que ve en estantes. A veces descubre botellas que no sabía que tenía. | "¿Por qué hay tanto stock de esta etiqueta? No se está vendiendo y está ocupando espacio." | Frustrado, desorganizado. |
+| **Monitoreo de conservación** | Confía en que el sistema de climatización es estable. Solo nota problemas si ve etiquetas despegadas por humedad o siente calor excesivo. | "Mientras no se sienta caliente aquí adentro, el vino debería estar en buen estado." | Expuesto, confiado (por falta de datos). |
+| **Servicio al cliente (Descorche)** | El sommelier o mozo lleva la botella a la mesa; ocasionalmente el cliente rechaza el vino por estar picado o degradado. | "Qué vergüenza con el cliente. Otra botella que se va a merma por mala guarda." | Avergonzado, molesto. |
+| **Decisión de compra/reposición** | compra/reposición	Revisa qué se vendió y pide reposición de las etiquetas "famosas", ignorando el potencial de otras menos conocidas. | "¿Cuánto pedí de este Malbec la última vez? Traeré lo mismo por si acaso." | Impreciso, rutinario. |
+| **Cierre y registro** | Registra manualmente las botellas que se descartaron por daño térmico o vencimiento de ventana de consumo. | "Esta pérdida de dinero se pudo evitar si hubiéramos movido ese vino antes." | Resignado, cansado. |
 
 ---
 
-## As-is Scenario Mapping: Proveedores y distribuidores de insumos para licorerías
+## As-is Scenario Mapping: Coleccionistas y Aficionados
 
 | Fase | Doing | Thinking | Feeling |
 |:---|:---|:---|:---|
-| **Revisión de demanda** | Despliega decenas de chats de WhatsApp, llama a clientes habituales para preguntar qué necesitan. | "¿Quién me escribió ayer? Seguro alguien me pidió algo urgente y se me perdió." | Presionado, disperso. |
-| **Planificación de rutas** | Organiza entregas en papel o memoria, priorizando quien grita más fuerte. | "Otra vez un pedido de emergencia que desbarata mi ruta del día." | Reactivo, agotado. |
-| **Preparación de despacho** | Prepara cajas basándose en pedidos informales, sin visibilidad del stock real del cliente. | "Espero no quedarme corto. Si sobra, ya veré si otro me lo compra." | Incierto, arriesgado. |
-| **Entrega y confirmación** | Deja la mercancía, recibe una firma borrosa o un mensaje de "recibido". | "¿Y si después dicen que les faltó algo? No tengo registro claro." | Desprotegido, tenso. |
-| **Control de stock propio** | Actualiza su almacén en un Excel aparte que no habla con el de sus clientes. | "Tengo insumos estancados que nadie me pidió. Si supiera con anticipación..." | Aislado, ineficiente. |
+| **Inventariado de la colección** | Anota sus botellas en una libreta, usa una app de catas (tipo Vivino) o simplemente confía en su memoria visual. | "Creo que tengo dos botellas de ese tinto para la cena, o quizás ya nos las bebimos el mes pasado." | Incierto, nostálgico. |
+| **Ingreso de nuevas botellas** | Acomoda las compras nuevas en el espacio que encuentra libre en su cava o refrigerador de vinos. | "Tengo que buscarle un hueco a estas botellas premium, espero que no se me pierdan al fondo." | Entusiasmado, pero desorganizado. |
+| **Vigilancia de la cava** | Revisa ocasionalmente el termómetro de la cava cuando pasa cerca o cuando hay un corte de luz en casa. | "Espero que la temperatura sea la correcta. Si el equipo falla mientras estoy en el trabajo, no me enteraré." | Ansioso, vulnerable. |
+| **Elección para el descorche** | Rebusca entre las botellas para encontrar la ideal para una ocasión, a veces descubriendo una que ya se arruinó. | "¿Cuándo compré esto? Huele a vinagre... qué pena, era una botella especial que guardaba hace años." | Frustrado, decepcionado |
+| **Ausencia o viajes** | Se va de viaje o pasa el día fuera de casa sin ninguna visibilidad sobre el estado de su inversión. | "Si hay un bajón de luz y la cava se apaga, mis botellas más caras están en riesgo ahora mismo." | Inseguro, desprotegido. |
+| **Control de maduración** | Intenta recordar cuáles son las botellas que ya están "listas" para beber y cuáles deben seguir guardadas. | "Me gustaría saber qué abrir hoy sin tener que leer cada etiqueta una por una." | Abrumado, dubitativo. |
+
 ## 2.4. Ubiquitous Language.
 
-| Terms | Definition |
-|:---|:---|
-| **Owner (Dueño)** | Persona natural o jurídica responsable de una licorería o destilería, con autoridad final sobre compras, almacenamiento y ventas. |
-| **Supplier (Proveedor)** | Distribuidor o mayorista que abastece a uno o varios dueños y gestiona su propio inventario dentro de la plataforma. |
-| **Appointed Manager (Administrador designado)** | Usuario autorizado por el dueño para operar el inventario diariamente bajo permisos específicos de gestión. |
-| **Supply (Insumo)** | Materia prima, producto terminado o artículo indispensable para la operación del negocio que debe ser registrado y controlado. |
-| **Batch (Lote)** | Cantidad de supplies recibidos en una sola entrada, identificados por fecha de recepción, proveedor y condiciones uniformes. |
-| **Stock (Existencias)** | Cantidad física disponible de un supply en un momento determinado, expresada según su unidad de medida operativa. |
-| **Low Stock (Stock bajo)** | Estado de un supply cuya cantidad disponible ha descendido por debajo del reorder point configurado. |
-| **Reorder Point (Punto de reorden)** | Cantidad mínima definida para un supply que, al ser alcanzada, activa una alerta de reposición. |
-| **Expiration Date (Fecha de caducidad)** | Fecha límite en la que un supply deja de ser apto para su uso o venta, registrada por batch. |
-| **Upcoming Expiration (Vencimiento próximo)** | Condición de un batch cuya expiration date está dentro del rango crítico de días configurado. |
-| **Spoilage (Deterioro)** | Degradación de la calidad de un supply por exposición a condiciones ambientales inadecuadas, independientemente de su expiration date. |
-| **Stockout (Desabastecimiento)** | Situación en la que un supply necesario no está disponible en stock, interrumpiendo la operación o la venta. |
-| **Emergency Purchase (Compra de emergencia)** | Adquisición urgente de supplies fuera del flujo planificado, generalmente a mayor costo y menor margen de negociación. |
-| **Storage Room (Almacén)** | Espacio físico donde el dueño conserva sus supplies y donde se registran las condiciones ambientales de guarda. |
-| **Environmental Monitoring (Monitoreo ambiental)** | Registro continuo de temperatura y humedad del storage room mediante sensores para prevenir spoilage. |
-| **Alert (Alerta)** | Notificación automática generada ante condiciones críticas: low stock, upcoming expiration o desviación ambiental. |
-| **Restocking (Reposición)** | Acción de solicitar y recibir supplies para restaurar el stock hasta niveles operativos óptimos. |
-| **Purchase Order (Orden de compra)** | Solicitud formal que un owner genera hacia un supplier para la adquisición de supplies. |
-| **Delivery (Entrega)** | Traslado físico de supplies desde el storage room del supplier hasta el del owner, con registro de fecha, cantidad y estado. |
-| **Inventory Movement (Movimiento de inventario)** | Cualquier cambio en la cantidad o ubicación de un supply: entrada, salida, ajuste o transferencia. |
-| **Transaction Record (Historial)** | Registro cronológico inmutable de todos los inventory movements, purchase orders y deliveries asociados a un supply o batch. |
-| **Traceability (Trazabilidad)** | Capacidad de rastrear el recorrido completo de un supply desde su recepción hasta su consumo o venta final. |
-| **Operations Overview (Panel de control)** | Vista consolidada que presenta al usuario el estado actual de su inventario, alertas pendientes y métricas clave. |
-| **Performance Report (Reporte)** | Documento generado automáticamente que resume consumo, caducidad, spoilage o inventory movements en un período determinado. |
-| **Supply Chain (Cadena de suministro)** | Conjunto de actores, procesos y flujos de información que conectan la demanda del owner con la oferta del supplier. |
-| **Subscription Plan (Plan de suscripción)** | Modelo de pago recurrente que otorga acceso a la plataforma, escalado según el volumen de operaciones del negocio. |
+| Term (EN) | Término (ES) | Definition |
+|:---|:---|:---|
+| **Merchant Owner** | **Dueño de Negocio** | Usuario que gestiona la cava de un restaurante o establecimiento comercial. Su prioridad es la rotación de stock y la rentabilidad. |
+| **Private Collector** | **Coleccionista / Aficionado** | Usuario que gestiona una cava personal. Su prioridad es la preservación a largo plazo, el valor patrimonial y el disfrute personal. |
+| **Cellar / Vault** | **Cava** | Espacio físico controlado donde se almacenan las botellas y donde se ubica el dispositivo IoT de monitoreo. |
+| **Bottle / Label** | **Botella / Etiqueta** | Unidad fundamental de inventario. Representa un vino o destilado específico con atributos de añada, tipo y bodega. |
+| **Stock** | **Existencias** | Cantidad física disponible de una etiqueta específica dentro de la cava en un momento determinado. |
+| **IoT Sensor** | **Sensor IoT** | Dispositivo de hardware encargado de capturar y transmitir los datos ambientales (temperatura/humedad) a la plataforma. |
+| **Environmental Tracking** | **Seguimiento Ambiental** | Registro continuo y en tiempo real de las condiciones atmosféricas dentro de la cava. |
+| **Threshold** | **Umbral** | Límites configurables de temperatura y humedad fuera de los cuales el vino comienza a sufrir degradación térmica. |
+| **Thermal Stability** | **Estabilidad Térmica** | Atributo que mide la constancia de la temperatura en el tiempo; factor crítico para la guarda de vinos de alta gama. |
+| **Spoilage / Fault** | **Degradación / Vino Picado** | Deterioro químico del vino debido a condiciones ambientales inadecuadas o exposición prolongada al calor. |
+| **Optimal Window** | **Ventana de Consumo** | Periodo estimado en el que una etiqueta alcanza su máxima expresión de calidad (maduración ideal). |
+| **Stagnant Stock** | **Stock Estancado** | Etiquetas con baja rotación o que han superado su ventana óptima sin ser consumidas o vendidas. |
+| **Alert** | **Alerta** | Notificación push o SMS generada automáticamente ante una desviación de los umbrales ambientales o stock crítico. |
+| **Uncorking / Outflow** | **Descorche / Salida** | Registro de la apertura o venta de una botella, lo que reduce el stock y finaliza su ciclo de trazabilidad. |
+| **Inflow / Entry** | **Ingreso / Entrada** | Registro de nuevas botellas en la cava, capturando datos de añada y condiciones iniciales. |
+| **Traceability** | **Trazabilidad Térmica** | Historial inmutable que demuestra que una botella ha sido conservada bajo rangos óptimos desde su ingreso. |
+| **Cellar Dashboard** | **Panel de Cava** | Interfaz principal que muestra el estado térmico actual, alertas activas y resumen de inventario. |
+| **Rotation Report** | **Reporte de Rotación** | Documento mensual que analiza el flujo de botellas y sugiere cuáles deben ser consumidas o promocionadas. |
+| **Steward / Sommelier** | **Administrador / Sommelier** | Usuario autorizado por el Merchant Owner para gestionar el inventario y responder a las alertas ambientales. |
+| **Subscription Plan** | **Plan de Suscripción** | Modelo de monetización SaaS que desbloquea funciones de analítica avanzada y reportes históricos. |
+| **Maturity Status** | **Estado de Maduración** | Clasificación de la botella según su tiempo en cava: "En guarda", "Listo para descorche" o "Consumo urgente". |
+| **Inventory Movement** | **Movimiento de Inventario** | Cualquier cambio en el stock, ya sea por ingreso, descorche, pérdida por rotura o degradación. |
+| **Historical Data** | **Datos Históricos** | Serie de tiempo que almacena los registros de los sensores para auditorías de calidad o análisis de patrones. |
