@@ -217,11 +217,19 @@ En esta sección se aborda la investigación tomando como base la recolección d
 
 **Segmento objetivo 1: **
 
-<img src="../assets/user-persona/segmento 1.png" alt="segmento 1" width="500">
+<center>
+  <a href="https://ibb.co/gMDfNmgW">
+    <img src="https://i.ibb.co/FbBy2m7Y/Alfredo-Medina.png" alt="Alfredo-Medina" border="2">
+  </a>
+</center>
 
 **Segmento objetivo 2: **
+<center>
+  <a href="https://ibb.co/7BGLW2b">
+    <img src="https://i.ibb.co/jqLsMgH/Orlando-Romero-Flores.png" alt="Orlando-Romero-Flores" border="0">
+  </a>
+</center>
 
-<img src="../assets/user-persona/segmento 2 .png" alt="segmento 2 " width="500">
 
 ### 2.3.2. User Task Matrix.
 
@@ -260,12 +268,18 @@ Al analizar el cuadro, se identifican coincidencias y diferencias estratégicas 
 
 **1. Empathy Mapping - segmento 1**
 
-<img src="../assets/empathy-maps/EM1.png" alt="segmento 1 Empathy map" width="1000">
+<center>
+  <a href="https://ibb.co/13PLdBY">
+    <img src="https://i.ibb.co/WQM6P7N/Empathy-map-2.png" alt="Empathy-map-2" border="0">
+  </a>
+</center>
 
 **2. Empathy Mapping - segmento 2**
-
-<img src="../assets/empathy-maps/EM2.png" alt="segmento 2 Empathy map" width="1000">
-
+<center>
+  <a href="https://ibb.co/23Q34yCJ">
+    <img src="https://i.ibb.co/Dfyf2tvd/Empathy-map-1.png" alt="Empathy-map-1" border="0">
+  </a>
+</center>
 ### 2.3.4. As-Is escenario Mapping.
 ## As-is Scenario Mapping: Dueños de Restaurantes y Cavas Comerciales
 
