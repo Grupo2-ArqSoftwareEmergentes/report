@@ -20,7 +20,7 @@ Convertirnos en el estándar tecnológico para la gestión de bebidas premium en
 |---|---|---|---|
 | <img src="../assets/members/U202121325.jpg" alt="Ian Macavilca Quispe" width="100"> | Macavilca Quispe, Ian | U202121325 | Soy un estudiante de 21 años, con interes en optimización y diseño de Apps Web/Mobile. Me gusta resolver problemas con ideas creativas. |
 | <img src="../assets/members/U201824550.jpg" alt="Javier Kenyi Mendoza Solis" width="100"> | Mendoza Solis, Javier Kenyi | U201824550 | Soy estudiante de quinto ciclo de Ingeniería de Software. Destaco en razonamiento numérico y creativo, con conocimientos en SQL, C++ y Python. Me considero amable, empático y enfocado en generar confianza para un buen trabajo en equipo. |
-
+|<img src="https://camo.githubusercontent.com/240cc4f5cfad98a03626304d463d59fde9918d805e8df2f6ca4ec9970814489d/68747470733a2f2f692e706f7374696d672e63632f476d4a6a513048472f45726e6573746f2d656c6567616e74652e706e67" alt="Javier Kenyi Mendoza Solis" width="100">| Casaverde De La Cruz Ernesto David|U20221B657 |Soy estudiante de Ingeniería de Software, me caracterizo por ser una persona responsable, con escucha activa y enfoque colaborativo. Me comprometo a aportar al trabajo en equipo para lograr resultados de calidad mientras todos aprendemos en el proceso. Además, cuento con conocimientos en programación, incluyendo C++, HTML, CSS y JavaScript.|
 
 ## 1.2. Solution Profile
 
