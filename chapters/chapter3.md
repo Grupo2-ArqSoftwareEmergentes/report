@@ -31,8 +31,9 @@ La presente sección detalla las Historias de Usuario que guiarán el desarrollo
 
 ## 3.3. Impact Mapping.
 
-El **Impact Mapping** constituye una técnica de planeación estratégica que nos ayuda a visualizar la relación entre las metas del negocio y la entrega de valor a los actores clave. 
-<img src="../assets/impact-map/IM.png" alt="Impact Map" width="1000">
+El **Impact Mapping** constituye una técnica de planeación estratégica que nos ayuda a visualizar la relación entre las metas del negocio y la entrega de valor a los actores clave.
+<br /><img src="../assets/images/impact_mapping.png" alt="impact_mapping.png" width="500">
+
     
 ## 3.4. Product Backlog.
 
