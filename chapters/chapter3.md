@@ -52,15 +52,32 @@ El **Impact Mapping** constituye una técnica de planeación estratégica que no
     
 ## 3.4. Product Backlog.
 
-El Product Backlog constituye el inventario centralizado y priorizado de todos los requisitos, funcionalidades y mejoras necesarias para la materialización de la solución 
+El Product Backlog constituye el inventario centralizado y priorizado de todos los requisitos, funcionalidades y mejoras necesarias para la materialización de la solución VineVault, asegurando que el equipo trabaje en lo más valioso primero.
 
 
-
-
-
-<img src="https://i.imgur.com/.png" alt="backlog1" width="1000">
-
-
-| N    | Epic / Story ID | Título | Descripción | Story Points |
-| ---- | --- | --- | --- | --- |
-| 1    | .            | .                    | . | 2            |
+| N | Epic / Story ID | Título | Descripción | Story Points |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | US01 | Account Registration | **Como** usuario nuevo, **quiero** registrar una cuenta con mis datos personales **para** acceder a la plataforma. | 1 |
+| 2 | US02 | User Login | **Como** usuario registrado, **quiero** iniciar sesión de forma segura **para** visualizar mi información privada. | 1 |
+| 3 | US03 | Profile Selection | **Como** usuario inicial, **quiero** elegir entre perfil "Restaurante" o "Coleccionista" **para** personalizar mi experiencia. | 1 |
+| 4 | US04 | Password Recovery | **Como** usuario, **quiero** recuperar mi contraseña vía correo electrónico **para** no perder acceso a mi cuenta. | 2 |
+| 5 | US05 | Manual Bottle Entry | **Como** usuario, **quiero** registrar una botella manualmente (bodega, añada, tipo) **para** actualizar mi inventario. | 3 |
+| 6 | US06 | Bulk Stock Upload | **Como** dueño de negocio, **quiero** subir un archivo Excel con mi stock **para** no registrar botellas una por una. | 5 |
+| 7 | US07 | Inventory Search | **Como** sommelier, **quiero** buscar etiquetas por nombre o añada **para** agilizar el servicio al cliente. | 1 |
+| 8 | US08 | Advanced Filtering | **Como** coleccionista, **quiero** filtrar mis vinos por cepa, país o precio **para** organizar mis catas. | 2 |
+| 9 | US09 | Register Uncorking | **Como** usuario, **quiero** marcar una botella como "descorchada" **para** reducir el stock automáticamente. | 2 |
+| 10 | US10 | QR/Barcode Scanner | **Como** administrador, **quiero** escanear códigos de barras **para** registrar entradas y salidas de stock rápidamente. | 5 |
+| 11 | US11 | Cellar Zone Definition | **Como** usuario, **quiero** crear zonas dentro de mi cava (Estante A, Fila B) **para** ubicar físicamente mis botellas. | 3 |
+| 12 | US12 | IoT Sensor Pairing | **Como** administrador de la cava, **quiero** vincular el sensor IoT a mi red Wi-Fi **para** recibir datos ambientales. | 8 |
+| 13 | US13 | Real-time Dashboard | **Como** usuario, **quiero** ver la temperatura y humedad actual en un panel visual **para** asegurar la salud del vino. | 3 |
+| 14 | US14 | Multi-sensor Support | **Como** dueño de un restaurante grande, **quiero** vincular múltiples sensores **para** monitorear diferentes zonas de mi cava. | 5 |
+| 15 | US15 | Historical Data Graph | **Como** coleccionista, **quiero** ver gráficos de fluctuación térmica de la última semana **para** auditar mi equipo de frío. | 5 |
+| 16 | US16 | Sensor Calibration | **Como** usuario técnico, **quiero** ajustar los parámetros de calibración del sensor **para** asegurar la precisión de las lecturas. | 3 |
+| 17 | US17 | Config Thermal Alerts | **Como** dueño de la cava, **quiero** establecer límites de temperatura (mín/máx) **para** recibir avisos preventivos. | 5 |
+| 18 | US18 | Push Notifications | **Como** usuario móvil, **quiero** recibir alertas inmediatas en mi celular **para** actuar rápido ante un fallo climático. | 3 |
+| 19 | US19 | Emergency Email Alerts | **Como** administrador, **quiero** recibir correos de emergencia cuando el sensor se desconecte **para** evitar pérdida de datos. | 3 |
+| 20 | US20 | Monthly Rotation Report | **Como** dueño de negocio, **quiero** un reporte mensual de etiquetas de baja rotación **para** optimizar mi capital. | 8 |
+| 21 | US21 | Thermal Traceability | **Como** coleccionista, **quiero** un certificado digital de estabilidad de mis botellas premium **para** garantizar su valor. | 5 |
+| 22 | US22 | Maturity Prediction | **Como** aficionado, **quiero** alertas de "ventana óptima de consumo" **para** no dejar pasar el mejor momento de un vino. | 8 |
+| 23 | US23 | Export to PDF/CSV | **Como** administrador, **quiero** exportar mi inventario actual a PDF **para** realizar auditorías físicas offline. | 3 |
+| 24 | US24 | Offline Sync | **Como** usuario, **quiero** que la app guarde cambios localmente si pierdo conexión **para** sincronizarlos al recuperar internet. | 8 |
