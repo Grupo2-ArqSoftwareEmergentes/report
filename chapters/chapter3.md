@@ -13,21 +13,36 @@
 
 La presente sección detalla las Historias de Usuario que guiarán el desarrollo de la plataforma VineVault.
 
-| Story ID | Título | Descripción | Criterios de Aceptación | Epic ID |
-| --- | --- | --- | --- | --- |
-| **US01** | Register a new account | **Como** usuario nuevo, **quiero** registrar una cuenta con mis datos personales **para** acceder a las funciones de gestión de mi cava. | 1. El sistema debe validar que el correo no esté registrado previamente.<br>2. La contraseña debe tener al menos 8 caracteres y un símbolo.<br>3. Enviar correo de confirmación al finalizar. | EP01 |
-| **US02** | Select User Profile | **Como** usuario registrado, **quiero** elegir entre un perfil comercial o privado **para** que la interfaz se adapte a mi tipo de uso (Restaurante o Coleccionista). | 1. El usuario debe poder cambiar el perfil en la configuración inicial.<br>2. La interfaz debe mostrar métricas de "Venta" para negocios y "Consumo" para coleccionistas. | EP01 |
-| **US03** | Register a new bottle | **Como** usuario, **quiero** registrar una etiqueta con su añada y tipo de vino **para** mantener mi inventario digital actualizado. | 1. Permitir el ingreso manual de bodega, cepa y año.<br>2. El sistema debe permitir asignar una ubicación específica (estante/fila).<br>3. Mostrar mensaje de éxito tras el registro. | EP02 |
-| **---** | **---** | **---** | **---** | **---** |
-| **US04** | Search and filter stock | **Como** sommelier o coleccionista, **quiero** filtrar mis vinos por tipo o precio **para** encontrar rápidamente la botella que necesito. | 1. Incluir barra de búsqueda por nombre de etiqueta.<br>2. Filtros por categoría: Tinto, Blanco, Espumante, Rosado.<br>3. Filtro por rango de añadas. | EP02 |
-| **US05** | Register uncorking | **Como** usuario, **quiero** marcar una botella como "descorchada" **para** que se reste automáticamente del stock disponible. | 1. El usuario debe confirmar la acción antes de procesar.<br>2. El sistema debe registrar la fecha y hora de la salida del stock. | EP02 |
-| **US06** | Pair IoT Sensor | **Como** administrador de la cava, **quiero** vincular el sensor de temperatura mediante Wi-Fi **para** recibir datos ambientales en la app. | 1. El proceso de vinculación no debe exceder los 3 pasos.<br>2. Mostrar estado de conexión "En línea/Fuera de línea" en tiempo real. | EP03 |
-| **---** | **---** | **---** | **---** | **---** |
-| **US07** | Real-time Dashboard | **Como** usuario, **quiero** ver indicadores visuales de temperatura y humedad **para** asegurar que mis vinos no sufran degradación térmica. | 1. Actualización de datos cada 5 minutos como mínimo.<br>2. Uso de colores: Verde (Óptimo), Amarillo (Precaución), Rojo (Crítico). | EP03 |
-| **US08** | Set Thermal Alerts | **Como** dueño de la cava, **quiero** configurar umbrales máximos de temperatura **para** recibir una notificación push si hay una falla climática. | 1. Permitir al usuario definir el límite (ej. 18°C).<br>2. La notificación debe llegar en menos de 10 segundos tras detectarse el exceso. | EP03 |
-| **US09** | Monthly Rotation Report | **Como** dueño de negocio, **quiero** recibir un reporte de botellas estancadas **para** crear promociones y evitar que el capital se pierda. | 1. El reporte debe listar botellas con más de 60 días sin movimiento.<br>2. Opción de exportar el reporte en formato PDF. | EP04 |
-| **US10** | Thermal Traceability | **Como** coleccionista, **quiero** ver el historial climático de una botella específica **para** garantizar su calidad al momento de una venta o descorche. | 1. Mostrar gráfico histórico de temperatura desde que la botella ingresó.<br>2. Indicar el porcentaje de tiempo que la botella estuvo en rango ideal. | EP04 |
+## 3.2. User Stories.
 
+La presente sección detalla las 24 Historias de Usuario distribuidas en 7 Epics para la gestión integral de VineVault.
+
+| Story ID | Título | Descripción | Criterios de Aceptación | Epic ID |
+| :--- | :--- | :--- | :--- | :--- |
+| **US01** | User Registration | **Como** nuevo usuario, **quiero** crear una cuenta **para** gestionar mi cava de forma personalizada. | 1. Validación de correo electrónico único.<br>2. Contraseña con al menos 8 caracteres.<br>3. Envío de correo de verificación. | EP01 |
+| **US02** | User Login | **Como** usuario registrado, **quiero** iniciar sesión **para** acceder a mi inventario privado. | 1. Autenticación segura mediante credenciales.<br>2. Opción de "Recordar sesión" activa. | EP01 |
+| **US03** | Profile Selection | **Como** usuario, **quiero** elegir entre perfil Comercial o Privado **para** adaptar la terminología de la app. | 1. Selección obligatoria en el primer ingreso.<br>2. Persistencia del tipo de perfil en la base de datos. | EP01 |
+| **US04** | Manual Bottle Entry | **Como** usuario, **quiero** registrar una botella manualmente **para** actualizar mi stock digital. | 1. Campos obligatorios: Bodega, Cepa y Añada.<br>2. Opción de subir foto de la etiqueta.<br>3. Confirmación de guardado exitoso. | EP02 |
+| **US05** | Label Scanning | **Como** sommelier, **quiero** escanear códigos de barras **para** agilizar el registro de nuevas cajas de vino. | 1. Acceso a la cámara del dispositivo móvil.<br>2. Búsqueda instantánea en base de datos global. | EP02 |
+| **US06** | Uncorking Action | **Como** usuario, **quiero** marcar una botella como descorchada **para** reducir el stock automáticamente. | 1. Botón de acceso rápido en la ficha del vino.<br>2. Registro del motivo (Venta, Consumo, Mermas).<br>3. Actualización inmediata del contador. | EP02 |
+| **US07** | Advanced Search | **Como** usuario, **quiero** buscar botellas por filtros **para** encontrarlas sin navegar por toda la lista. | 1. Filtros por color (Tinto, Blanco, Rosado).<br>2. Barra de búsqueda por nombre de bodega. | EP02 |
+| **US08** | IoT Sensor Pairing | **Como** administrador, **quiero** vincular el sensor térmico **para** iniciar el monitoreo de la cava. | 1. Guía interactiva de 3 pasos para Wi-Fi.<br>2. Indicador visual de señal de red.<br>3. Notificación de emparejamiento exitoso. | EP03 |
+| **US09** | Live Dashboard | **Como** usuario, **quiero** ver la temperatura en tiempo real **para** asegurar la salud del vino. | 1. Actualización de datos cada 10 minutos.<br>2. Indicadores de color según rango óptimo. | EP03 |
+| **US10** | Thermal Thresholds | **Como** dueño, **quiero** configurar alertas térmicas **para** proteger mi inversión de picos de calor. | 1. Definición de límites personalizados (Min/Max).<br>2. Notificación push inmediata al celular.<br>3. Registro de la alerta en el log histórico. | EP03 |
+| **US11** | Multi-Sensor Support | **Como** usuario con múltiples locales, **quiero** gestionar varios sensores **para** controlar distintas cavas. | 1. Selector de "Cava activa" en el menú.<br>2. Listado de sensores con nombres editables. | EP03 |
+| **US12** | Historical Charts | **Como** analista, **quiero** ver gráficos de fluctuación **para** detectar fallas en la refrigeración. | 1. Gráfico de líneas interactivo (Temp vs Tiempo).<br>2. Selector de rango (Día, Semana, Mes).<br>3. Opción de zoom en picos específicos. | EP04 |
+| **US13** | Monthly Health Report | **Como** dueño de negocio, **quiero** un reporte mensual de salud **para** auditar el estado de mi bodega. | 1. Generación automática el primer día del mes.<br>2. Resumen de incidentes térmicos ocurridos. | EP04 |
+| **US14** | Maturity Prediction | **Como** coleccionista, **quiero** saber el pico de madurez **para** beber mis botellas en su mejor momento. | 1. Cálculo basado en tipo de uva y crianza.<br>2. Etiqueta visual "Listo para beber" en la app.<br>3. Notificación anticipada 30 días antes del pico. | EP04 |
+| **US15** | Stagnant Stock Alert | **Como** administrador, **quiero** identificar vinos sin rotación **para** evitar capital inmovilizado. | 1. Identificación de botellas con 60+ días quietas.<br>2. Sugerencia de promoción en el dashboard. | EP04 |
+| **US16** | Supplier Directory | **Como** usuario, **quiero** guardar datos de mis proveedores **para** facilitar la reposición de stock. | 1. Formulario de contacto (Nombre, Celular, Correo).<br>2. Vinculación de proveedor a etiquetas específicas.<br>3. Acceso directo a llamar/escribir desde la app. | EP05 |
+| **US17** | Purchase Order Log | **Como** dueño, **quiero** registrar mis compras **para** llevar un control de gastos por etiqueta. | 1. Registro de precio de compra y fecha.<br>2. Posibilidad de adjuntar foto de la factura. | EP05 |
+| **US18** | Reorder Suggestions | **Como** sommelier, **quiero** sugerencias de compra **para** no perder ventas por falta de stock. | 1. Cálculo basado en velocidad de consumo.<br>2. Generación de lista de "Pendientes por comprar".<br>3. Alerta de stock crítico (debajo de 3 botellas). | EP05 |
+| **US19** | Tasting Notes | **Como** aficionado, **quiero** añadir mis propias notas de cata **para** recordar mis experiencias. | 1. Campo de texto para impresiones sensoriales.<br>2. Guardado automático al cerrar la ficha. | EP06 |
+| **US20** | Rating System | **Como** usuario, **quiero** calificar mis vinos con estrellas **para** organizar mi top personal. | 1. Escala de 1 a 5 estrellas.<br>2. Promedio visual en el listado general.<br>3. Opción de filtrar por "Mejor calificados". | EP06 |
+| **US21** | Share Collection | **Como** coleccionista, **quiero** compartir mi catálogo por enlace **para** mostrar mis botellas a invitados. | 1. Generación de link de "Solo lectura".<br>2. Opción de desactivar el link en cualquier momento. | EP06 |
+| **US22** | Units Configuration | **Como** usuario, **quiero** cambiar entre Celsius y Fahrenheit **para** ver los datos en mi unidad preferida. | 1. Switch de unidad en la configuración general.<br>2. Actualización de todos los gráficos del sistema.<br>3. Guardado de preferencia por usuario. | EP07 |
+| **US23** | Help Center Access | **Como** usuario nuevo, **quiero** acceder a tutoriales **para** aprender a usar los sensores IoT. | 1. Sección de FAQs con videos cortos.<br>2. Botón de soporte por chat directo. | EP07 |
+| **US24** | Data Export (Backup) | **Como** administrador, **quiero** exportar mi inventario a Excel **para** tener un respaldo físico de mis datos. | 1. Botón de exportación masiva en Configuración.<br>2. Formato compatible con Excel (.xlsx) y CSV.<br>3. Descarga inmediata al dispositivo. | EP07 |
 
 ## 3.3. Impact Mapping.
 
@@ -39,7 +54,7 @@ El **Impact Mapping** constituye una técnica de planeación estratégica que no
 
 El Product Backlog constituye el inventario centralizado y priorizado de todos los requisitos, funcionalidades y mejoras necesarias para la materialización de la solución 
 
-URL del backlog en Jira: https://goo.su/
+
 
 
 
