@@ -37,16 +37,8 @@ Step 9: Aggregates
 <td> <img src="../assets/eventstorming/step9.jpg" alt="Step9"></td>
 
 ### 4.2.2. Candidate Context Discovery.
-En esta sección el equipo, a partir del dominio modelado como EventStorm, explica y 
-evidencia el proceso realizado para la sesión de Candidate Context Discovery, en la 
-que se busca identificar los bounded contexts. Puede aplicar las técnicas de start- 
-with-value (Identificar las partes core del dominio que tienen el mayor valor para el 
-negocio), start-with-simple (Crear modelos simples, pero con propósito, 
-descomponiendo el timeline en steps secuenciales), ó look-for-pivotal-events (Buscar 
-eventos clave del negocio que indiquen cambios de estado entre diferentes partes 
-del proceso de negocio). La sesión de Candidate Context Discovery no debería durar 
-más de 2 horas. Utilice para el proceso la herramienta indicada. Complemente la 
-explicación con capturas en imagen de los cambios progresivos del EventStorm.
+
+<td> <img src="../assets/candidatecontext/candidate.jpg" alt="Step9"></td>
 
 ### 4.2.3. Domain Message Flows Modeling.
 En esta sección, el equipo explica y evidencia el proceso seguido para visualizar cómo 
