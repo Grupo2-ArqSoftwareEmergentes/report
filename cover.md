@@ -20,8 +20,8 @@
   <hr style="width: 50%; margin: 25px auto; border: 1px solid #999;"/>
 
 <h2 style="margin-bottom: 10px;"><strong>"Informe del Trabajo Final"</strong></h2>
-<p style="margin: 5px 0;"><strong>Nombre del grupo:</strong> Grupo2</p>
-<p style="margin: 5px 0;"><strong>Nombre del producto:</strong> WineSoft</p>
+<p style="margin: 5px 0;"><strong>Nombre del grupo:</strong> WineSoft</p>
+<p style="margin: 5px 0;"><strong>Nombre del producto:</strong> VineVault</p>
 
   <br>
 
