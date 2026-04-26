@@ -16,10 +16,71 @@
 ## 4.2. Strategic-Level Domain-Driven Design.
 
 ### 4.2.1. EventStorming.
+
+Step 1: Unstructured Exploration
+<td> <img src="../assets/eventstorming/step1.jpg" alt="Step1"></td>
+Step 2: Timelines
+<td> <img src="../assets/eventstorming/step2.jpg" alt="Step2"></td>
+Step 3: Paint Points
+<td> <img src="../assets/eventstorming/step3.jpg" alt="Step3"></td>
+Step 4: Pivotal Points
+<td> <img src="../assets/eventstorming/step4.jpg" alt="Step4"></td>
+Step 5: Commands
+<td> <img src="../assets/eventstorming/step5.jpg" alt="Step5"></td>
+Step 6: Policies
+<td> <img src="../assets/eventstorming/step6.jpg" alt="Step6"></td>
+Step7: ReadModels
+<td> <img src="../assets/eventstorming/step7.jpg" alt="Step7"></td>
+Step 8: External Systems
+<td> <img src="../assets/eventstorming/step8.jpg" alt="Step8"></td>
+Step 9: Aggregates
+<td> <img src="../assets/eventstorming/step9.jpg" alt="Step9"></td>
+
 ### 4.2.2. Candidate Context Discovery.
+En esta sección el equipo, a partir del dominio modelado como EventStorm, explica y 
+evidencia el proceso realizado para la sesión de Candidate Context Discovery, en la 
+que se busca identificar los bounded contexts. Puede aplicar las técnicas de start- 
+with-value (Identificar las partes core del dominio que tienen el mayor valor para el 
+negocio), start-with-simple (Crear modelos simples, pero con propósito, 
+descomponiendo el timeline en steps secuenciales), ó look-for-pivotal-events (Buscar 
+eventos clave del negocio que indiquen cambios de estado entre diferentes partes 
+del proceso de negocio). La sesión de Candidate Context Discovery no debería durar 
+más de 2 horas. Utilice para el proceso la herramienta indicada. Complemente la 
+explicación con capturas en imagen de los cambios progresivos del EventStorm.
+
 ### 4.2.3. Domain Message Flows Modeling.
+En esta sección, el equipo explica y evidencia el proceso seguido para visualizar cómo 
+deben colaborar los bounded contexts para resolver los casos que se presentan en el 
+negocio para los usuarios del sistema. Para ello debe aplicar la técnica de 
+visualización Domain Storytelling. Complemente la explicación con capturas en 
+imágenes de los diagramas de Domain Storytelling elaborados.
+
 ### 4.2.4. Bounded Context Canvases.
+En esta sección el equipo diseña sus candidate bounded contexts, detallando los 
+criterios de diseño. El equipo debe ir seleccionando cada bounded context, por 
+orden de importancia, para elaborar su Bounded Context Canvas. La elaboración del 
+Bounded Context Canvas debe seguir un proceso iterativo con los pasos de Context 
+Overview Definition, Business Rules Distillation & Ubiquitous Language Capture, 
+Capability Analysis, Capability Layering (si aplica), Dependencies Capture, y Design 
+Critique.
+
 ### 4.2.5. Context Mapping.
+En esta sección el equipo explica y evidencia el proceso de elaboración de un 
+conjunto de contexts maps (visualizaciones de las relaciones estructurales entre 
+bounded contexts). Para ello el equipo revisa información recolectada y la utiliza 
+para producir los diseños candidatos. Se recomienda en el proceso incluir preguntas 
+como: “¿qué pasaría si movemos este capability a otro bounded context?”, “¿qué 
+pasaría si descomponemos este capability y movemos uno de los sub-capabilities a 
+otro bounded context?”, “¿qué pasaría si partimos el bounded context en múltiples 
+bounded contexts?”, “¿qué pasaría si tomamos este capability de estos 3 contexts y 
+lo usamos para formar un nuevo context?”, “¿qué pasaría si duplicamos una 
+funcionalidad para romper la dependencia?”, “¿qué pasaría si creamos un shared
+service para reducir la duplicación entre múltiples bounded contexts?”, “¿qué 
+pasaría si aislamos los core capabilities y movemos los otros a un context aparte?”. 
+Debe finalizar este proceso discutiendo cada alternativa de context mapping a fin de 
+llegar a la mejor aproximación. Es importante que el equipo considere los patrones 
+de relaciones entre Bounded Contexts establecidos en Domain-Driven Design, como 
+Anti-corruption Layer, Conformist, Customer/Supplier ó Shared Kernel
 
 ## 4.3. Software Architecture.
 
