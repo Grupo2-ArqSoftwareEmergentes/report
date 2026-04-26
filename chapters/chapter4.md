@@ -41,11 +41,14 @@ Step 9: Aggregates
 <td> <img src="../assets/candidatecontext/candidate.jpg" alt="Step9"></td>
 
 ### 4.2.3. Domain Message Flows Modeling.
-En esta sección, el equipo explica y evidencia el proceso seguido para visualizar cómo 
-deben colaborar los bounded contexts para resolver los casos que se presentan en el 
-negocio para los usuarios del sistema. Para ello debe aplicar la técnica de 
-visualización Domain Storytelling. Complemente la explicación con capturas en 
-imágenes de los diagramas de Domain Storytelling elaborados.
+
+<td> <img src="../assets/dmfm/scenario1.jpg" alt="Scenario1"></td>
+
+<td> <img src="../assets/dmfm/scenario2.jpg" alt="Scenario2"></td>
+
+<td> <img src="../assets/dmfm/scenario3.jpg" alt="Scenario3"></td>
+
+<td> <img src="../assets/dmfm/scenario4.jpg" alt="Scenario4"></td>
 
 ### 4.2.4. Bounded Context Canvases.
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los 
