@@ -155,13 +155,16 @@ Step 9: Aggregates
 <td> <img src="../assets/dmfm/scenario4.jpg" alt="Scenario4"></td>
 
 ### 4.2.4. Bounded Context Canvases.
-En esta sección el equipo diseña sus candidate bounded contexts, detallando los 
-criterios de diseño. El equipo debe ir seleccionando cada bounded context, por 
-orden de importancia, para elaborar su Bounded Context Canvas. La elaboración del 
-Bounded Context Canvas debe seguir un proceso iterativo con los pasos de Context 
-Overview Definition, Business Rules Distillation & Ubiquitous Language Capture, 
-Capability Analysis, Capability Layering (si aplica), Dependencies Capture, y Design 
-Critique.
+
+<td> <img src="../assets/bcc/bcc1.jpg" alt="BCC1"></td>
+
+<td> <img src="../assets/bcc/bcc2.jpg" alt="BCC2"></td>
+
+<td> <img src="../assets/bcc/bcc3.jpg" alt="BCC3"></td>
+
+<td> <img src="../assets/bcc/bcc4.jpg" alt="BCC4"></td>
+
+<td> <img src="../assets/bcc/bcc5.jpg" alt="BCC5"></td>
 
 ### 4.2.5. Context Mapping.
 En esta sección el equipo explica y evidencia el proceso de elaboración de un 
