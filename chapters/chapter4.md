@@ -87,8 +87,29 @@ En esta sección se presentan las restricciones del sistema, entendidas como con
 | DR-07     | Interoperabilidad | Capacidad del sistema para integrarse con dispositivos IoT, sensores ambientales y servicios externos, utilizando protocolos estándar y APIs para asegurar comunicación eficiente. | Media       | Media               |
 | DR-08     | Modificabilidad | Facilidad para extender el sistema, incorporar nuevos sensores, mejorar funcionalidades y adaptar reglas de negocio sin afectar componentes existentes ni generar deuda técnica significativa. | Media       | Media               |
 
-
 ### 4.1.4. Architectural Design Decisions.
+
+| Driver ID | Título          | Descripción                                                                                                                                 | Importancia | Complejidad Técnica |
+|-----------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------|---------------------|
+| DR-01     | Rendimiento    | Capacidad del sistema para procesar datos de sensores IoT y reflejarlos en el dashboard en menos de 10 segundos, así como generar alertas inmediatas ante variaciones críticas, garantizando monitoreo en tiempo casi real. | Alta        | Alta                |
+| DR-02     | Disponibilidad | Capacidad del sistema para mantenerse operativo de forma continua 24/7, permitiendo a los usuarios acceder al estado de su cava y monitorear condiciones ambientales desde cualquier ubicación sin interrupciones. | Alta        | Media               |
+| DR-03     | Seguridad      | Implementación de mecanismos de protección de datos, incluyendo almacenamiento seguro, comunicación encriptada y protección ante accesos no autorizados, garantizando la confidencialidad de la información del usuario y su colección. | Alta        | Media               |
+| DR-04     | Usabilidad     | Capacidad del sistema para ofrecer una experiencia simple e intuitiva, permitiendo registrar botellas, consultar inventario y visualizar datos sin fricción, reduciendo la dependencia de procesos manuales. | Alta        | Media               |
+| DR-05     | Escalabilidad  | Habilidad del sistema para soportar múltiples usuarios y sensores IoT simultáneamente, manteniendo tiempos de respuesta estables y sin degradación del servicio en escenarios de crecimiento. | Alta        | Alta                |
+| DR-06     | Confiabilidad  | Garantía de funcionamiento consistente del sistema, asegurando la correcta recepción de datos de sensores y el envío de alertas sin pérdida de información, incluso en operación continua. | Media       | Alta                |
+| DR-07     | Interoperabilidad | Capacidad del sistema para integrarse con dispositivos IoT, sensores ambientales y servicios externos, utilizando protocolos estándar y APIs para asegurar comunicación eficiente. | Media       | Media               |
+| DR-08     | Modificabilidad | Facilidad para extender el sistema, incorporar nuevos sensores, mejorar funcionalidades y adaptar reglas de negocio sin afectar componentes existentes ni generar deuda técnica significativa. | Media       | Media               |
+
+La arquitectura de Monolito Modular basada en Domain-Driven Design (DDD) se presenta como la alternativa más adecuada para el desarrollo de VineVault. Esta decisión se fundamenta en los siguientes aspectos:
+
+En primer lugar, permite cumplir de manera efectiva con los drivers arquitectónicos definidos, especialmente en lo relacionado con el monitoreo en tiempo casi real de condiciones ambientales, la seguridad de los datos de los usuarios y la confiabilidad en la gestión del inventario de botellas.
+
+Asimismo, reduce la complejidad operativa del sistema, lo cual resulta clave considerando que el proyecto está orientado a un entorno con recursos de desarrollo limitados. Una arquitectura monolítica modular facilita el desarrollo, despliegue y mantenimiento sin introducir sobrecarga innecesaria.
+
+Por otro lado, esta arquitectura favorece la aplicación de Domain-Driven Design, permitiendo organizar el sistema en dominios claramente definidos como Inventario, Monitoreo IoT, Alertas y Análisis. Esto contribuye a una mejor estructuración del código y a una mayor coherencia con las necesidades del negocio.
+
+Finalmente, evita la complejidad adicional que implicaría una arquitectura de microservicios, la cual, si bien es escalable, introduciría desafíos innecesarios en términos de comunicación entre servicios, despliegue distribuido y mantenimiento. Dado el alcance actual de VineVault, una solución monolítica modular resulta más eficiente, manejable y alineada con los requerimientos del sistema.
+
 ### 4.1.5. Quality Attribute Scenario Refinements.
 
 ## 4.2. Strategic-Level Domain-Driven Design.
