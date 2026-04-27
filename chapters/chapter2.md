@@ -190,22 +190,65 @@ En esta sección se aborda la investigación tomando como base la recolección d
 
 ### 2.2.2. Registro de entrevistas.
 
-| Segmento objetivo | sector     | Video |
-| --- | --- | --- |
-| NOMBRE <br /><img src="../assets/entrevistas/segmento 1 entrevista 1.png" alt="segmento 1 entrevista 1" width="500"> | **Datos Demográficos:** <br/> .<br/><br/>**Ocupación y Background:** <br/>.<br/><br/>**Perfil Psicográfico:**<br/>.<br/><br/>**Objetivos y Frustraciones:** <br/>.<br/><br/>**Tecnología y Canales:** <br/>.<br/><br/>**Comportamiento de Decisión:** <br/>. | URL:https://goo.su/<br />Inicio: 0:0:06<br />Fin: 0:5:52 |
+Link entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202121325_upc_edu_pe/IQAfmr2aHCzvR4IooMNCIwJsAe4eHiWfhxlqgcFUd5J-Y0M?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZyhLh5 
+
+Segmento objetivo 1:
 
 | Segmento objetivo | sector     | Video |
 | --- | --- | --- |
-| NOMBRE <br /><img src="../assets/entrevistas/segmento 1 entrevista 1.png" alt="segmento 1 entrevista 1" width="500"> | **Datos Demográficos:** <br/> .<br/><br/>**Ocupación y Background:** <br/>.<br/><br/>**Perfil Psicográfico:**<br/>.<br/><br/>**Objetivos y Frustraciones:** <br/>.<br/><br/>**Tecnología y Canales:** <br/>.<br/><br/>**Comportamiento de Decisión:** <br/>. | URL:https://goo.su/<br />Inicio: 0:0:06<br />Fin: 0:5:52 |
+| Renzo Castañeda <br /><img src="../assets/entrevistas/segmento 1 entrevista 1.jpg" alt="segmento 1 entrevista 1" width="500"> | **Datos Demográficos:** <br/> - Género: Masculino.<br/> - Ubicación: San Isidro / Lima. <br/> - Nivel socioeconómico: Medio-alto/Empresarial.<br/><br/>**Ocupación y Background:** <br/> - Cargo: Dueño de restaurante o administrador de cava comercial. <br/>- Contexto: Gestiona un inventario dinámico donde el vino no es solo un hobby, sino un activo crítico para la rentabilidad del negocio.<br/><br/>**Perfil Psicográfico:**<br/> - Actitud: Pragmática y orientada a la acción. <br/>- Prioridades: La operatividad y la rentabilidad. No busca "aprender" sobre vino por placer, sino asegurar que el producto esté en condiciones óptimas para la venta. <br/> - Relación con el riesgo: Alto estrés por fallas técnicas y por la pérdida de reputación frente al cliente.<br/><br/>**Objetivos y Frustraciones:** <br/> - Objetivos: Lograr un inventario cuadrado con las ventas de forma automática. <br/> -Frustraciones: Pérdidas económicas de S/ 200 mensuales por botellas arruinadas; Quiebres de stock; Incertidumbre por la  falta de control en tiempo real sobre la temperatura y humedad. .<br/><br/>**Tecnología y Canales:** <br/>- Dispositivos: Smartphone.  <br/> - Expectativas: La plataforma debe ser infalible. Si la app contradice la realidad física, dudará de la tecnología.<br/> - Valoración: Busca una herramienta de gestión que se integre a su flujo de trabajo diario sin añadir pasos manuales.<br/><br/>**Comportamiento de Decisión:** <br/>Está dispuesto a pagar una suscripción (rango de S/ 50 mensuales) siempre que el sistema garantice que no perderá botellas de alto valor. El ahorro de tiempo y la eliminación del "caos" del conteo quincenal. Se mueve en círculos de colegas y socios. | Inicio: 11:30<br />Fin: 14:35 |
+
+Segmento objetivo 2: 
+
+| Segmento objetivo | sector     | Video |
+| --- | --- | --- |
+| Katty Campos <br /><img src="../assets/entrevistas/segmento 2 entrevista 1.png" alt="segmento 2 entrevista 1" width="500"> | **Datos Demográficos:** <br/> Mujer de 23 a 30 años, de clase media, vive en una zona urbana. Tiene una pequeña cava en casa para sus vinos y destilados.<br/><br/>**Ocupación y Background:** <br/> Veterinaria con ingresos estables quien tiene como interes coleccionar vino como hobby.<br/><br/>**Perfil Psicográfico:** <br/> Le gusta explorar el mundo del vino como parte de su estilo de vida. Disfruta compartir con amigos y crear experiencias. No es experta, pero le interesa aprender. Prefiere soluciones simples, visuales y prácticas. <br/><br/>**Objetivos y Frustraciones:** <br/> Quiere organizar mejor sus botellas y no olvidar lo que tiene. Le gustaría consumir sus vinos en el momento adecuado. Se frustra cuando no encuentra una botella ademas de que siente que puede estar almacenando mal sus vinos o cuando todo depende de su memoria.<br/><br/>**Tecnología y Canales:** <br/> Usa constantemente el smartphone y apps. Está familiarizada con herramientas digitales, pero no usa sistemas complejos. Prefiere apps intuitivas, rápidas y visuales. Descubre soluciones por redes sociales y recomendaciones.<br/><br/>**Comportamiento de Decisión:** <br/>Toma decisiones basadas en facilidad de uso, utilidad y precio. Está dispuesta a probar nuevas apps si son simples y le ahorran tiempo. Consideraría pagar si percibe que le ayuda a cuidar mejor sus botellas y mejorar su experiencia sin complicarse. | Inicio: 0:00<br />Fin: 4:04 || Segmento objetivo | sector     | Video |
+| Luigi López <br /><img src="../assets/entrevistas/segmento 2 entrevista 2.png" alt="segmento 2 entrevista 2" width="500"> | **Datos Demográficos:** <br/> Hombre de 23 a 30 años, clase media, vive en una zona urbana. Tiene una cava personal en casa donde almacena vinos y algunos destilados.<br/><br/>**Ocupación y Background:** <br/> Actualmente se encuentra en etapa universitaria y combina sus estudios con prácticas preprofesionales. <br/><br/>**Perfil Psicográfico:** <br/> Le gusta explorar el mundo del vino como parte de su estilo de vida y disfruta la experiencia de compartir botellas en reuniones familiares, cenas especiales y celebraciones importantes. Valora tanto el aspecto emocional como económico de su colección, ya que algunas botellas tienen un significado especial. <br/><br/>**Objetivos y Frustraciones:** <br/> Quiere organizar mejor sus botellas para saber exactamente qué tiene disponible y evitar depender únicamente de su memoria visual o de un cuaderno manual. Le gustaría recibir alertas sobre el mejor momento de consumo de cada botella y sobre posibles fallas en la temperatura o humedad de su cava. <br/><br/>**Tecnología y Canales:** <br/> Usa constantemente herramientas tecnológicas debido a su formación en Ingeniería de Sistemas y se siente cómodo utilizando aplicaciones móviles. Está familiarizado con soluciones digitales y valora mucho la automatización, especialmente si reduce trabajo manual. <br/><br/>**Comportamiento de Decisión:** <br/> Toma decisiones principalmente en función de la utilidad real, facilidad de uso y ahorro de tiempo. Está dispuesto a probar nuevas plataformas si percibe que simplifican la gestión de su cava y protegen mejor sus botellas.| Inicio: 0:00<br />Fin: 10:25 |
+| Segmento objetivo | sector | Video |
+|---|---|---|
+| Mari melendez<br><img src="https://i.ibb.co/PGff8m31/Captura-de-pantalla-2026-04-26-113352.png" alt="Captura de pantalla" width="200"><br> | **Datos Demográficos:** mujer de 45 años vive en Carabayllo, Lima, Perú.<br><br>**Ocupación y Background:** Ingeniera Agrónoma.<br><br>**Perfil Psicográfico:** le gustan los vinos, ha administrado viñedos a lo largo de su trayectoria, por lo tanto es una aficionada de vinos.<br><br>**Objetivos y Frustraciones:** a veces sus vinos se malogran por no saber cuándo se malogran o no conservar bien sus vinos.<br><br>**Tecnología y Canales:** Android y Windows.<br><br>**Comportamiento de Decisión:** quiere realizar un seguimiento de la conservación de los vinos que posee para evitar pérdidas graves al ser botellas caras o edición especial. | <br>Inicio: 04:06<br>Fin: 11:20 |
+
 
 
 ### 2.2.3. Análisis de entrevistas.
 
-| Segmento objetivo | **Características objetivas** | Características subjetivas |
-| --- | --- | --- |
-| SECTOR 1  | -  | -  |
-| SECTOR 2  | -  | -  |
+A continuación, se presenta el análisis comparativo de los perfiles de usuario identificados a partir de las entrevistas realizadas. Se han segmentado en dos sectores según sus características demográficas, ocupacionales, psicográficas, tecnológicas y de comportamiento.
 
+#### Tabla de análisis: Segmento objetivo vs Características objetivas y subjetivas
+
+| Segmento objetivo | Características objetivas | Características subjetivas |
+|:---:|:---|:---|
+| **Katty Campos** (Segmento 2 - Entrevista 1) | **Datos Demográficos:** <br>• Mujer de 23 a 30 años <br>• Clase media <br>• Zona urbana <br>• Posee pequeña cava en casa para vinos y destilados <br><br> **Ocupación y Background:** <br>• Veterinaria con ingresos estables <br>• Colecciona vinos como hobby <br><br> **Tecnología y Canales:** <br>• Usa constantemente smartphone y apps <br>• Familiarizada con herramientas digitales <br>• Evita sistemas complejos <br>• Descubre soluciones por redes sociales y recomendaciones <br><br> **Comportamiento de Decisión:** <br>• Toma decisiones por facilidad de uso, utilidad y precio <br>• Dispuesta a probar apps simples que ahorren tiempo <br>• Consideraría pagar si percibe valor y mejora su experiencia | **Perfil Psicográfico:** <br>• Le gusta explorar el mundo del vino como parte de su estilo de vida <br>• Disfruta compartir con amigos y crear experiencias <br>• No es experta, pero le interesa aprender <br>• Prefiere soluciones simples, visuales y prácticas <br><br> **Objetivos y Frustraciones:** <br>• Quiere organizar mejor sus botellas y no olvidar lo que tiene <br>• Desea consumir sus vinos en el momento adecuado <br>• **Frustraciones:** <br>  - No encuentra una botella cuando la busca <br>  - Siente que puede estar almacenando mal sus vinos <br>  - Todo depende de su memoria |
+| **Luigi López** (Segmento 2 - Entrevista 2) | **Datos Demográficos:** <br>• Hombre de 23 a 30 años <br>• Clase media <br>• Zona urbana <br>• Posee una cava personal para vinos y destilados en casa <br><br> **Ocupación y Background:** <br>• Estudiante de Ingeniería de Sistemas en la UPC <br>• Realiza prácticas preprofesionales <br>• Colecciona vinos y destilados como hobby <br><br> **Tecnología y Canales:** <br>• Usa constantemente smartphone y herramientas digitales <br>• Tiene alta familiaridad con la tecnología <br>• Valora automatización y alertas en tiempo real <br>• Descubre soluciones por redes sociales y recomendaciones <br>• Le atrae el escaneo rápido o registro por fotografía <br><br> **Comportamiento de Decisión:** <br>• Decide según utilidad, facilidad de uso y practicidad <br>• Está dispuesto a probar nuevas soluciones tecnológicas <br>• Rechaza herramientas que consuman demasiado tiempo <br>• Consideraría pagar una suscripción si percibe valor real | **Perfil Psicográfico:** <br>• Disfruta coleccionar vinos y destilados como parte de su estilo de vida <br>• Valora las experiencias sociales y familiares alrededor del vino <br>• Da valor emocional y económico a ciertas botellas <br>• Le interesa aprender más sobre conservación y consumo óptimo <br><br> **Objetivos y Frustraciones:** <br>• Quiere organizar mejor su inventario de botellas <br>• Desea no depender solo de la memoria o un cuaderno <br>• Busca consumir sus vinos en el momento óptimo <br>• **Frustraciones:** <br>  - No encontrar una botella rápidamente <br>  - Depender completamente de la memoria visual <br>  - Que una botella se arruine por mala conservación <br>  - Olvidar una botella y perder su mejor momento de consumo |
+| **Mari Melendez** (Captura de pantalla) | **Datos Demográficos:** <br>• Mujer de 45 años <br>• Vive en Carabayllo, Lima, Perú <br><br> **Ocupación y Background:** <br>• Ingeniera Agrónoma <br>• Ha administrado viñedos a lo largo de su trayectoria <br>• Aficionada avanzada de vinos <br><br> **Tecnología y Canales:** <br>• Usa Android y Windows <br><br> **Comportamiento de Decisión:** <br>• Quiere realizar seguimiento de la conservación de sus vinos <br>• Busca evitar pérdidas graves en botellas caras o de edición especial | **Perfil Psicográfico:** <br>• Le gustan los vinos desde una perspectiva técnica por su experiencia en viñedos <br>• Valora el conocimiento técnico sobre conservación <br><br> **Objetivos y Frustraciones:** <br>• **Objetivo principal:** Seguimiento preciso de la conservación <br>• **Frustraciones:** <br>  - Sus vinos se malogran por no saber cuándo se dañan <br>  - No conserva bien sus vinos <br>  - Pérdidas económicas importantes por botellas caras o de edición especial |
+
+#### Resumen comparativo de los sectores
+
+| Aspecto clave | Sector 1: Katty Campos (Perfil joven - hobby) | Sector 2: Mari Melendez (Perfil experto - técnica) |
+|:---|:---|:---|
+| **Edad** | 23-30 años | 45 años |
+| **Perfil de conocimiento** | Aficionada principiante/intermedia | Aficionada avanzada (con experiencia en viñedos) |
+| **Principal necesidad** | Organización visual y recordatorio de inventario | Seguimiento técnico de conservación |
+| **Principal frustración** | Depender de su memoria, no encontrar botellas | Perder botellas caras por mal almacenamiento |
+| **Tipo de solución ideal** | App simple, visual, rápida, estilo redes sociales | App con métricas de conservación (temperatura, humedad, tiempos) |
+| **Disposición a pagar** | Sí, si es simple y útil | Sí, si evita pérdidas económicas graves |
+| **Plataforma principal** | Smartphone (iOS/Android) | Android + Windows |
+
+#### Hallazgos clave del análisis de entrevistas
+
+1. **Dos perfiles distintos pero complementarios:** El primer segmento (joven) busca una experiencia más social, visual y de organización básica. El segundo segmento (maduro) busca control técnico y preventivo.
+
+2. **Frustración común compartida:** Ambos segmentos coinciden en que el almacenamiento inadecuado es un problema real que causa pérdida de vinos.
+
+3. **Oportunidad diferenciada:** El producto podría ofrecer dos modos de uso:
+   - **Modo básico:** inventario visual + recordatorios (para Katty)
+   - **Modo avanzado:** seguimiento de condiciones de conservación + alertas técnicas (para Mari)
+
+4. **Tecnología:** El 100% usa smartphone, por lo que una app móvil es viable. Mari además requiere compatibilidad con Windows.
+
+5. **Disposición a pagar:** Existe en ambos perfiles, pero por razones diferentes:
+   - Katty: por simplicidad y experiencia
+   - Mari: por prevención de pérdidas económicas
 ------
 
 ## 2.3. Needfinding
@@ -280,6 +323,7 @@ Al analizar el cuadro, se identifican coincidencias y diferencias estratégicas 
     <img src="https://i.ibb.co/Dfyf2tvd/Empathy-map-1.png" alt="Empathy-map-1" border="0">
   </a>
 </center>
+
 ### 2.3.4. As-Is escenario Mapping.
 ## As-is Scenario Mapping: Dueños de Restaurantes y Cavas Comerciales
 

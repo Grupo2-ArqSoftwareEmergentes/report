@@ -1,16 +1,16 @@
 # Bibliografía
 
--
+- 
 
 
 
 # Anexo
 
-Link de la entrevista:
+Link de la entrevista: 
 
-Big Picture Event Storming:
+Big Picture Event Storming: 
 
-Candidate Context Discovery:
+Candidate Context Discovery: 
 
 URL del backlog en Jira: 
 
