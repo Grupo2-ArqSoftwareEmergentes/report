@@ -3,10 +3,10 @@
 ## 3.1. To-Be Scenario Mapping.
 
 **To-Be Scenario Mapping Segmento 1:**
-<br /><img src="../assets/images/to_be_segmento1.jpg" alt="to_be_segmento1.jpg" width="500">
+<br /><img src="../assets/images/to_be_segmento1.jpg" alt="to_be_segmento1.jpg" width="">
 
 **To-Be Scenario Mapping Segmento 2:**
-<br /><img src="../assets/images/to_be_segmento2.jpg" alt="to_be_segmento1.jpg" width="500">
+<br /><img src="../assets/images/to_be_segmento2.jpg" alt="to_be_segmento1.jpg" width="">
 
 
 ## 3.2. User Stories.

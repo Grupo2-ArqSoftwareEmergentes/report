@@ -6,3 +6,6 @@
 | 0.1.0   | 26/04/2026 | Ian Macavilca Quispe, Casaverde De La Cruz Ernesto David, Mendoza Solis Javier Kenyi, Moscoso Bejar Stephano, Shimabukuro Uku Carlos Joel  | Se completo el avance del TB1.    |
 # Project Report Collaboration Insights
 
+Link repositorio:https://github.com/Grupo2-ArqSoftwareEmergentes/report.git
+
+<br /><img src="assets/images/githubreport.jpg" alt="to_be_segmento1.jpg" width="">
