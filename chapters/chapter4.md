@@ -122,6 +122,17 @@ Anti-corruption Layer, Conformist, Customer/Supplier ó Shared Kernel
 ## 4.3. Software Architecture.
 
 ### 4.3.1. Software Architecture System Landscape Diagram.
+
+<td> <img src="../assets/softwarearchitecture/systemlandscapediagram.jpg" width="550" alt="system landscape diagram"></td>
+
 ### 4.3.2. Software Architecture Context Level Diagrams.
+
+<td> <img src="../assets/softwarearchitecture/contextleveldiagram.jpg" width="550" alt="context level diagram"></td>
+
 ### 4.3.3. Software Architecture Container Level Diagrams.
+
+<td> <img src="../assets/softwarearchitecture/containerleveldiagram.jpg" width="550" alt="container level diagram"></td>
+
 ### 4.3.4. Software Architecture Deployment Diagrams.
+
+<td> <img src="../assets/softwarearchitecture/deploymentdiagram.jpg" width="550" alt="deployment diagram"></td>
