@@ -48,8 +48,20 @@ En esta sección se especifican las User Stories primarias que resultan crítica
 - **Predicción de madurez y recomendaciones (US14):**
   Esta funcionalidad agrega valor al usuario al indicar el momento óptimo de consumo de las botellas. Implica el uso de lógica de negocio basada en reglas o modelos predictivos, afectando la arquitectura en términos de procesamiento de datos y generación de insights personalizados.
 
-#### 4.1.2.1. Quality attribute Scenarios.
-#### 4.1.2.1. Constraints.
+#### 4.1.2.2. Quality attribute Scenarios.
+
+En esta sección se detallan los escenarios iniciales de atributos de calidad que influyen directamente en la arquitectura de VineVault. Estos escenarios permiten definir requisitos no funcionales clave relacionados con el monitoreo en tiempo real, la confiabilidad del sistema y la protección de datos.
+
+| ID    | Atributo     | Fuente                 | Estímulo                                           | Artefacto             | Entorno                                      | Respuesta                                              | Medida                                              |
+|-------|--------------|------------------------|----------------------------------------------------|------------------------|-----------------------------------------------|--------------------------------------------------------|-----------------------------------------------------|
+| QA-01 | Rendimiento  | Sensor IoT             | Envía datos de temperatura y humedad               | Backend + Dashboard    | Operación normal con múltiples sensores activos | El sistema procesa y actualiza los datos en el dashboard | Actualización visible en ≤ 10 segundos              |
+| QA-02 | Confiabilidad| Sensor IoT             | Variación fuera del rango permitido                | Módulo de alertas      | Operación continua (24/7)                     | El sistema genera y envía una notificación al usuario   | Notificación enviada en ≤ 5 segundos                |
+| QA-03 | Disponibilidad| Usuario               | Solicita acceso al dashboard                       | App web/móvil          | Acceso remoto desde cualquier ubicación       | El sistema permite visualizar inventario y estado       | Disponibilidad ≥ 99% del tiempo                     |
+| QA-04 | Escalabilidad| Múltiples usuarios     | Consultas y monitoreo simultáneo de varias cavas   | Backend central        | Alta concurrencia (usuarios y sensores)       | El sistema mantiene tiempos de respuesta estables       | Respuestas ≤ 3 segundos con múltiples usuarios      |
+| QA-05 | Seguridad    | Usuario                | Registro y almacenamiento de datos                 | Base de datos          | Redes públicas (WiFi/4G/5G)                   | Los datos son almacenados y transmitidos de forma segura| 100% de datos protegidos mediante encriptación      |
+
+
+#### 4.1.2.3. Constraints.
 
 ### 4.1.3. Architectural Drivers Backlog.
 ### 4.1.4. Architectural Design Decisions.
