@@ -190,9 +190,13 @@ En esta sección se aborda la investigación tomando como base la recolección d
 
 ### 2.2.2. Registro de entrevistas.
 
+Segmento objetivo 1:
+
 | Segmento objetivo | sector     | Video |
 | --- | --- | --- |
-| NOMBRE <br /><img src="../assets/entrevistas/segmento 1 entrevista 1.png" alt="segmento 1 entrevista 1" width="500"> | **Datos Demográficos:** <br/> .<br/><br/>**Ocupación y Background:** <br/>.<br/><br/>**Perfil Psicográfico:**<br/>.<br/><br/>**Objetivos y Frustraciones:** <br/>.<br/><br/>**Tecnología y Canales:** <br/>.<br/><br/>**Comportamiento de Decisión:** <br/>. | URL:https://goo.su/<br />Inicio: 0:0:06<br />Fin: 0:5:52 |
+| Renzo Castañeda <br /><img src="../assets/entrevistas/segmento 1 entrevista 1.jpg" alt="segmento 1 entrevista 1" width="500"> | **Datos Demográficos:** <br/> - Género: Masculino.<br/> - Ubicación: San Isidro / Lima. <br/> - Nivel socioeconómico: Medio-alto/Empresarial.<br/><br/>**Ocupación y Background:** <br/> - Cargo: Dueño de restaurante o administrador de cava comercial. <br/>- Contexto: Gestiona un inventario dinámico donde el vino no es solo un hobby, sino un activo crítico para la rentabilidad del negocio.<br/><br/>**Perfil Psicográfico:**<br/> - Actitud: Pragmática y orientada a la acción. <br/>- Prioridades: La operatividad y la rentabilidad. No busca "aprender" sobre vino por placer, sino asegurar que el producto esté en condiciones óptimas para la venta. <br/> - Relación con el riesgo: Alto estrés por fallas técnicas y por la pérdida de reputación frente al cliente.<br/><br/>**Objetivos y Frustraciones:** <br/> - Objetivos: Lograr un inventario cuadrado con las ventas de forma automática. <br/> -Frustraciones: Pérdidas económicas de S/ 200 mensuales por botellas arruinadas; Quiebres de stock; Incertidumbre por la  falta de control en tiempo real sobre la temperatura y humedad. .<br/><br/>**Tecnología y Canales:** <br/>- Dispositivos: Smartphone.  <br/> - Expectativas: La plataforma debe ser infalible. Si la app contradice la realidad física, dudará de la tecnología.<br/> - Valoración: Busca una herramienta de gestión que se integre a su flujo de trabajo diario sin añadir pasos manuales.<br/><br/>**Comportamiento de Decisión:** <br/>Está dispuesto a pagar una suscripción (rango de S/ 50 mensuales) siempre que el sistema garantice que no perderá botellas de alto valor. El ahorro de tiempo y la eliminación del "caos" del conteo quincenal. Se mueve en círculos de colegas y socios. | URL:https://goo.su/<br />Inicio: 0:0:06<br />Fin: 0:5:52 |
+
+Segmento objetivo 2: 
 
 | Segmento objetivo | sector     | Video |
 | --- | --- | --- |
