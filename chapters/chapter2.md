@@ -206,11 +206,42 @@ En esta sección se aborda la investigación tomando como base la recolección d
 
 ### 2.2.3. Análisis de entrevistas.
 
-| Segmento objetivo | **Características objetivas** | Características subjetivas |
-| --- | --- | --- |
-| SECTOR 1  | -  | -  |
-| SECTOR 2  | -  | -  |
+A continuación, se presenta el análisis comparativo de los perfiles de usuario identificados a partir de las entrevistas realizadas. Se han segmentado en dos sectores según sus características demográficas, ocupacionales, psicográficas, tecnológicas y de comportamiento.
 
+#### Tabla de análisis: Segmento objetivo vs Características objetivas y subjetivas
+
+| Segmento objetivo | Características objetivas | Características subjetivas |
+|:---:|:---|:---|
+| **Katty Campos** (Segmento 2 - Entrevista 1) | **Datos Demográficos:** <br>• Mujer de 23 a 30 años <br>• Clase media <br>• Zona urbana <br>• Posee pequeña cava en casa para vinos y destilados <br><br> **Ocupación y Background:** <br>• Veterinaria con ingresos estables <br>• Colecciona vinos como hobby <br><br> **Tecnología y Canales:** <br>• Usa constantemente smartphone y apps <br>• Familiarizada con herramientas digitales <br>• Evita sistemas complejos <br>• Descubre soluciones por redes sociales y recomendaciones <br><br> **Comportamiento de Decisión:** <br>• Toma decisiones por facilidad de uso, utilidad y precio <br>• Dispuesta a probar apps simples que ahorren tiempo <br>• Consideraría pagar si percibe valor y mejora su experiencia | **Perfil Psicográfico:** <br>• Le gusta explorar el mundo del vino como parte de su estilo de vida <br>• Disfruta compartir con amigos y crear experiencias <br>• No es experta, pero le interesa aprender <br>• Prefiere soluciones simples, visuales y prácticas <br><br> **Objetivos y Frustraciones:** <br>• Quiere organizar mejor sus botellas y no olvidar lo que tiene <br>• Desea consumir sus vinos en el momento adecuado <br>• **Frustraciones:** <br>  - No encuentra una botella cuando la busca <br>  - Siente que puede estar almacenando mal sus vinos <br>  - Todo depende de su memoria |
+| **Mari Melendez** (Captura de pantalla) | **Datos Demográficos:** <br>• Mujer de 45 años <br>• Vive en Carabayllo, Lima, Perú <br><br> **Ocupación y Background:** <br>• Ingeniera Agrónoma <br>• Ha administrado viñedos a lo largo de su trayectoria <br>• Aficionada avanzada de vinos <br><br> **Tecnología y Canales:** <br>• Usa Android y Windows <br><br> **Comportamiento de Decisión:** <br>• Quiere realizar seguimiento de la conservación de sus vinos <br>• Busca evitar pérdidas graves en botellas caras o de edición especial | **Perfil Psicográfico:** <br>• Le gustan los vinos desde una perspectiva técnica por su experiencia en viñedos <br>• Valora el conocimiento técnico sobre conservación <br><br> **Objetivos y Frustraciones:** <br>• **Objetivo principal:** Seguimiento preciso de la conservación <br>• **Frustraciones:** <br>  - Sus vinos se malogran por no saber cuándo se dañan <br>  - No conserva bien sus vinos <br>  - Pérdidas económicas importantes por botellas caras o de edición especial |
+
+#### Resumen comparativo de los sectores
+
+| Aspecto clave | Sector 1: Katty Campos (Perfil joven - hobby) | Sector 2: Mari Melendez (Perfil experto - técnica) |
+|:---|:---|:---|
+| **Edad** | 23-30 años | 45 años |
+| **Perfil de conocimiento** | Aficionada principiante/intermedia | Aficionada avanzada (con experiencia en viñedos) |
+| **Principal necesidad** | Organización visual y recordatorio de inventario | Seguimiento técnico de conservación |
+| **Principal frustración** | Depender de su memoria, no encontrar botellas | Perder botellas caras por mal almacenamiento |
+| **Tipo de solución ideal** | App simple, visual, rápida, estilo redes sociales | App con métricas de conservación (temperatura, humedad, tiempos) |
+| **Disposición a pagar** | Sí, si es simple y útil | Sí, si evita pérdidas económicas graves |
+| **Plataforma principal** | Smartphone (iOS/Android) | Android + Windows |
+
+#### Hallazgos clave del análisis de entrevistas
+
+1. **Dos perfiles distintos pero complementarios:** El primer segmento (joven) busca una experiencia más social, visual y de organización básica. El segundo segmento (maduro) busca control técnico y preventivo.
+
+2. **Frustración común compartida:** Ambos segmentos coinciden en que el almacenamiento inadecuado es un problema real que causa pérdida de vinos.
+
+3. **Oportunidad diferenciada:** El producto podría ofrecer dos modos de uso:
+   - **Modo básico:** inventario visual + recordatorios (para Katty)
+   - **Modo avanzado:** seguimiento de condiciones de conservación + alertas técnicas (para Mari)
+
+4. **Tecnología:** El 100% usa smartphone, por lo que una app móvil es viable. Mari además requiere compatibilidad con Windows.
+
+5. **Disposición a pagar:** Existe en ambos perfiles, pero por razones diferentes:
+   - Katty: por simplicidad y experiencia
+   - Mari: por prevención de pérdidas económicas
 ------
 
 ## 2.3. Needfinding
