@@ -63,6 +63,20 @@ En esta sección se detallan los escenarios iniciales de atributos de calidad qu
 
 #### 4.1.2.3. Constraints.
 
+En esta sección se presentan las restricciones del sistema, entendidas como condiciones no negociables establecidas por el cliente o por el negocio que sirven como lineamientos fundamentales para el desarrollo de la solución.
+
+| ID     | Título                         | Descripción                                                                 | Aceptación                                                                 | EPIC  |
+|--------|--------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-------|
+| CON-01 | Compatibilidad multiplataforma | La solución debe funcionar en dispositivos móviles y web para acceso remoto | Escenario 1: El usuario accede desde móvil → visualiza su inventario correctamente. Escenario 2: El usuario accede desde web → los datos se muestran sincronizados | EP01 |
+| CON-02 | Integración con sensores IoT   | El sistema debe conectarse con sensores para monitoreo ambiental            | Escenario 1: El sensor envía datos → el sistema los recibe correctamente. Escenario 2: El usuario visualiza los datos → estos se reflejan en el dashboard | EP03 |
+| CON-03 | Monitoreo en tiempo real       | El sistema debe procesar datos ambientales en tiempo casi real              | Escenario 1: Sensor envía datos → actualización en ≤ 10 segundos. Escenario 2: Múltiples sensores activos → el sistema mantiene la actualización continua | EP03 |
+| CON-04 | Alertas inmediatas             | El sistema debe notificar cambios críticos de temperatura/humedad           | Escenario 1: Se supera el umbral → se envía notificación. Escenario 2: El usuario recibe alerta → puede actuar rápidamente | EP03 |
+| CON-05 | Almacenamiento histórico       | El sistema debe guardar datos históricos para análisis                      | Escenario 1: El sistema registra datos continuamente → se almacenan correctamente. Escenario 2: El usuario consulta historial → visualiza gráficos sin errores | EP04 |
+| CON-06 | Arquitectura escalable         | La solución debe soportar múltiples usuarios y sensores simultáneamente     | Escenario 1: Varios usuarios acceden → el sistema responde sin caídas. Escenario 2: Múltiples sensores activos → no se degrada el rendimiento | EP03 |
+| CON-07 | Seguridad de datos             | La información debe almacenarse y transmitirse de forma segura              | Escenario 1: Usuario registra datos → se almacenan encriptados. Escenario 2: Usuario accede desde red pública → la información se mantiene segura | EP01 |
+| CON-08 | Simplicidad de uso             | La aplicación debe ser fácil de usar y evitar procesos manuales complejos   | Escenario 1: Usuario registra botella → proceso rápido. Escenario 2: Usuario navega en la app → interfaz intuitiva sin fricción | EP02 |
+
+
 ### 4.1.3. Architectural Drivers Backlog.
 ### 4.1.4. Architectural Design Decisions.
 ### 4.1.5. Quality Attribute Scenario Refinements.
