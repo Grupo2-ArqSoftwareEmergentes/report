@@ -112,9 +112,9 @@ Finalmente, evita la complejidad adicional que implicaría una arquitectura de m
 
 ### 4.1.5. Quality Attribute Scenario Refinements.
 
-![Scenario 01](report/assets/Scenario-Refinements/Scenario01Refinement.png)
+![Scenario 01](assets/Scenario-Refinements/Scenario01Refinement.png)
 
-![Scenario 02](report/assets/Scenario-Refinements/Scenario02Refinement.png)
+![Scenario 02](assets/Scenario-Refinements/Scenario02Refinement.png)
 
 
 ## 4.2. Strategic-Level Domain-Driven Design.
