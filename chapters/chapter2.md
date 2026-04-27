@@ -323,6 +323,7 @@ Al analizar el cuadro, se identifican coincidencias y diferencias estratégicas 
     <img src="https://i.ibb.co/Dfyf2tvd/Empathy-map-1.png" alt="Empathy-map-1" border="0">
   </a>
 </center>
+
 ### 2.3.4. As-Is escenario Mapping.
 ## As-is Scenario Mapping: Dueños de Restaurantes y Cavas Comerciales
 
