@@ -119,6 +119,8 @@ Finalmente, evita la complejidad adicional que implicaría una arquitectura de m
 
 ## 4.2. Strategic-Level Domain-Driven Design.
 
+Link del miro: https://miro.com/app/board/uXjVGjmKdFM=/?share_link_id=672003898236 
+
 ### 4.2.1. EventStorming.
 
 Step 1: Unstructured Exploration
