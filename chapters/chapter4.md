@@ -78,6 +78,20 @@ En esta sección se presentan las restricciones del sistema, entendidas como con
 | CON-08 | Simplicidad de uso             | La aplicación debe ser fácil de usar y evitar procesos manuales complejos   | Escenario 1: El usuario registra una botella y el proceso es rápido.<br>Escenario 2: El usuario navega en la aplicación y la interfaz es intuitiva sin fricción. | EP02 |
 
 
+#### 4.1.2.3. Constraints.
+
+En esta sección se presentan las restricciones del sistema, entendidas como condiciones no negociables establecidas por el cliente o por el negocio que sirven como lineamientos fundamentales para el desarrollo de la solución.
+
+| ID     | Título                         | Descripción                                                                 | Aceptación                                                                 | EPIC  |
+|--------|--------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-------|
+| CON-01 | Compatibilidad multiplataforma | La solución debe funcionar en dispositivos móviles y web para acceso remoto | Escenario 1: El usuario accede desde móvil y visualiza su inventario correctamente.<br>Escenario 2: El usuario accede desde web y los datos se muestran sincronizados. | EP01 |
+| CON-02 | Integración con sensores IoT   | El sistema debe conectarse con sensores para monitoreo ambiental            | Escenario 1: El sensor envía datos y el sistema los recibe correctamente.<br>Escenario 2: El usuario visualiza los datos y estos se reflejan en el dashboard. | EP03 |
+| CON-03 | Monitoreo en tiempo real       | El sistema debe procesar datos ambientales en tiempo casi real              | Escenario 1: El sensor envía datos y la actualización se realiza en menos de 10 segundos.<br>Escenario 2: Existen múltiples sensores activos y el sistema mantiene la actualización continua. | EP03 |
+| CON-04 | Alertas inmediatas             | El sistema debe notificar cambios críticos de temperatura/humedad           | Escenario 1: Se supera el umbral y se envía una notificación.<br>Escenario 2: El usuario recibe la alerta y puede actuar rápidamente. | EP03 |
+| CON-05 | Almacenamiento histórico       | El sistema debe guardar datos históricos para análisis                      | Escenario 1: El sistema registra datos continuamente y se almacenan correctamente.<br>Escenario 2: El usuario consulta el historial y visualiza gráficos sin errores. | EP04 |
+| CON-06 | Arquitectura escalable         | La solución debe soportar múltiples usuarios y sensores simultáneamente     | Escenario 1: Varios usuarios acceden y el sistema responde sin caídas.<br>Escenario 2: Existen múltiples sensores activos y no se degrada el rendimiento. | EP03 |
+| CON-07 | Seguridad de datos             | La información debe almacenarse y transmitirse de forma segura              | Escenario 1: El usuario registra datos y estos se almacenan encriptados.<br>Escenario 2: El usuario accede desde una red pública y la información se mantiene segura. | EP01 |
+| CON-08 | Simplicidad de uso             | La aplicación debe ser fácil de usar y evitar procesos manuales complejos   | Escenario 1: El usuario registra una botella y el proceso es rápido.<br>Escenario 2: El usuario navega en la aplicación y la interfaz es intuitiva sin fricción. | EP02 |
 ### 4.1.3. Architectural Drivers Backlog.
 
 | Driver ID | Título          | Descripción                                                                                                                                 | Importancia | Complejidad Técnica |
@@ -116,6 +130,11 @@ Por otro lado, esta arquitectura favorece la aplicación de Domain-Driven Design
 Finalmente, evita la complejidad adicional que implicaría una arquitectura de microservicios, la cual, si bien es escalable, introduciría desafíos innecesarios en términos de comunicación entre servicios, despliegue distribuido y mantenimiento. Dado el alcance actual de VineVault, una solución monolítica modular resulta más eficiente, manejable y alineada con los requerimientos del sistema.
 
 ### 4.1.5. Quality Attribute Scenario Refinements.
+
+![Scenario 01](../assets/Scenario-Refinements/Scenario01Refinement.png)
+
+![Scenario 02](../assets/Scenario-Refinements/Scenario02Refinement.png)
+
 
 ## 4.2. Strategic-Level Domain-Driven Design.
 
