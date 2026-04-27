@@ -21,6 +21,7 @@ La razón fundamental detrás del diseño de VineVault es garantizar una gestió
   - Disponibilidad constante de la plataforma para consulta remota.
   - Escalabilidad para gestionar múltiples cavas o colecciones simultáneamente.
 
+
 ### 4.1.2. Attribute-Driven Design Inputs.
  #### 4.1.2.1. Primary Functionality (Primary User Stories).
 
@@ -60,6 +61,23 @@ En esta sección se detallan los escenarios iniciales de atributos de calidad qu
 | QA-05 | Seguridad     | Usuario            | Registro y almacenamiento de datos               | Base de datos        | Redes públicas WiFi, 4G, 5G                 | Los datos son almacenados y transmitidos de forma segura| 100 por ciento de datos protegidos mediante encriptación |
 
 
+
+#### 4.1.2.3. Constraints.
+
+En esta sección se presentan las restricciones del sistema, entendidas como condiciones no negociables establecidas por el cliente o por el negocio que sirven como lineamientos fundamentales para el desarrollo de la solución.
+
+| ID     | Título                         | Descripción                                                                 | Aceptación                                                                 | EPIC  |
+|--------|--------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-------|
+| CON-01 | Compatibilidad multiplataforma | La solución debe funcionar en dispositivos móviles y web para acceso remoto | Escenario 1: El usuario accede desde móvil y visualiza su inventario correctamente.<br>Escenario 2: El usuario accede desde web y los datos se muestran sincronizados. | EP01 |
+| CON-02 | Integración con sensores IoT   | El sistema debe conectarse con sensores para monitoreo ambiental            | Escenario 1: El sensor envía datos y el sistema los recibe correctamente.<br>Escenario 2: El usuario visualiza los datos y estos se reflejan en el dashboard. | EP03 |
+| CON-03 | Monitoreo en tiempo real       | El sistema debe procesar datos ambientales en tiempo casi real              | Escenario 1: El sensor envía datos y la actualización se realiza en menos de 10 segundos.<br>Escenario 2: Existen múltiples sensores activos y el sistema mantiene la actualización continua. | EP03 |
+| CON-04 | Alertas inmediatas             | El sistema debe notificar cambios críticos de temperatura/humedad           | Escenario 1: Se supera el umbral y se envía una notificación.<br>Escenario 2: El usuario recibe la alerta y puede actuar rápidamente. | EP03 |
+| CON-05 | Almacenamiento histórico       | El sistema debe guardar datos históricos para análisis                      | Escenario 1: El sistema registra datos continuamente y se almacenan correctamente.<br>Escenario 2: El usuario consulta el historial y visualiza gráficos sin errores. | EP04 |
+| CON-06 | Arquitectura escalable         | La solución debe soportar múltiples usuarios y sensores simultáneamente     | Escenario 1: Varios usuarios acceden y el sistema responde sin caídas.<br>Escenario 2: Existen múltiples sensores activos y no se degrada el rendimiento. | EP03 |
+| CON-07 | Seguridad de datos             | La información debe almacenarse y transmitirse de forma segura              | Escenario 1: El usuario registra datos y estos se almacenan encriptados.<br>Escenario 2: El usuario accede desde una red pública y la información se mantiene segura. | EP01 |
+| CON-08 | Simplicidad de uso             | La aplicación debe ser fácil de usar y evitar procesos manuales complejos   | Escenario 1: El usuario registra una botella y el proceso es rápido.<br>Escenario 2: El usuario navega en la aplicación y la interfaz es intuitiva sin fricción. | EP02 |
+
+
 #### 4.1.2.3. Constraints.
 
 En esta sección se presentan las restricciones del sistema, entendidas como condiciones no negociables establecidas por el cliente o por el negocio que sirven como lineamientos fundamentales para el desarrollo de la solución.
@@ -86,6 +104,7 @@ En esta sección se presentan las restricciones del sistema, entendidas como con
 | DR-06     | Confiabilidad  | Garantía de funcionamiento consistente del sistema, asegurando la correcta recepción de datos de sensores y el envío de alertas sin pérdida de información, incluso en operación continua. | Media       | Alta                |
 | DR-07     | Interoperabilidad | Capacidad del sistema para integrarse con dispositivos IoT, sensores ambientales y servicios externos, utilizando protocolos estándar y APIs para asegurar comunicación eficiente. | Media       | Media               |
 | DR-08     | Modificabilidad | Facilidad para extender el sistema, incorporar nuevos sensores, mejorar funcionalidades y adaptar reglas de negocio sin afectar componentes existentes ni generar deuda técnica significativa. | Media       | Media               |
+
 
 ### 4.1.4. Architectural Design Decisions.
 
@@ -119,15 +138,73 @@ Finalmente, evita la complejidad adicional que implicaría una arquitectura de m
 
 ## 4.2. Strategic-Level Domain-Driven Design.
 
+Link del miro: https://miro.com/app/board/uXjVGjmKdFM=/?share_link_id=672003898236 
+
 ### 4.2.1. EventStorming.
+
+Step 1: Unstructured Exploration
+<td> <img src="../assets/eventstorming/step1.jpg" alt="Step1"></td>
+Step 2: Timelines
+<td> <img src="../assets/eventstorming/step2.jpg" alt="Step2"></td>
+Step 3: Paint Points
+<td> <img src="../assets/eventstorming/step3.jpg" alt="Step3"></td>
+Step 4: Pivotal Points
+<td> <img src="../assets/eventstorming/step4.jpg" alt="Step4"></td>
+Step 5: Commands
+<td> <img src="../assets/eventstorming/step5.jpg" alt="Step5"></td>
+Step 6: Policies
+<td> <img src="../assets/eventstorming/step6.jpg" alt="Step6"></td>
+Step7: ReadModels
+<td> <img src="../assets/eventstorming/step7.jpg" alt="Step7"></td>
+Step 8: External Systems
+<td> <img src="../assets/eventstorming/step8.jpg" alt="Step8"></td>
+Step 9: Aggregates
+<td> <img src="../assets/eventstorming/step9.jpg" alt="Step9"></td>
+
 ### 4.2.2. Candidate Context Discovery.
+
+<td> <img src="../assets/candidatecontext/candidate.jpg" alt="Step9"></td>
+
 ### 4.2.3. Domain Message Flows Modeling.
+
+<td> <img src="../assets/dmfm/scenario1.jpg" alt="Scenario1"></td>
+
+<td> <img src="../assets/dmfm/scenario2.jpg" alt="Scenario2"></td>
+
+<td> <img src="../assets/dmfm/scenario3.jpg" alt="Scenario3"></td>
+
+<td> <img src="../assets/dmfm/scenario4.jpg" alt="Scenario4"></td>
+
 ### 4.2.4. Bounded Context Canvases.
+
+<td> <img src="../assets/bcc/bcc1.jpg" alt="BCC1"></td>
+
+<td> <img src="../assets/bcc/bcc2.jpg" alt="BCC2"></td>
+
+<td> <img src="../assets/bcc/bcc3.jpg" alt="BCC3"></td>
+
+<td> <img src="../assets/bcc/bcc4.jpg" alt="BCC4"></td>
+
+<td> <img src="../assets/bcc/bcc5.jpg" alt="BCC5"></td>
+
 ### 4.2.5. Context Mapping.
+
+<td> <img src="../assets/contextmap/contextmap.jpg" alt="contextmap"></td>
 
 ## 4.3. Software Architecture.
 
 ### 4.3.1. Software Architecture System Landscape Diagram.
+
+<td> <img src="../assets/softwarearchitecture/systemlandscapediagram.jpg" width="550" alt="system landscape diagram"></td>
+
 ### 4.3.2. Software Architecture Context Level Diagrams.
+
+<td> <img src="../assets/softwarearchitecture/contextleveldiagram.jpg" width="550" alt="context level diagram"></td>
+
 ### 4.3.3. Software Architecture Container Level Diagrams.
+
+<td> <img src="../assets/softwarearchitecture/containerleveldiagram.jpg" width="550" alt="container level diagram"></td>
+
 ### 4.3.4. Software Architecture Deployment Diagrams.
+
+<td> <img src="../assets/softwarearchitecture/deploymentdiagram.jpg" width="550" alt="deployment diagram"></td>
