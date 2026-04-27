@@ -169,22 +169,8 @@ Step 9: Aggregates
 <td> <img src="../assets/bcc/bcc5.jpg" alt="BCC5"></td>
 
 ### 4.2.5. Context Mapping.
-En esta sección el equipo explica y evidencia el proceso de elaboración de un 
-conjunto de contexts maps (visualizaciones de las relaciones estructurales entre 
-bounded contexts). Para ello el equipo revisa información recolectada y la utiliza 
-para producir los diseños candidatos. Se recomienda en el proceso incluir preguntas 
-como: “¿qué pasaría si movemos este capability a otro bounded context?”, “¿qué 
-pasaría si descomponemos este capability y movemos uno de los sub-capabilities a 
-otro bounded context?”, “¿qué pasaría si partimos el bounded context en múltiples 
-bounded contexts?”, “¿qué pasaría si tomamos este capability de estos 3 contexts y 
-lo usamos para formar un nuevo context?”, “¿qué pasaría si duplicamos una 
-funcionalidad para romper la dependencia?”, “¿qué pasaría si creamos un shared
-service para reducir la duplicación entre múltiples bounded contexts?”, “¿qué 
-pasaría si aislamos los core capabilities y movemos los otros a un context aparte?”. 
-Debe finalizar este proceso discutiendo cada alternativa de context mapping a fin de 
-llegar a la mejor aproximación. Es importante que el equipo considere los patrones 
-de relaciones entre Bounded Contexts establecidos en Domain-Driven Design, como 
-Anti-corruption Layer, Conformist, Customer/Supplier ó Shared Kernel
+
+<td> <img src="../assets/contextmap/contextmap.jpg" alt="contextmap"></td>
 
 ## 4.3. Software Architecture.
 
