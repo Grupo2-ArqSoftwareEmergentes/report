@@ -181,6 +181,88 @@ En el contexto de VineVault, Billing se apoya principalmente en PostgreSQL para 
 #### 5.2.7.1.Bounded Context Domain Layer Class Diagrams.
 #### 5.2.7.2.Bounded Context Database Design Diagram.
 
+## 5.3.Bounded Context: Notification
+El Bounded Context Notification centraliza la gestión del envío de comunicaciones hacia los usuarios de VineVault, incluyendo alertas críticas, mensajes informativos y notificaciones derivadas de eventos del sistema. Su finalidad es proporcionar una capacidad transversal de comunicación que permita a otros bounded contexts informar situaciones relevantes, como anomalías ambientales, recordatorios de consumo o actualizaciones del sistema, manteniendo consistencia, trazabilidad y control sobre cada envío.
+
+### 5.3.1. Domain Layer.
+La capa de dominio del Bounded Context Notification modela la gestión de mensajes, solicitudes de envío, canales de comunicación y trazabilidad de las notificaciones emitidas por VineVault. Su responsabilidad es asegurar que los eventos generados por otros bounded contexts, como Environmental Monitoring o Inventory Intelligence, puedan traducirse en comunicaciones efectivas, consistentes y alineadas con las preferencias del usuario.
+
+Este contexto no decide cuándo ocurre una anomalía térmica o cuándo debe generarse una recomendación de consumo; su función es encargarse del ciclo de vida de la notificación resultante. Por ello, constituye una capacidad transversal de soporte para otro BC.
+
+| **Elemento del dominio**     | **Descripción**                                                                                             |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Notification Message         | Representa el contenido de la notificación generada, incluyendo título, cuerpo y metadata contextual.       |
+| Delivery Request             | Representa una solicitud concreta de envío dirigida a uno o varios usuarios.                                |
+| Delivery Channel             | Representa el medio de comunicación utilizado, como notificaciones push o correo electrónico.               |
+| Notification History         | Representa el registro trazable de notificaciones enviadas, pendientes o fallidas.                          |
+| User Notification Preference | Representa la configuración del usuario respecto a los canales habilitados y la frecuencia de notificación. |
+
+
+**Reglas de negocio**
+
+Las reglas de dominio incluyen respetar las preferencias de notificación del usuario, garantizar que los mensajes críticos tengan prioridad, registrar el resultado de cada intento de entrega y permitir reintentos en caso de fallos. Asimismo, el sistema debe soportar tanto notificaciones en tiempo real como comunicaciones informativas derivadas de análisis periódicos.
+
+### 5.3.2. Interface Layer.
+La capa de interfaz del Bounded Context Notification expone operaciones relacionadas con la consulta del historial de notificaciones, la gestión de preferencias del usuario y la recepción de solicitudes internas de envío provenientes de otros bounded contexts de VineVault. Asimismo, actúa como el punto de entrada que permite traducir eventos del sistema, como anomalías ambientales o recomendaciones de consumo, en solicitudes formales de notificación.
+
+| **Endpoint u operación**         | **Tipo de acceso** | **Propósito**                                                                                              |
+| -------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
+| GET /notifications/history       | Protegido          | Consultar el historial de notificaciones enviadas al usuario, incluyendo estado y tipo de mensaje.         |
+| PATCH /notifications/preferences | Protegido          | Configurar canales habilitados (push, email) y preferencias de recepción del usuario.                      |
+| GET /notifications/settings      | Protegido          | Obtener la configuración actual de notificaciones del usuario.                                             |
+| POST /notifications/send         | Interno controlado | Registrar una solicitud de envío generada por otros bounded contexts (ej. alerta térmica o recomendación). |
+| POST /notifications/test         | Protegido          | Permitir al usuario validar la configuración mediante el envío de una notificación de prueba.              |
+
+La interfaz se apoya en contratos como NotificationHistoryResponse, NotificationPreferenceRequest, NotificationSettingsResponse y DeliveryRequestDto. Estos contratos definen la estructura de los datos intercambiados entre clientes, otros bounded contexts y el sistema de notificaciones.
+
+Las validaciones de esta capa se enfocan en verificar la identidad del usuario autenticado, la consistencia de los canales seleccionados, la existencia de destinatarios válidos y la integridad de los datos necesarios para construir el mensaje. En el caso de solicitudes internas, se asegura además que provengan de bounded contexts autorizados como Environmental Monitoring BC o Inventory Intelligence BC.
+
+De este modo, la Interface Layer de Notification habilita una comunicación estructurada entre los eventos del sistema y la capacidad especializada de envío de mensajes, permitiendo que VineVault entregue información crítica de manera confiable y controlada.
+
+### 5.3.3. Application Layer.
+La capa de aplicación del Bounded Context Notification coordina la transformación de eventos del sistema en notificaciones concretas dirigidas a los usuarios. Su responsabilidad es orquestar la selección del contenido, la resolución de destinatarios, la evaluación de preferencias y el despacho de mensajes a través de los canales disponibles, garantizando trazabilidad en todo el proceso.
+
+En el contexto de VineVault, esta capa permite convertir eventos como anomalías de temperatura, pérdida de conexión con sensores o recomendaciones de consumo en comunicaciones efectivas hacia el usuario final.
+
+| **Caso de uso**              | **Descripción**                                                                                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| RequestNotificationDelivery  | Registrar una solicitud de envío proveniente de otros bounded contexts, como Environmental Monitoring o Inventory Intelligence.            |
+| ResolveRecipients            | Determinar los destinatarios efectivos en función del usuario asociado a la cava y sus preferencias configuradas.                          |
+| EvaluateNotificationPriority | Clasificar la notificación según su criticidad (por ejemplo, alertas críticas vs. mensajes informativos).                                  |
+| RenderNotificationMessage    | Construir el contenido final del mensaje utilizando datos de contexto (ej. temperatura actual, nombre de la cava, recomendación generada). |
+| DispatchNotification         | Enviar la notificación a través del canal correspondiente, como push móvil o correo electrónico.                                           |
+| RecordDeliveryOutcome        | Registrar el resultado de la entrega, incluyendo éxito, fallo o reintento.                                                                 |
+
+Estos casos de uso pueden implementarse mediante servicios como NotificationAppService, NotificationRoutingService, MessageRenderingService y NotificationHistoryService. La coordinación entre estos servicios permite desacoplar la intención de comunicar (generada por otros bounded contexts) de la lógica concreta de construcción y envío del mensaje.
+
+Adicionalmente, esta capa puede integrar mecanismos de priorización y manejo de eventos en tiempo real, asegurando que notificaciones críticas (como una temperatura fuera de rango que pueda dañar el vino) sean procesadas y enviadas con mayor urgencia que comunicaciones informativas.
+
+De este modo, la Application Layer de Notification actúa como el orquestador que transforma solicitudes abstractas de comunicación en notificaciones concretas, asegurando que cada mensaje enviado por VineVault tenga el contenido, canal y nivel de prioridad adecuados según el contexto de negocio.
+
+### 5.3.4. Infrastructure Layer.
+La capa de infraestructura del Bounded Context Notification implementa los mecanismos técnicos necesarios para la persistencia del historial de notificaciones, la gestión de solicitudes de envío y la integración con proveedores externos de mensajería. En el contexto de VineVault, esta capa permite materializar el envío de alertas críticas —como anomalías de temperatura o fallos de conexión con sensores— mediante canales como notificaciones push y correo electrónico.
+
+Siguiendo la arquitectura del sistema, este contexto se apoya en PostgreSQL para la trazabilidad de notificaciones y en servicios externos como Firebase Cloud Messaging (FCM) para notificaciones push y proveedores SMTP o APIs de email transaccional para el envío de correos.
+
+| **Recurso de infraestructura**    | **Responsabilidad**                                                                     |
+| --------------------------------- | --------------------------------------------------------------------------------------- |
+| PostgreSQL                        | Persistir solicitudes de envío, historial de notificaciones y preferencias del usuario. |
+| Firebase Cloud Messaging (FCM)    | Gestionar el envío de notificaciones push en tiempo real hacia dispositivos móviles.    |
+| Email Service Provider (SMTP/API) | Ejecutar el envío de correos electrónicos para alertas o comunicaciones informativas.   |
+| Delivery Repository Adapter       | Registrar resultados de envío, estados de notificación y reintentos.                    |
+| Notification Channel Adapter      | Abstraer la integración con distintos canales (push, email).                            |
+
+Las estructuras principales de persistencia pueden incluir notification_requests, notification_history y user_notification_preferences, permitiendo mantener un registro completo de cada comunicación emitida por el sistema.
+
+Adicionalmente, la infraestructura debe soportar mecanismos de reintentos automáticos ante fallos de entrega, registro de logs para diagnóstico y capacidades de observabilidad que permitan monitorear métricas como tasa de éxito, latencia de envío y frecuencia de alertas críticas. Esto resulta especialmente importante en VineVault, donde una notificación tardía o fallida puede comprometer la conservación de la cava.
+
+En consecuencia, la Infrastructure Layer de Notification hace operativa la capacidad comunicacional de VineVault, conectando las decisiones del negocio con servicios reales de mensajería y garantizando la trazabilidad completa de cada notificación enviada.
+
+### 5.3.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.3.7.1.Bounded Context Domain Layer Class Diagrams.
+#### 5.3.7.2.Bounded Context Database Design Diagram.
+
 
 ## 5.X.Bounded Context: <Bounded Context Name>
 ### 5.X.1. Domain Layer.
