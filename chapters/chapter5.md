@@ -463,12 +463,86 @@ Las estructuras persistentes de este contexto pueden incluir tablas como telemet
 #### 5.5.7.1.Bounded Context Domain Layer Class Diagrams.
 #### 5.5.7.2.Bounded Context Database Design Diagram.
 
-## 5.X.Bounded Context: <Bounded Context Name>
-### 5.X.1. Domain Layer.
-### 5.X.2. Interface Layer.
-### 5.X.3. Application Layer.
-### 5.X.4. Infrastructure Layer.
-### 5.X.6. Bounded Context Software Architecture Component Level Diagrams.
-### 5.X.7. Bounded Context Software Architecture Code Level Diagrams.
-#### 5.X.7.1.Bounded Context Domain Layer Class Diagrams.
-#### 5.X.7.2.Bounded Context Database Design Diagram.
+## 5.6.Bounded Context: Inventory Intelligence
+El Bounded Context Inventory Intelligence agrupa las capacidades orientadas al análisis del comportamiento del inventario de vinos, la generación de reportes históricos y la construcción de recomendaciones inteligentes basadas en patrones de consumo, rotación y maduración. Este contexto extiende el valor del sistema más allá de la simple gestión de botellas, permitiendo transformar datos operativos en conocimiento accionable para el usuario.
+
+A diferencia del Wine Inventory BC, que se centra en el estado actual del inventario, este contexto se enfoca en su interpretación analítica y evolutiva, ayudando a optimizar decisiones como cuándo consumir una botella, qué vinos rotan más rápido o cuáles están en riesgo de sobre-maduración.
+
+### 5.6.1. Domain Layer.
+La capa de dominio del Bounded Context Inventory Intelligence concentra las reglas de negocio relacionadas con el análisis histórico del inventario, la generación de reportes, el cálculo de métricas clave y la formulación de recomendaciones inteligentes. Su objetivo es transformar eventos del inventario en insights que permitan mejorar la gestión de la cava.
+
+Este contexto se diferencia de Environmental Monitoring BC porque no analiza condiciones físicas (temperatura, humedad), sino el comportamiento del inventario en el tiempo y su relación con el consumo.
+
+| **Elemento del dominio** | **Descripción**                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------ |
+| Stock Rotation Metric    | Representa la velocidad con la que las botellas salen del inventario en un periodo determinado.        |
+| Consumption Pattern      | Representa un patrón identificado en el consumo de vinos (frecuencia, tipo, ocasión).                  |
+| Aging Recommendation     | Representa una sugerencia sobre cuándo consumir una botella según su maduración.                       |
+| Inventory Insight        | Representa un hallazgo relevante derivado del análisis del inventario (ej. baja rotación, sobrestock). |
+| Report Snapshot          | Representa un reporte generado en un momento específico con métricas clave del inventario.             |
+
+Las reglas de dominio principales incluyen el cálculo de la tasa de rotación del inventario, la identificación de patrones de consumo por tipo de vino o usuario, la detección de botellas en riesgo de sobre-maduración o baja rotación, y la generación de recomendaciones de consumo óptimo. Asimismo, se contempla la generación de reportes periódicos que consolidan el estado analítico de la cava.
+
+Los eventos relevantes en este contexto incluyen StockRotationCalculated, ConsumptionPatternIdentified, AgingRecommendationGenerated, InventoryInsightDetected y MonthlyReportGenerated.
+
+### 5.6.2. Interface Layer.
+La capa de interfaz del Bounded Context Inventory Intelligence expone consultas analíticas, reportes del inventario, métricas de rotación y recomendaciones inteligentes para los usuarios. Su responsabilidad es poner a disposición estos resultados mediante endpoints claros y consistentes, respetando las restricciones de acceso según el plan contratado y el ownership del inventario.
+
+| **Endpoint u operación**                | **Tipo de acceso** | **Propósito**                                 |
+| --------------------------------------- | ------------------ | --------------------------------------------- |
+| GET /intelligence/inventory/rotation    | Protegido          | Consultar la tasa de rotación del inventario. |
+| GET /intelligence/inventory/patterns    | Protegido          | Recuperar patrones de consumo.                |
+| GET /intelligence/reports/monthly       | Protegido          | Obtener el reporte mensual del inventario.    |
+| GET /intelligence/insights              | Protegido          | Consultar insights detectados.                |
+| GET /intelligence/recommendations/aging | Protegido          | Obtener recomendaciones de consumo.           |
+| GET /intelligence/inventory/at-risk     | Protegido          | Listar botellas en riesgo.                    |
+
+
+La interfaz debe validar que el usuario tenga acceso al inventario consultado, verificar las restricciones del plan (por ejemplo, acceso limitado a reportes históricos en usuarios gratuitos) y garantizar que las respuestas sean coherentes con el nivel de detalle permitido. Asimismo, debe manejar escenarios donde no exista suficiente información histórica para generar insights o recomendaciones.
+
+Para ello, puede apoyarse en DTOs como StockRotationResponse, ConsumptionPatternResponse, InventoryInsightResponse, MonthlyReportResponse y AgingRecommendationResponse, los cuales estructuran la información analítica de forma clara para los clientes.
+
+### 5.6.3. Application Layer.
+La capa de aplicación del Bounded Context Inventory Intelligence coordina el procesamiento analítico del inventario, la generación de reportes y la construcción de recomendaciones, incorporando además la interpretación enriquecida de resultados mediante componentes externos.
+
+| **Caso de uso**              | **Descripción**                                                          |
+| ---------------------------- | ------------------------------------------------------------------------ |
+| CalculateStockRotation       | Calcula la tasa de rotación del inventario.                              |
+| IdentifyConsumptionPatterns  | Identifica patrones de consumo a partir de descorches.                   |
+| GenerateMonthlyReport        | Genera el reporte mensual consolidado.                                   |
+| GenerateAgingRecommendations | Genera recomendaciones de consumo.                                       |
+| DetectInventoryInsights      | Detecta insights relevantes del inventario.                              |
+| GenerateInventoryNarrative   | Genera una explicación en lenguaje natural de los resultados analíticos. |
+| EnforceAnalyticsAccessPolicy | Controla el acceso según el plan del usuario.                            |
+
+
+Estos casos de uso pueden materializarse mediante servicios como InventoryAnalyticsAppService, ReportGenerationAppService, RecommendationAppService y AnalyticsAccessAppService. Cada servicio coordina consultas al inventario histórico, aplica reglas analíticas (como cálculos de rotación o evaluación de maduración) y considera restricciones comerciales provenientes del Billing BC.
+
+Por ejemplo, GenerateMonthlyReport puede consolidar información como número de botellas consumidas, tasa de rotación por categoría de vino, distribución del inventario y principales insights detectados durante el periodo. De forma similar, GenerateAgingRecommendations evalúa atributos del vino (tipo, año, tiempo en cava) para sugerir el momento óptimo de consumo.
+
+Asimismo, EnforceAnalyticsAccessPolicy permite definir si un usuario con plan gratuito accede únicamente a métricas básicas o a un subconjunto limitado del reporte, mientras que usuarios premium o business obtienen acceso completo a tendencias e insights avanzados.
+
+### 5.6.4. Infrastructure Layer.
+La capa de infraestructura del Bounded Context Inventory Intelligence implementa los componentes técnicos necesarios para persistir datos analíticos, generar reportes, ejecutar procesos batch y soportar la integración con servicios externos de interpretación avanzada.
+
+| **Recurso de infraestructura**         | **Responsabilidad**                                                     |
+| -------------------------------------- | ----------------------------------------------------------------------- |
+| Inventory Analytics Repository Adapter | Persistir métricas, insights y snapshots del inventario.                |
+| Reporting Storage                      | Almacenar reportes generados.                                           |
+| Scheduled Jobs                         | Ejecutar cálculos periódicos (rotación, reportes, insights).            |
+| Query Optimization Components          | Optimizar consultas sobre historiales de inventario.                    |
+| Generative AI Adapter                  | Integrar con un proveedor de IA para interpretar resultados analíticos. |
+| Prompt Builder                         | Construir prompts a partir de métricas e insights.                      |
+| AI Response Mapper                     | Transformar respuestas de IA en estructuras del sistema.                |
+| Audit and Logging Components           | Registrar ejecución de análisis, generación de reportes y uso de IA.    |
+
+Las estructuras persistentes incluyen stock_rotation_metrics, consumption_patterns, inventory_insights, monthly_reports y aging_recommendations, desacoplando el análisis del flujo transaccional del inventario.
+
+La integración con IA generativa permite enriquecer los resultados analíticos con interpretaciones en lenguaje natural, sin afectar la consistencia del dominio. Esta integración se mantiene encapsulada en la infraestructura para preservar la independencia del modelo de negocio.
+
+La infraestructura debe prestar especial atención a eficiencia, procesamiento batch y control de costos asociados al uso de servicios externos.
+
+### 5.6.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.6.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.6.7.1.Bounded Context Domain Layer Class Diagrams.
+#### 5.6.7.2.Bounded Context Database Design Diagram.
