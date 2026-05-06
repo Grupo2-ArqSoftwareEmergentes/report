@@ -371,6 +371,97 @@ Dado que este contexto es el núcleo transaccional del sistema, cualquier incons
 #### 5.4.7.1.Bounded Context Domain Layer Class Diagrams.
 #### 5.4.7.2.Bounded Context Database Design Diagram.
 
+## 5.5.Bounded Context: Environmental Monitoring
+El Bounded Context Environmental Monitoring concentra la lógica encargada de recibir, validar y procesar la telemetría ambiental proveniente de los sensores instalados en la cava (ESP32). Su finalidad es transformar lecturas crudas de temperatura y humedad en estados significativos del entorno, detectando desviaciones de condiciones óptimas, anomalías en los sensores y situaciones que puedan comprometer la conservación del vino.
+
+Este contexto actúa como el puente entre el mundo físico y el sistema digital de VineVault, asegurando que la información ambiental sea confiable, consistente y utilizable por otros contextos como notificaciones e inteligencia de inventario.
+
+### 5.5.1. Domain Layer.
+La capa de dominio del Bounded Context Environmental Monitoring concentra las reglas de negocio relacionadas con la ingesta, validación e interpretación de la telemetría ambiental. Su objetivo es transformar lecturas crudas de temperatura y humedad en estados comprensibles del entorno, tales como condiciones óptimas, desviaciones de rango o detección de anomalías en sensores.
+
+Este contexto constituye el núcleo de monitoreo en tiempo real de VineVault, ya que es el responsable de garantizar que las condiciones ambientales de la cava se mantengan dentro de parámetros adecuados para la conservación del vino. A partir de sus decisiones se alimentan las alertas críticas, se construyen historiales ambientales y se proveen insumos para el análisis posterior en el contexto de inteligencia.
+
+| Elemento del dominio                 | Descripción                                                                                                                      |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| Telemetry Batch                  | Representa un conjunto de lecturas recibidas desde uno o múltiples sensores en un intervalo de tiempo.                           |
+| Reading                          | Representa una medición individual de temperatura o humedad en un instante específico.                                           |
+| Environmental State              | Representa la clasificación semántica del entorno (óptimo, advertencia, crítico) según los thresholds definidos.                 |
+| Threshold Evaluation             | Representa el resultado de comparar una lectura contra los rangos seguros establecidos para la conservación del vino.            |
+| Sensor Anomaly                   | Representa una condición atípica (lecturas inconsistentes, valores imposibles o ruido) que invalida la confianza en la medición. |
+| Environmental Condition Snapshot | Representa una agregación puntual del estado ambiental (por ejemplo, promedios recientes de temperatura y humedad).              |
+
+**Reglas de negocio**
+
+Las reglas principales de la capa de dominio son las siguientes:
+| Regla                                     | Descripción                                                                                                                                           |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Validación de rangos físicos          | Cada reading debe encontrarse dentro de rangos físicamente posibles antes de ser procesado (ej. evitar valores inválidos como temperaturas irreales). |
+| Identidad y trazabilidad de lecturas  | Toda lectura debe incluir timestamp, tipo de métrica (temperatura o humedad) y origen (sensor) válido.                                                |
+| No duplicación de lecturas            | El sistema no debe procesar ni almacenar lecturas duplicadas provenientes del mismo sensor y timestamp.                                               |
+| Evaluación independiente por métrica  | Temperatura y humedad deben evaluarse de manera independiente contra sus respectivos thresholds.                                                      |
+| Clasificación del estado ambiental    | El estado ambiental debe derivarse en función de los resultados de evaluación de thresholds (óptimo, advertencia, crítico).                           |
+| Detección de superación de thresholds | Se debe generar un evento cuando una métrica excede sus límites definidos.                                                                            |
+| Detección de anomalías de sensor      | Lecturas inconsistentes, abruptas o fuera de comportamiento esperado deben marcarse como anomalías y excluirse del procesamiento normal.              |
+| Persistencia de lecturas válidas      | Solo las lecturas validadas deben ser almacenadas y utilizadas para análisis posteriores.                                                             |
+| Idempotencia en procesamiento         | El procesamiento de un mismo Telemetry Batch no debe generar efectos duplicados.                                                                      |
+| Detección de desconexión              | La ausencia prolongada de datos de un sensor debe interpretarse como posible desconexión.                                                             |
+
+### 5.5.2. Interface Layer.
+La capa de interfaz del Bounded Context Environmental Monitoring expone los procesos mediante los cuales la plataforma recibe telemetría ambiental desde los sensores de la cava, consulta estados del entorno y entrega resultados a otros bounded contexts o a las aplicaciones cliente. Su responsabilidad es aceptar entradas de datos desde dispositivos ESP32, validarlas en un nivel preliminar y permitir la consulta de condiciones ambientales hacia la Mobile App, Web App y otros módulos del sistema.
+
+| Endpoint u operación                                | Tipo de acceso     | Propósito                                                                       |
+| --------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- |
+| POST /environmental/telemetry/ingest            | Sistema a sistema  | Recibir lecturas o lotes de telemetría desde sensores ESP32 autorizados.        |
+| GET /environmental/devices/{id}/current         | Protegido          | Consultar el estado ambiental actual (temperatura y humedad) de un dispositivo. |
+| GET /environmental/cellars/{id}/current         | Protegido          | Consultar el estado ambiental actual de una cava o espacio físico.              |
+| GET /environmental/devices/{id}/history-preview | Protegido          | Recuperar una vista acotada del historial reciente para dashboards.             |
+| POST /environmental/evaluate                    | Interno controlado | Forzar o disparar el proceso de evaluación de lecturas pendientes.              |
+
+La interfaz emplea DTOs como TelemetryIngestionRequest, ReadingDto, EnvironmentalStateResponse y EnvironmentalSnapshotResponse, permitiendo que las lecturas y resultados se intercambien sin acoplar a los clientes o dispositivos con la estructura interna del dominio.
+
+Las validaciones iniciales comprueban formato, identidad del dispositivo, timestamp, integridad del lote y consistencia mínima de las métricas antes de que la capa de aplicación procese la información. Esto asegura que únicamente datos estructuralmente válidos ingresen al sistema.
+
+Adicionalmente, esta capa diferencia entre operaciones de ingestión y operaciones de consulta. Las primeras requieren autenticación técnica (por ejemplo, API keys o tokens asociados al dispositivo) y control sobre frecuencia de envío, mientras que las segundas requieren permisos funcionales, ya que la información ambiental está restringida al propietario de la cava o a usuarios autorizados.
+
+### 5.5.3. Application Layer.
+La capa de aplicación del Bounded Context Environmental Monitoring orquesta la secuencia completa de recepción, validación, persistencia y evaluación de la telemetría ambiental proveniente de los sensores de la cava. Su tarea principal es coordinar los componentes que transforman lecturas entrantes de temperatura y humedad en estados ambientales persistidos y eventos de negocio que pueden ser consumidos por otros contextos como Notification o Inventory Intelligence.
+
+| Caso de uso               | Descripción                                                                                                                  |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| IngestTelemetryBatch      | Recibe un lote de lecturas desde sensores ESP32 y coordina su validación inicial.                                            |
+| ValidateReading           | Determina si una lectura cumple condiciones de formato, rango y consistencia o si debe ser rechazada o marcada como anómala. |
+| PersistReading            | Almacena la lectura válida en el repositorio de datos históricos.                                                            |
+| EvaluateTemperature       | Evalúa la temperatura contra los thresholds definidos para conservación del vino.                                            |
+| EvaluateHumidity          | Evalúa la humedad contra los thresholds establecidos.                                                                        |
+| UpdateEnvironmentalState  | Actualiza el estado ambiental de la cava en función de las evaluaciones realizadas.                                          |
+| DetectSensorAnomaly       | Identifica comportamientos anormales en las lecturas o fallos del sensor.                                                    |
+| DetectSensorDisconnection | Detecta la ausencia prolongada de datos como posible desconexión del sensor.                                                 |
+
+Estos casos de uso pueden implementarse mediante servicios como TelemetryIngestionAppService, EnvironmentalEvaluationAppService, ThresholdEvaluationAppService y SensorHealthAppService. Cada servicio coordina repositorios, reglas de dominio y publicación de eventos, manteniendo idempotencia y trazabilidad sobre cada lectura procesada.
+
+Un flujo representativo de esta capa comienza con IngestTelemetryBatch, que recibe un conjunto de lecturas desde los sensores. Luego, ValidateReading verifica formato, rangos y duplicidad, mientras PersistReading almacena los datos aceptados. Posteriormente, EvaluateTemperature y EvaluateHumidity analizan cada métrica frente a sus thresholds. Finalmente, UpdateEnvironmentalState refleja el estado actualizado de la cava y, si corresponde, se generan eventos que pueden ser consumidos por el contexto de notificaciones o por el módulo de inteligencia.
+
+La capa de aplicación también es responsable de garantizar coherencia temporal entre lecturas, control de frecuencia de ingestión y preparación de datos para su uso en análisis históricos. Esto permite no solo reaccionar ante condiciones actuales, sino también construir una base sólida para análisis de tendencias y comportamiento ambiental.
+
+### 5.5.4. Infrastructure Layer.
+La capa de infraestructura del Bounded Context Environmental Monitoring implementa los componentes técnicos necesarios para recibir, almacenar y procesar la telemetría ambiental proveniente de los sensores de la cava. En ella se concretan los adaptadores de ingestión de datos desde dispositivos ESP32, los mecanismos de persistencia para lecturas históricas y los servicios auxiliares que permiten sostener la evaluación de condiciones ambientales en tiempo real.
+
+Conforme al modelo definido para VineVault, esta capa se apoya en PostgreSQL para la persistencia de lecturas, estados ambientales y snapshots operativos. Dado que el sistema maneja datos de naturaleza temporal, la estructura de almacenamiento se encuentra optimizada para consultas por rango de tiempo, agregaciones y recuperación eficiente de historiales recientes. Asimismo, interactúa con productores externos (sensores ESP32) a través de APIs seguras, asegurando autenticación y control de frecuencia de envío.
+
+| Recurso de infraestructura             | Responsabilidad                                                                               |
+| -------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Telemetry Ingestion Adapter            | Recibir lotes de lecturas desde sensores ESP32 mediante endpoints seguros.                    |
+| Time-Series Persistence Adapter        | Almacenar readings y snapshots históricos de temperatura y humedad.                           |
+| Environmental State Repository Adapter | Persistir estados ambientales calculados y su evolución en el tiempo.                         |
+| Threshold Config Reader                | Recuperar thresholds vigentes desde configuración interna o desde otros contextos.            |
+| Monitoring and Logging Components      | Registrar volumen de ingestión, rechazos, anomalías, desconexiones y fallos de procesamiento. |
+
+Las estructuras persistentes de este contexto pueden incluir tablas como telemetry_readings, environmental_states, environmental_snapshots, threshold_breaches y sensor_anomalies. Esta organización permite conservar tanto los datos crudos provenientes de los sensores como los resultados procesados que luego serán consumidos por la capa de interfaz y otros bounded contexts como Notification o Inventory Intelligence.
+
+### 5.5.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.5.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.5.7.1.Bounded Context Domain Layer Class Diagrams.
+#### 5.5.7.2.Bounded Context Database Design Diagram.
 
 ## 5.X.Bounded Context: <Bounded Context Name>
 ### 5.X.1. Domain Layer.
