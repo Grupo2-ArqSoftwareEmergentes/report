@@ -264,6 +264,114 @@ En consecuencia, la Infrastructure Layer de Notification hace operativa la capac
 #### 5.3.7.2.Bounded Context Database Design Diagram.
 
 
+## 5.4.Bounded Context: Wine Inventory
+El Bounded Context Wine Inventory modela el núcleo transaccional de VineVault, representando las botellas de vino, su estado dentro de la cava y las operaciones asociadas a su ciclo de vida. Este contexto permite mantener una representación precisa y actualizada del inventario, sirviendo como base para la analítica, recomendaciones y control operativo del sistema.
+
+Este contexto es considerado el Core Domain, ya que concentra el valor principal del negocio: la gestión inteligente de colecciones de vino, incluyendo el registro, seguimiento y consumo de botellas.
+
+### 5.4.1. Domain Layer.
+La capa de dominio del Bounded Context Wine Inventory modela el ciclo de vida completo de las botellas dentro de la cava. Su responsabilidad es representar entidades como vinos, botellas, movimientos de inventario y estados asociados, así como las reglas que gobiernan su registro, almacenamiento, consulta y descorche.
+
+Este contexto es fundamental porque proporciona la fuente de verdad del inventario sobre la cual operan otros contextos como Inventory Intelligence, que depende de estos datos para generar análisis y recomendaciones, y Notification, que reacciona ante eventos relevantes como la reducción de stock o cambios significativos en el inventario.
+
+| Elemento del dominio | Descripción                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------- |
+| Wine                 | Representa la información base de un vino (nombre, bodega, tipo de uva, añada, etc.). |
+| Bottle               | Representa una instancia física individual de un vino dentro de la cava.              |
+| Inventory            | Representa la colección de botellas asociadas a un usuario o cava.                    |
+| Inventory Movement   | Representa una operación que modifica el inventario, como ingreso o descorche.        |
+| Bottle Status        | Representa el estado de la botella, por ejemplo almacenada, consumida o reservada.    |
+| Storage Location     | Representa la ubicación física dentro de la cava (rack, fila, posición).              |
+
+**Reglas de negocio**
+
+Las reglas principales de la capa de dominio son las siguientes:
+
+| Regla                               | Descripción                                                                                                                  |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Asociación obligatoria de vino      | Toda botella registrada debe estar asociada a un vino válido previamente definido en el sistema.                             |
+| Trazabilidad de movimientos         | Ninguna botella puede cambiar de estado sin registrar un movimiento de inventario (por ejemplo, un descorche o eliminación). |
+| Integridad del inventario           | El inventario no puede contener cantidades negativas de botellas bajo ninguna circunstancia.                                 |
+| Consistencia del vino               | Los atributos del vino (bodega, tipo de uva, añada) deben mantenerse consistentes para todas las botellas asociadas.         |
+| Control de estado de botella        | Una botella solo puede tener un estado válido a la vez (almacenada, consumida, reservada, etc.).                             |
+| Validez de ubicación                | Toda botella debe estar asociada a una ubicación física válida dentro de la cava.                                            |
+| Registro de auditoría               | Todo movimiento de inventario debe registrar información mínima: fecha, tipo de operación y usuario responsable.             |
+| Restricción de transición de estado | No se permite pasar directamente de “almacenada” a “consumida” sin un evento explícito de descorche.                         |
+
+### 5.4.2. Interface Layer.
+La capa de interfaz del Bounded Context Wine Inventory expone los procesos mediante los cuales los usuarios registran vinos, agregan botellas al inventario, consultan su colección, realizan descorches y gestionan la ubicación y estado de cada botella. Su objetivo es recibir solicitudes desde la Web App y la Mobile App, validarlas y transferirlas a la capa de aplicación mediante contratos estables y entendibles.
+
+Desde la perspectiva del usuario, esta capa es la encargada de materializar la gestión operativa de la cava. Aquí se ejecutan las acciones principales del día a día: registrar nuevas botellas, organizarlas dentro del espacio físico y reflejar su consumo, manteniendo siempre actualizado el estado del inventario.
+
+| Endpoint u operación                   | Tipo de acceso | Propósito                                                         |
+| -------------------------------------- | -------------- | ----------------------------------------------------------------- |
+| POST /wines                            | Protegido      | Registrar un nuevo vino base (bodega, tipo de uva, añada, etc.).  |
+| POST /inventory/bottles                | Protegido      | Agregar una o más botellas al inventario del usuario.             |
+| GET /inventory                         | Protegido      | Consultar el estado actual del inventario completo.               |
+| GET /inventory/bottles/{id}            | Protegido      | Obtener el detalle de una botella específica.                     |
+| PATCH /inventory/bottles/{id}/location | Protegido      | Actualizar la ubicación física de una botella dentro de la cava.  |
+| PATCH /inventory/bottles/{id}/status   | Protegido      | Actualizar el estado de la botella (reservada, almacenada, etc.). |
+| POST /inventory/bottles/{id}/uncork    | Protegido      | Registrar el descorche de una botella (consumo).                  |
+| DELETE /inventory/bottles/{id}         | Protegido      | Eliminar una botella del inventario (por ajuste o error).         |
+| GET /inventory/search                  | Protegido      | Buscar botellas por atributos (uva, bodega, añada, etc.).         |
+
+La interfaz utiliza DTOs como CreateWineRequest, AddBottleRequest, BottleDetailsResponse, InventoryResponse, UpdateBottleLocationRequest, UpdateBottleStatusRequest y UncorkBottleRequest, los cuales desacoplan la comunicación externa de la representación interna del dominio. Esta separación facilita la evolución de clientes web y mobile sin comprometer la consistencia del modelo.
+
+### 5.4.3. Application Layer.
+La capa de aplicación del Bounded Context Wine Inventory coordina los casos de uso asociados a la gestión del inventario de botellas dentro de la cava. Su función es orquestar la ejecución de comandos, consultar repositorios, aplicar políticas del dominio y garantizar que los cambios en el inventario se reflejen de manera consistente y trazable en toda la plataforma.
+
+| Caso de uso               | Descripción                                                                       |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| CreateWine                | Registra un nuevo vino base con sus atributos (bodega, tipo de uva, añada, etc.). |
+| AddBottleToInventory      | Agrega una o más botellas al inventario asociadas a un vino existente.            |
+| GetInventory              | Recupera el estado actual del inventario del usuario.                             |
+| GetBottleDetails          | Obtiene la información detallada de una botella específica.                       |
+| UpdateBottleLocation      | Actualiza la ubicación física de una botella dentro de la cava.                   |
+| UpdateBottleStatus        | Modifica el estado de la botella (almacenada, reservada, etc.).                   |
+| UncorkBottle              | Registra el consumo de una botella mediante un descorche.                         |
+| RemoveBottleFromInventory | Elimina una botella del inventario por ajuste o corrección.                       |
+| SearchInventory           | Permite buscar botellas según atributos como uva, bodega o añada.                 |
+
+Estos casos de uso pueden implementarse a través de servicios como WineAppService, InventoryAppService y BottleManagementAppService, donde cada uno coordina validaciones de ownership, consistencia del inventario, estado de las botellas y reglas del dominio antes de persistir los cambios.
+
+Por ejemplo, AddBottleToInventory debe verificar que el vino exista previamente, que el usuario tenga acceso al inventario y que la operación no genere inconsistencias (como cantidades negativas). Asimismo, debe registrar el movimiento correspondiente para mantener la trazabilidad del inventario.
+
+El caso UncorkBottle requiere validar que la botella exista, que se encuentre en estado “almacenada” y que no haya sido previamente consumida. Además, debe registrar el evento de descorche y actualizar el estado de la botella de manera consistente.
+
+De forma similar, UpdateBottleLocation debe comprobar que la nueva ubicación sea válida dentro de la estructura de la cava, mientras que UpdateBottleStatus debe asegurar que las transiciones de estado sean coherentes con las reglas del dominio.
+
+La capa de aplicación también es responsable de emitir eventos de dominio que luego serán consumidos por otros bounded contexts. En particular, los eventos generados por este contexto son fundamentales para Inventory Intelligence, que analiza la rotación de stock y genera recomendaciones, así como para Notification, que puede alertar sobre niveles bajos de inventario o cambios relevantes.
+
+De este modo, Wine Inventory no solo gestiona datos transaccionales, sino que habilita semánticamente al resto del sistema al proporcionar una fuente confiable de información sobre el estado de la cava.
+
+En conjunto, la Application Layer de Wine Inventory convierte operaciones de gestión de inventario en transacciones coherentes, persistentes y trazables. Su valor reside en garantizar que el estado digital de la colección de vinos refleje fielmente las acciones realizadas por el usuario en el mundo real, manteniendo la integridad del dominio y habilitando capacidades analíticas y de monitoreo en toda la plataforma.
+
+### 5.4.4. Infrastructure Layer.
+La capa de infraestructura del Bounded Context Wine Inventory implementa la persistencia y los adaptadores técnicos requeridos para registrar vinos, botellas, movimientos de inventario y estados asociados. En esta capa se concretan repositorios, mecanismos de almacenamiento y servicios auxiliares necesarios para sostener la gestión transaccional del inventario modelada por el dominio.
+
+Conforme al modelo arquitectónico de VineVault, este contexto se apoya principalmente en PostgreSQL como base de datos operativa para vinos, botellas, inventarios y movimientos. Asimismo, puede integrar adaptadores para eventos internos que reflejen cambios en el inventario, permitiendo mantener sincronizados los estados persistidos con las operaciones realizadas por el usuario.
+
+| Recurso de infraestructura   | Responsabilidad                                                          |
+| ---------------------------- | ------------------------------------------------------------------------ |
+| PostgreSQL                   | Persistir vinos, botellas, inventarios, movimientos y estados asociados. |
+| Wine Repository Adapter      | Implementar acceso a datos para registro y consulta de vinos.            |
+| Bottle Repository Adapter    | Implementar acceso a datos para gestión de botellas individuales.        |
+| Inventory Repository Adapter | Gestionar la agregación y consulta del inventario por usuario.           |
+| Inventory Movement Adapter   | Persistir operaciones de entrada, salida y descorche con trazabilidad.   |
+| Search Adapter               | Optimizar consultas por atributos como uva, bodega o añada.              |
+
+Las estructuras mínimas de almacenamiento pueden incluir tablas como wines, bottles, inventories, inventory_movements, bottle_status y storage_locations. Esta organización permite պահպանar trazabilidad completa sobre altas de botellas, descorches, ajustes de inventario y cambios de ubicación a lo largo del tiempo.
+
+La infraestructura de este contexto también debe contemplar mecanismos de auditoría, validación de integridad referencial y control de concurrencia para evitar inconsistencias (por ejemplo, descorches simultáneos sobre una misma botella). Asimismo, se deben implementar capacidades de observabilidad para detectar fallos en operaciones críticas como el registro de botellas o la persistencia de movimientos.
+
+Dado que este contexto es el núcleo transaccional del sistema, cualquier inconsistencia en esta capa puede impactar directamente en la analítica posterior (Inventory Intelligence) y en la generación de alertas o notificaciones, afectando la confiabilidad general de la plataforma.
+
+### 5.4.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.4.7.1.Bounded Context Domain Layer Class Diagrams.
+#### 5.4.7.2.Bounded Context Database Design Diagram.
+
+
 ## 5.X.Bounded Context: <Bounded Context Name>
 ### 5.X.1. Domain Layer.
 ### 5.X.2. Interface Layer.
