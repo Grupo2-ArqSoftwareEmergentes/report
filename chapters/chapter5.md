@@ -88,12 +88,15 @@ A continuación, se presenta el diagrama de arquitectura a nivel de componentes 
 ### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.1.7.1.Bounded Context Domain Layer Class Diagrams.
 
+Se detalla el diagrama de clases de la capa de dominio para el Bounded Context de Identity & Access Management (IAM), ilustrando las entidades y reglas lógicas que aseguran la correcta identificación, administración de sesiones y control de acceso
+
+<br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class_Diagrams.png" alt="Bounded_Context_Domain_Layer_Class_Diagrams.png" width="500">
 
 #### 5.1.7.2.Bounded Context Database Design Diagram.
 
 Se presenta el diseño físico de la base de datos para el Bounded Context de Billing, detallando la estructura de tablas y relaciones que soportan la gestión de suscripciones y facturación.
 
-<br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class Diagrams.png" alt="Bounded_Context_Domain_Layer_Class Diagrams.png" width="500">
+<br /><img src="../assets/boundedcontext/Bounded_Context_Database_Design_Diagram.png" alt="Bounded_Context_Database_Design_Diagram.png" width="500">
 
 
 ## 5.2.Bounded Context: Billing
