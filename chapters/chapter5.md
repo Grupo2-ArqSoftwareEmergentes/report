@@ -88,11 +88,13 @@ A continuación, se presenta el diagrama de arquitectura a nivel de componentes 
 ### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.1.7.1.Bounded Context Domain Layer Class Diagrams.
 
+
+#### 5.1.7.2.Bounded Context Database Design Diagram.
+
 Se presenta el diseño físico de la base de datos para el Bounded Context de Billing, detallando la estructura de tablas y relaciones que soportan la gestión de suscripciones y facturación.
 
 <br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class Diagrams.png" alt="Bounded_Context_Domain_Layer_Class Diagrams.png" width="500">
 
-#### 5.1.7.2.Bounded Context Database Design Diagram.
 
 ## 5.2.Bounded Context: Billing
 El Bounded Context Billing agrupa la lógica de negocio vinculada a planes, suscripciones, checkout, pagos e invoices dentro de VineVault. Su responsabilidad es gobernar el acceso a las capacidades del sistema según el tipo de usuario, permitiendo diferenciar entre funcionalidades básicas de gestión de cava y capacidades avanzadas como analítica histórica, multiusuario y monitoreo extendido.
