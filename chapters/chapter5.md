@@ -80,6 +80,11 @@ Las decisiones tecnológicas adoptadas priorizan bajo costo, simplicidad operati
 
 
 ### 5.1.6. Bounded Context Software Architecture Component Level Diagrams.
+
+A continuación, se presenta el diagrama de arquitectura a nivel de componentes para el Bounded Context de Identity & Access Management (IAM), el cual describe de manera detallada la interacción y las responsabilidades de las capas de interfaz, aplicación, dominio e infraestructura diseñadas para garantizar la seguridad.
+
+<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_Component_Level_Diagrams.png" alt="Bounded_Context_Software_Architecture_Component_Level_Diagrams.png" width="500">
+
 ### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.1.7.1.Bounded Context Domain Layer Class Diagrams.
 #### 5.1.7.2.Bounded Context Database Design Diagram.
@@ -215,7 +220,8 @@ La capa de interfaz del Bounded Context Notification expone operaciones relacion
 
 La interfaz se apoya en contratos como NotificationHistoryResponse, NotificationPreferenceRequest, NotificationSettingsResponse y DeliveryRequestDto. Estos contratos definen la estructura de los datos intercambiados entre clientes, otros bounded contexts y el sistema de notificaciones.
 
-Las validaciones de esta capa se enfocan en verificar la identidad del usuario autenticado, la consistencia de los canales seleccionados, la existencia de destinatarios válidos y la integridad de los datos necesarios para construir el mensaje. En el caso de solicitudes internas, se asegura además que provengan de bounded contexts autorizados como Environmental Monitoring BC o Inventory Intelligence BC.
+Las validaciones de esta cap5.1.6. Bounded Context Software Architecture Component Level Diagrams.
+a se enfocan en verificar la identidad del usuario autenticado, la consistencia de los canales seleccionados, la existencia de destinatarios válidos y la integridad de los datos necesarios para construir el mensaje. En el caso de solicitudes internas, se asegura además que provengan de bounded contexts autorizados como Environmental Monitoring BC o Inventory Intelligence BC.
 
 De este modo, la Interface Layer de Notification habilita una comunicación estructurada entre los eventos del sistema y la capacidad especializada de envío de mensajes, permitiendo que VineVault entregue información crítica de manera confiable y controlada.
 
