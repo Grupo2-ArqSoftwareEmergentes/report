@@ -192,6 +192,12 @@ En el contexto de VineVault, Billing se apoya principalmente en PostgreSQL para 
 | Secure Configuration Manager      | Gestionar credenciales, claves API y configuraciones sensibles del proveedor de pagos.         |
 
 ### 5.2.6. Bounded Context Software Architecture Component Level Diagrams.
+
+Se presenta el diagrama de arquitectura a nivel de componentes para el Bounded Context de Billing, el cual ilustra la organización de las capas de interfaz, aplicación, dominio e infraestructura encargadas de gestionar el ciclo comercial y la habilitación de capacidades premium
+
+<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_Component_Level_Diagrams_2.png" alt="Bounded_Context_Software_Architecture_Component_Level_Diagrams_2.png" width="500">
+
+
 ### 5.2.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.2.7.1.Bounded Context Domain Layer Class Diagrams.
 #### 5.2.7.2.Bounded Context Database Design Diagram.
