@@ -210,8 +210,7 @@ Se presenta el diagrama de clases de la capa de dominio para el Bounded Context 
 
 Se presenta el diagrama de clases de la capa de dominio para el Bounded Context de Billing, el cual define la estructura lógica del agregado Subscription y sus entidades relacionadas (Plan, Invoice, TrialPeriod), asegurando que la monetización de VineVault se gestione mediante la habilitación dinámica de capacidades.
 
-<br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class_Diagrams_2.png" alt="Bounded_Context_Domain_Layer_Class_Diagrams_2.png" width="500">
-![Bounded_Context_Database_Design_Diagram_2.png](../../../../Desktop/Bounded_Context_Database_Design_Diagram_2.png)
+<br /><img src="../assets/boundedcontext/Bounded_Context_Database_Design_Diagram_2.png" alt="Bounded_Context_Database_Design_Diagram_2.png" width="500">
 
 ## 5.3.Bounded Context: Notification
 El Bounded Context Notification centraliza la gestión del envío de comunicaciones hacia los usuarios de VineVault, incluyendo alertas críticas, mensajes informativos y notificaciones derivadas de eventos del sistema. Su finalidad es proporcionar una capacidad transversal de comunicación que permita a otros bounded contexts informar situaciones relevantes, como anomalías ambientales, recordatorios de consumo o actualizaciones del sistema, manteniendo consistencia, trazabilidad y control sobre cada envío.
