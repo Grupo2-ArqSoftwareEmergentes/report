@@ -291,6 +291,12 @@ Adicionalmente, la infraestructura debe soportar mecanismos de reintentos autom�
 En consecuencia, la Infrastructure Layer de Notification hace operativa la capacidad comunicacional de VineVault, conectando las decisiones del negocio con servicios reales de mensajería y garantizando la trazabilidad completa de cada notificación enviada.
 
 ### 5.3.6. Bounded Context Software Architecture Component Level Diagrams.
+
+Se detalla el diagrama de arquitectura a nivel de componentes para el Bounded Context de Notification, ilustrando la organización de las capas encargadas de centralizar y gestionar el envío de comunicaciones y alertas críticas
+
+<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_3.png" alt="Bounded_Context_Software_Architecture_Component_Level_Diagrams_2.png" width="500">
+
+
 ### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.3.7.1.Bounded Context Domain Layer Class Diagrams.
 #### 5.3.7.2.Bounded Context Database Design Diagram.
