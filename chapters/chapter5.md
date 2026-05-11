@@ -413,8 +413,18 @@ La infraestructura de este contexto también debe contemplar mecanismos de audit
 Dado que este contexto es el núcleo transaccional del sistema, cualquier inconsistencia en esta capa puede impactar directamente en la analítica posterior (Inventory Intelligence) y en la generación de alertas o notificaciones, afectando la confiabilidad general de la plataforma.
 
 ### 5.4.6. Bounded Context Software Architecture Component Level Diagrams.
+
+Se presenta el diagrama de arquitectura a nivel de componentes para el Bounded Context de Environmental Monitoring, el cual ilustra la organización de las capas encargadas de la captura de datos en tiempo real, el análisis de condiciones climáticas y la detección de anomalías dentro de la cava
+<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_Component_Level_Diagrams_4.png" alt="Bounded_Context_Software_Architecture_Component_Level_Diagrams_4.png" width="500">
+
+
 ### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.4.7.1.Bounded Context Domain Layer Class Diagrams.
+
+
+
+
+
 #### 5.4.7.2.Bounded Context Database Design Diagram.
 
 ## 5.5.Bounded Context: Environmental Monitoring
