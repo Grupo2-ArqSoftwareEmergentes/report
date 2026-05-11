@@ -419,13 +419,20 @@ Se presenta el diagrama de arquitectura a nivel de componentes para el Bounded C
 
 
 ### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
+
 #### 5.4.7.1.Bounded Context Domain Layer Class Diagrams.
 
-
+Se presenta el diagrama de clases de la capa de dominio para el Bounded Context de Environmental Monitoring, detallando la lógica de las entidades Sensor, ClimateThreshold y el agregado EnvironmentalAnomaly para garantizar la integridad climática de la cava.
+<br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class_Diagrams_4.png" alt="Bounded_Context_Domain_Layer_Class_Diagrams_4.png" width="500">
 
 
 
 #### 5.4.7.2.Bounded Context Database Design Diagram.
+
+Se detalla el diseño físico de la base de datos para el Bounded Context de Environmental Monitoring, ilustrando la estructura de tablas para la persistencia de telemetría en tiempo real y el registro histórico de anomalías ambientales.
+<br /><img src="../assets/boundedcontext/Bounded_Context_Database_Design_Diagram_4.png" alt="Bounded_Context_Database_Design_Diagram_4.png" width="500">
+
+
 
 ## 5.5.Bounded Context: Environmental Monitoring
 El Bounded Context Environmental Monitoring concentra la lógica encargada de recibir, validar y procesar la telemetría ambiental proveniente de los sensores instalados en la cava (ESP32). Su finalidad es transformar lecturas crudas de temperatura y humedad en estados significativos del entorno, detectando desviaciones de condiciones óptimas, anomalías en los sensores y situaciones que puedan comprometer la conservación del vino.
