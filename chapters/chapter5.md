@@ -621,6 +621,19 @@ La integración con IA generativa permite enriquecer los resultados analíticos 
 La infraestructura debe prestar especial atención a eficiencia, procesamiento batch y control de costos asociados al uso de servicios externos.
 
 ### 5.6.6. Bounded Context Software Architecture Component Level Diagrams.
+
+Se presenta el diagrama de arquitectura a nivel de componentes para el Bounded Context de IoT Device Management, ilustrando la organización de las capas encargadas del registro de dispositivos, el control de conectividad y la gestión del ciclo de vida del hardware
+<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_Component_Level_Diagrams_6.png" alt="Bounded_Context_Software_Architecture_Component_Level_Diagrams_6.png" width="500">
+
+
 ### 5.6.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.6.7.1.Bounded Context Domain Layer Class Diagrams.
+
+Se presenta el diagrama de clases de la capa de dominio para el Bounded Context de IoT Device Management, detallando las entidades Device, Gateway y FirmwarePackage, así como las reglas de negocio para el monitoreo de salud y configuración del hardware.
+<br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class_Diagrams_6.png" alt="Bounded_Context_Domain_Layer_Class_Diagrams_6.png" width="500">
+
+
 #### 5.6.7.2.Bounded Context Database Design Diagram.
+
+Se detalla el diseño físico de la base de datos para el Bounded Context de IoT Device Management, ilustrando la estructura de tablas para la persistencia del inventario de hardware, la configuración de red y el historial de conectividad de los dispositivos.
+<br /><img src="../assets/boundedcontext/Bounded_Context_Database_Design_Diagram_6.png" alt="Bounded_Context_Database_Design_Diagram_6.png" width="500">
