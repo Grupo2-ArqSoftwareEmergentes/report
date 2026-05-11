@@ -522,9 +522,24 @@ Conforme al modelo definido para VineVault, esta capa se apoya en PostgreSQL par
 Las estructuras persistentes de este contexto pueden incluir tablas como telemetry_readings, environmental_states, environmental_snapshots, threshold_breaches y sensor_anomalies. Esta organización permite conservar tanto los datos crudos provenientes de los sensores como los resultados procesados que luego serán consumidos por la capa de interfaz y otros bounded contexts como Notification o Inventory Intelligence.
 
 ### 5.5.6. Bounded Context Software Architecture Component Level Diagrams.
+
+Se presenta el diagrama de arquitectura a nivel de componentes para el Bounded Context de Inventory Intelligence, ilustrando la organización de las capas encargadas de la gestión del catálogo de vinos, la optimización de existencias y la generación de recomendaciones personalizadas
+<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_Component_Level_Diagrams_5.png" alt="Bounded_Context_Software_Architecture_Component_Level_Diagrams_5.png" width="500">
+
 ### 5.5.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.5.7.1.Bounded Context Domain Layer Class Diagrams.
+
+Se presenta el diagrama de clases de la capa de dominio para el Bounded Context de Inventory Intelligence, detallando la interacción entre las entidades Wine, Winery, InventoryItem y el motor de Recommendation para una gestión integral y predictiva del catálogo.
+
+<br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class_Diagrams_5.png" alt="Bounded_Context_Domain_Layer_Class_Diagrams_5.png" width="500">
+
 #### 5.5.7.2.Bounded Context Database Design Diagram.
+
+Se detalla el diseño físico de la base de datos para el Bounded Context de Inventory Intelligence, ilustrando la estructura de tablas que soportan el inventario avanzado, la trazabilidad de movimientos de stock y el repositorio de conocimiento enológico.
+
+<br /><img src="../assets/boundedcontext/Bounded_Context_Database_Design_Diagram_5.png" alt="Bounded_Context_Database_Design_Diagram_5.png" width="500">
+
+
 
 ## 5.6.Bounded Context: Inventory Intelligence
 El Bounded Context Inventory Intelligence agrupa las capacidades orientadas al análisis del comportamiento del inventario de vinos, la generación de reportes históricos y la construcción de recomendaciones inteligentes basadas en patrones de consumo, rotación y maduración. Este contexto extiende el valor del sistema más allá de la simple gestión de botellas, permitiendo transformar datos operativos en conocimiento accionable para el usuario.
