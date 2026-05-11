@@ -306,6 +306,9 @@ Se presenta el diagrama de clases de la capa de dominio para el Bounded Context 
 
 #### 5.3.7.2.Bounded Context Database Design Diagram.
 
+Se detalla el diseño físico de la base de datos para el Bounded Context de Notification, ilustrando la organización de las tablas notification_requests, notification_history y user_notification_preferences , las cuales permiten la persistencia y trazabilidad de cada alerta emitida por el sistema
+<br /><img src="../assets//boundedcontext/Bounded_Context_Database_Design_Diagram_3.png" alt="Bounded_Context_Database_Design_Diagram_3.png" width="500">
+
 
 ## 5.4.Bounded Context: Wine Inventory
 El Bounded Context Wine Inventory modela el núcleo transaccional de VineVault, representando las botellas de vino, su estado dentro de la cava y las operaciones asociadas a su ciclo de vida. Este contexto permite mantener una representación precisa y actualizada del inventario, sirviendo como base para la analítica, recomendaciones y control operativo del sistema.
