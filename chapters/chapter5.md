@@ -294,11 +294,16 @@ En consecuencia, la Infrastructure Layer de Notification hace operativa la capac
 
 Se detalla el diagrama de arquitectura a nivel de componentes para el Bounded Context de Notification, ilustrando la organización de las capas encargadas de centralizar y gestionar el envío de comunicaciones y alertas críticas
 
-<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_3.png" alt="Bounded_Context_Software_Architecture_Component_Level_Diagrams_2.png" width="500">
+<br /><img src="../assets/boundedcontext/Bounded_Context_Software_Architecture_3.png" alt="Bounded_Context_Software_Architecture_3.png" width="500">
 
 
 ### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.3.7.1.Bounded Context Domain Layer Class Diagrams.
+
+Se presenta el diagrama de clases de la capa de dominio para el Bounded Context de Notification, el cual define la estructura lógica de las entidades NotificationMessage, DeliveryRequest y NotificationHistory , asegurando que las comunicaciones de VineVault se gestionen de manera consistente y alineada con las preferencias del usuario.
+
+<br /><img src="../assets/boundedcontext/Bounded_Context_Domain_Layer_Class_Diagrams_3.jpeg" alt="Bounded_Context_Domain_Layer_Class_Diagrams_3.jpeg" width="500">
+
 #### 5.3.7.2.Bounded Context Database Design Diagram.
 
 
