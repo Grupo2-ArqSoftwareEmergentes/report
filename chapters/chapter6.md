@@ -5,6 +5,9 @@
 ## 6.2. Information Architecture.
 
 ## 6.3. Landing Page UI Design.
+La landing page de VineVault se diseñó como un punto de conversión estratégico, orientado a proyectar valores de exclusividad e innovación, así como a garantizar una protección eficiente tanto para coleccionistas particulares como para empresas.<br/>
+
+<br /><img src="../assets/landingpage/landingpage.png" alt="landingpage.png.png" width="600">
 
 ## 6.4. Applications UX/UI Design.
 
