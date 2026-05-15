@@ -132,8 +132,8 @@ Se aplicará una organización jerárquica y modular, permitiendo que el usuario
 -  Configurar preferencias, alertas y parámetros generales de la cuenta.  
 
 #### Esquemas de Categorización del Contenido:  
--  Por función: Panel Principal, Cavas Inteligentes, Inventario, Ambiente, Alertas, Analíticas y Configuración.  
--  Por tipo de interacción: Registro, Monitoreo, Visualización, Gestión, Configuración y Exportación de datos.  
+-  **Por función:** Panel Principal, Cavas Inteligentes, Inventario, Ambiente, Alertas, Analíticas y Configuración.  
+-  **Por tipo de interacción:** Registro, Monitoreo, Visualización, Gestión, Configuración y Exportación de datos.  
 
 Esto permitirá que el usuario identifique rápidamente cada módulo de la plataforma, facilitando la navegación entre las distintas pantallas sin sobrecargar visualmente la interfaz del sistema.
 
@@ -141,12 +141,12 @@ Esto permitirá que el usuario identifique rápidamente cada módulo de la plata
 
 En la Landing Page, se utilizarán etiquetas simples e intuitivas que permitan al visitante navegar fácilmente entre las distintas secciones informativas de VineVault:
 
--  Inicio: Presentación general de VineVault y su propuesta tecnológica.  
--  Acerca de: Información sobre la startup, misión y visión del sistema.  
--  Servicios: Descripción de las funcionalidades relacionadas con monitoreo IoT, gestión de inventario y control         ambiental.  
--  Planes: Visualización de planes de suscripción y beneficios disponibles.  
--  Contacto: Formulario de consultas, soporte y comunicación comercial.  
--  Iniciar Sesión: Acceso a la plataforma web para usuarios registrados.  
+-  **Inicio:** Presentación general de VineVault y su propuesta tecnológica.  
+-  **Acerca de:** Información sobre la startup, misión y visión del sistema.  
+-  **Servicios:** Descripción de las funcionalidades relacionadas con monitoreo IoT, gestión de inventario y control         ambiental.  
+-  **Planes:** Visualización de planes de suscripción y beneficios disponibles.  
+-  **Contacto:** Formulario de consultas, soporte y comunicación comercial.  
+-  **Iniciar Sesión:** Acceso a la plataforma web para usuarios registrados.  
 
 En la Aplicación Web, el sistema de búsqueda permitirá localizar rápidamente botellas, cavas inteligentes, códigos de inventario y registros ambientales mediante filtros y palabras clave. Asimismo, se podrán realizar búsquedas por nombre del vino, añada, zona de cava y estado de conservación, facilitando la administración eficiente de las colecciones almacenadas dentro del sistema.
 
@@ -162,6 +162,33 @@ Para optimizar la visibilidad de VineVault en motores de búsqueda web, se imple
   - **Keywords:** cavas inteligentes, monitoreo de vinos, gestión de inventario, sensores IoT, conservación de vinos, analíticas de cava, control ambiental, wine cellar management.  
 
   - **Author:** VineVault Viticulture Systems.
+
+### 6.2.4. Navigation Systems.
+
+### Landing Page
+
+- **Inicio:** Presentación general de VineVault y acceso directo a las funcionalidades principales del sistema.  
+- **Acerca de:** Información sobre la startup, misión y visión orientadas a la gestión inteligente de cavas.  
+- **Servicios:** Sección informativa sobre monitoreo IoT, control ambiental, inventario inteligente y analíticas de conservación.  
+- **Planes:** Comparativa de planes y suscripciones disponibles para los usuarios.  
+- **Contacto:** Formulario de consultas y medios de soporte.  
+- **Iniciar Sesión:** Botón de acción principal (CTA) que redirige hacia la aplicación web.  
+
+### Web Application
+
+- **Panel Principal:** Vista general con métricas de inventario, estado ambiental y actividad reciente.  
+- **Cavas Inteligentes:** Administración de cavas registradas, zonas y condiciones de almacenamiento.  
+- **Inventario:** Gestión y visualización de botellas, códigos, añadas y estados de conservación.  
+- **Ambiente:** Monitoreo en tiempo real de temperatura, humedad y sensores IoT.  
+- **Alertas:** Visualización de notificaciones relacionadas con cambios ambientales o riesgos de conservación.  
+- **Analíticas:** Reportes gráficos y estadísticas relacionadas con el rendimiento y estado de las colecciones.  
+- **Configuración:** Gestión de perfil, preferencias, calibración de sensores y parámetros generales del sistema.  
+
+### Mobile Application
+
+- **Barra inferior:** Accesos rápidos a Inicio, Inventario, Ambiente, Alertas y Perfil.  
+- **Notificaciones en tiempo real:** Alertas relacionadas con cambios de temperatura, humedad o riesgos de conservación.  
+- **Navegación simplificada:** Interfaz coherente con el entorno web, manteniendo la misma identidad visual y organización modular de la plataforma.
 
 ## 6.3. Landing Page UI Design.
 La landing page de VineVault se diseñó como un punto de conversión estratégico, orientado a proyectar valores de exclusividad e innovación, así como a garantizar una protección eficiente tanto para coleccionistas particulares como para empresas.<br/>
