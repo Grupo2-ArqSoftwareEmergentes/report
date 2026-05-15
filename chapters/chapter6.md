@@ -150,6 +150,19 @@ En la Landing Page, se utilizarán etiquetas simples e intuitivas que permitan a
 
 En la Aplicación Web, el sistema de búsqueda permitirá localizar rápidamente botellas, cavas inteligentes, códigos de inventario y registros ambientales mediante filtros y palabras clave. Asimismo, se podrán realizar búsquedas por nombre del vino, añada, zona de cava y estado de conservación, facilitando la administración eficiente de las colecciones almacenadas dentro del sistema.
 
+### 6.2.3. SEO Tags and Meta Tags.
+
+Para optimizar la visibilidad de VineVault en motores de búsqueda web, se implementarán las siguientes etiquetas:
+
+- **Title:** VineVault  
+
+- **Meta Tags:**  
+  - **Description:** Plataforma inteligente para la gestión de cavas y monitoreo ambiental de colecciones de vinos mediante sensores IoT, analíticas y control en tiempo real.  
+
+  - **Keywords:** cavas inteligentes, monitoreo de vinos, gestión de inventario, sensores IoT, conservación de vinos, analíticas de cava, control ambiental, wine cellar management.  
+
+  - **Author:** VineVault Viticulture Systems.
+
 ## 6.3. Landing Page UI Design.
 La landing page de VineVault se diseñó como un punto de conversión estratégico, orientado a proyectar valores de exclusividad e innovación, así como a garantizar una protección eficiente tanto para coleccionistas particulares como para empresas.<br/>
 
