@@ -122,18 +122,18 @@ El flujo principal del sistema se centra en acciones esenciales como registrar b
 
 ### 6.2.1. Web Style Guidelines.
 
-• Sistemas de Organización Visual:  
+#### Sistemas de Organización Visual:  
 Se aplicará una organización jerárquica y modular, permitiendo que el usuario navegue de manera progresiva entre las distintas funcionalidades del sistema:
 
-• Registrar nuevas botellas o crear una nueva cava inteligente.  
-• Gestionar inventario y visualizar el estado de las colecciones almacenadas.  
-• Monitorear temperatura, humedad y sensores IoT en tiempo real.  
-• Analizar reportes y gráficos históricos relacionados con la conservación de los vinos.  
-• Configurar preferencias, alertas y parámetros generales de la cuenta.  
+-  Registrar nuevas botellas o crear una nueva cava inteligente.  
+-  Gestionar inventario y visualizar el estado de las colecciones almacenadas.  
+-  Monitorear temperatura, humedad y sensores IoT en tiempo real.  
+-  Analizar reportes y gráficos históricos relacionados con la conservación de los vinos.  
+-  Configurar preferencias, alertas y parámetros generales de la cuenta.  
 
-• Esquemas de Categorización del Contenido:  
-– Por función: Panel Principal, Cavas Inteligentes, Inventario, Ambiente, Alertas, Analíticas y Configuración.  
-– Por tipo de interacción: Registro, Monitoreo, Visualización, Gestión, Configuración y Exportación de datos.  
+#### Esquemas de Categorización del Contenido:  
+-  Por función: Panel Principal, Cavas Inteligentes, Inventario, Ambiente, Alertas, Analíticas y Configuración.  
+-  Por tipo de interacción: Registro, Monitoreo, Visualización, Gestión, Configuración y Exportación de datos.  
 
 Esto permitirá que el usuario identifique rápidamente cada módulo de la plataforma, facilitando la navegación entre las distintas pantallas sin sobrecargar visualmente la interfaz del sistema.
 
@@ -141,12 +141,12 @@ Esto permitirá que el usuario identifique rápidamente cada módulo de la plata
 
 En la Landing Page, se utilizarán etiquetas simples e intuitivas que permitan al visitante navegar fácilmente entre las distintas secciones informativas de VineVault:
 
-• Inicio: Presentación general de VineVault y su propuesta tecnológica.  
-• Acerca de: Información sobre la startup, misión y visión del sistema.  
-• Servicios: Descripción de las funcionalidades relacionadas con monitoreo IoT, gestión de inventario y control ambiental.  
-• Planes: Visualización de planes de suscripción y beneficios disponibles.  
-• Contacto: Formulario de consultas, soporte y comunicación comercial.  
-• Iniciar Sesión: Acceso a la plataforma web para usuarios registrados.  
+-  Inicio: Presentación general de VineVault y su propuesta tecnológica.  
+-  Acerca de: Información sobre la startup, misión y visión del sistema.  
+-  Servicios: Descripción de las funcionalidades relacionadas con monitoreo IoT, gestión de inventario y control         ambiental.  
+-  Planes: Visualización de planes de suscripción y beneficios disponibles.  
+-  Contacto: Formulario de consultas, soporte y comunicación comercial.  
+-  Iniciar Sesión: Acceso a la plataforma web para usuarios registrados.  
 
 En la Aplicación Web, el sistema de búsqueda permitirá localizar rápidamente botellas, cavas inteligentes, códigos de inventario y registros ambientales mediante filtros y palabras clave. Asimismo, se podrán realizar búsquedas por nombre del vino, añada, zona de cava y estado de conservación, facilitando la administración eficiente de las colecciones almacenadas dentro del sistema.
 
