@@ -120,7 +120,22 @@ La plataforma fue diseñada bajo un enfoque responsive:
 La arquitectura de información de VineVault se ha diseñado para que el usuario pueda gestionar, monitorear y analizar colecciones de vinos y destilados de manera rápida e intuitiva, priorizando la claridad visual y la reducción de fricción cognitiva dentro de la plataforma.
 El flujo principal del sistema se centra en acciones esenciales como registrar botellas, supervisar el estado ambiental de las cavas inteligentes y visualizar analíticas relacionadas con el inventario y la conservación de las colecciones.
 
+### 6.2.1. Web Style Guidelines.
 
+• Sistemas de Organización Visual:  
+Se aplicará una organización jerárquica y modular, permitiendo que el usuario navegue de manera progresiva entre las distintas funcionalidades del sistema:
+
+1. Registrar nuevas botellas o crear una nueva cava inteligente.  
+2. Gestionar inventario y visualizar el estado de las colecciones almacenadas.  
+3. Monitorear temperatura, humedad y sensores IoT en tiempo real.  
+4. Analizar reportes y gráficos históricos relacionados con la conservación de los vinos.  
+5. Configurar preferencias, alertas y parámetros generales de la cuenta.  
+
+• Esquemas de Categorización del Contenido:  
+– Por función: Panel Principal, Cavas Inteligentes, Inventario, Ambiente, Alertas, Analíticas y Configuración.  
+– Por tipo de interacción: Registro, Monitoreo, Visualización, Gestión, Configuración y Exportación de datos.  
+
+Esto permitirá que el usuario identifique rápidamente cada módulo de la plataforma, facilitando la navegación entre las distintas pantallas sin sobrecargar visualmente la interfaz del sistema.
 
 ## 6.3. Landing Page UI Design.
 La landing page de VineVault se diseñó como un punto de conversión estratégico, orientado a proyectar valores de exclusividad e innovación, así como a garantizar una protección eficiente tanto para coleccionistas particulares como para empresas.<br/>
