@@ -221,3 +221,13 @@ La estructura principal se compone de:
 ### 6.4.4. Applications User Flow Diagrams.
 
 ## 6.5. Applications Prototyping.
+
+En esta sección se presentan los prototipos interactivos de las aplicaciones, que permiten visualizar y probar la experiencia de usuario antes del desarrollo final.
+
+**Web Application Prototype**
+
+El prototipo de la aplicación web muestra la estructura general de navegación, el diseño de las principales vistas y las funcionalidades clave que tendrá la plataforma. Permite simular el flujo de navegación de los usuarios y visualizar cómo interactúan con los distintos módulos del sistema.
+
+<br /><img src="https://i.imgur.com/TJdeZst.png" alt="web proto" width="600">
+
+Web Application Prototype: https://sl1nk.com/v7zy0bh
