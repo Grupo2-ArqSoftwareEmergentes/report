@@ -290,6 +290,31 @@ El diseño de Analítica presenta una interfaz de inteligencia de datos para la 
 
 ### 6.4.2. Applications Wireflow Diagrams.
 
+**Wireflow 1: Onboarding y Gestión de Colección**
+
+Flujo: Registro → Landing → Inventario
+
+<img src="../assets/wireflows/wireflow1.png" alt="wireflow1.png" width="600">
+
+Recorrido típico:
+
+1. Conoce la propuesta en Landing Page
+2. Usuario se registra en Register
+3. Accede a su colección en Inventory
+
+**Wireflow 2: Monitoreo y Control de Cava**
+
+Flujo: Inventario → Cava Inteligente → Ambiente → Analítica
+
+<img src="../assets/wireflows/wireflow2.png" alt="wireflow2.png" width="600">
+
+Recorrido típico:
+
+1. Desde el listado de Inventory, selecciona un vino
+2. Explora detalles y maduración en Cava Inteligente
+3. Revisa condiciones ambientales en Ambiente
+4. Analiza tendencias y reportes en Analítica
+
 ### 6.4.3. Applications Mock-ups.
 
 ### 6.4.4. Applications User Flow Diagrams.
