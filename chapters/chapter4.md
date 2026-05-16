@@ -148,11 +148,28 @@ Primero empezamos  con una lluvia de ideas de los eventos del dominio relacionad
 
 <a href="https://ibb.co/g2DGZ6f"><img src="https://i.ibb.co/CcnqKWY/Untitled-5.jpg" alt="Step 1" border="0"></a>
 
+
+En esta etapa se buscó entender qué situaciones importantes ocurren dentro de una cava inteligente. A diferencia de un inventario tradicional, el dominio de VineVault involucra no solo almacenamiento de botellas, sino también monitoreo ambiental, trazabilidad y conservación de vinos premium.
+
+
 *Step 2: Timelines*
 
 Ahora revisamos  los eventos de dominio generados y los organizan en el orden en que ocurren en el dominio empresarial. Los eventos deben comenzar con el happy path: el flujo que describe un escenario empresarial exitoso.
 
 <a href="https://ibb.co/rfFhvdXk"><img src="https://i.ibb.co/YTPSb0V2/Untitled-6.jpg" alt="Untitled-6" border="0"></a>
+
+La línea temporal permitió visualizar el ciclo de vida de una botella dentro de la cava:
+
+1. El usuario crea su cava.
+2. Registra botellas.
+3. Vincula sensores IoT.
+4. El sistema monitorea temperatura y humedad.
+5. Se generan alertas.
+6. El usuario consume o retira botellas.
+7. El sistema analiza patrones históricos.
+
+Esto ayudó a entender cómo interactúan las operaciones físicas de la cava con los procesos digitales y analíticos del sistema.
+
 
 *Step 3: Paint Points*
 
@@ -161,22 +178,70 @@ puntos en el proceso que requieren atención. Estos pueden ser cuellos de botell
 requieren automatización, documentación faltante o conocimiento de dominio faltante.
 <a href="https://ibb.co/B59fVH7F"><img src="https://i.ibb.co/bMk6gjyD/Untitled-7.jpg" alt="Untitled-7" border="0"></a>
 
+
+Durante el análisis se detectaron problemas frecuentes en la gestión manual de colecciones de vino:
+
+1. Ingreso a la web fallida
+2. Desconocimiento del estado ambiental de la cava.
+3. Deterioro de vinos por cambios de temperatura.
+4. Falta de alertas tempranas.
+5. Dificultad para poder pagar la suscripcion 
+
+
+Estos pain points justificaron la necesidad de automatizar el monitoreo y digitalizar la administración de la cava mediante IoT y análisis inteligente.
+
 *Step 4: Pivotal Points*
 
 En esta Seccion buscamos eventos comerciales importantes que indiquen un cambio en el contexto o la fase. Estos se denominan eventos fundamentales y están marcados con una barra vertical que divide los eventos antes y después del evento fundamental. 
 <a href="https://ibb.co/twnt3tSv"><img src="https://i.ibb.co/V0bZ3Zdz/Untitled-8.jpg" alt="Untitled-8" border="0"></a>
+
+Los eventos pivote ayudaron a descubrir cambios de responsabilidad y futuros bounded contexts.
+
+1.- el usuario se registro
+2.- el usuario ingreso 
+3.- el usuario creo una cava 
+3.- desea conectar el sensor
+4.- crea un cava inteligente
+5.- y por ultimo decie apliar funciones atravez de pago 
+
+Estos eventos permitieron identificar separaciones naturales entre inventario, monitoreo ambiental y análisis inteligente.
 
 *Step 5: Commands*
 
 Ahora en  los comandos que describe qué desencadenó el evento o el flujo de eventos. Los comandos describen las operaciones del sistema y, contrariamente a los eventos de dominio, se formulan en imperativo.
 <a href="https://ibb.co/3gC0xNz"><img src="https://i.ibb.co/rDwZB6s/Untitled-9.jpg" alt="Untitled-9" border="0"></a>
 
+Los comandos modelaron las operaciones críticas del negocio:
+
+- Register Bottle
+- Connect Sensor
+- Validate Environmental Ranges
+- Generate Alert
+- Remove Bottle From Inventory
+- Generate Consumption Report
+
+Esto permitió diferenciar claramente entre:
+
+- acciones del usuario,automatizaciones del sistema, y respuestas del dominio.
+
+También ayudó a descubrir agregados responsables de mantener la consistencia del negocio.
+
 *Step 6: Policies*
 
 Seguimos con agregar  al modelo, pero no tienen un actor específico asociado con ellos. Durante este paso, busca automation policies que puedan ejecutar esos comandos. Una automation policy un escenario en el que un evento desencadena la ejecución de un comando. En otras palabras, un comando se ejecuta automáticamente cuando ocurre un evento de dominio específico
 
+
 <a href="https://ibb.co/mVyDfPGx"><img src="https://i.ibb.co/HfPF59VJ/Untitled-10.jpg" alt="Untitled-10" border="0"></a>
 
+Las políticas reflejan automatizaciones fundamentales para una cava inteligente.
+
+Ejemplos:
+
+1. Si la temperatura supera el umbral permitido → generar alerta.
+2. Si el stock de botellas es bajo → enviar advertencia.
+3. Si el sensor deja de transmitir datos → marcar dispositivo inactivo.
+
+Estas políticas permitieron entender que VineVault funciona como un sistema reactivo orientado a eventos y monitoreo continuo.
 
 *Step7: ReadModels*
 
@@ -184,13 +249,39 @@ continuamos con Un modelo de lectura es la vista de datos dentro del dominio que
 
 <a href="https://ibb.co/MDdxt5W3"><img src="https://i.ibb.co/pvqBMrG9/Untitled-11.jpg" alt="Untitled-11" border="0"></a>
 
+Los read models permitieron visualizar cómo el usuario interactúa con la información de la cava.
+
+Se identificaron vistas como:
+
+1. Dashboard ambiental en tiempo real.
+2. Inventario de botellas.
+3. Historial de temperatura y humedad.
+4. Reporte de consumo.
+5. Recomendaciones de maduración.
+
+Esto ayudó a validar qué información necesita cada actor para operar correctamente la cava.
+
 *Step 8: External Systems*
 
 
 Seguimos con los servicio externos este paso consiste en aumentar el modelo con sistemas externos. Un sistema externo se define como cualquier sistema que no forma parte del dominio que se está explorando. Puede ejecutar comandos (entrada) o puede ser notificado sobre eventos (salida).
 
+
+
+
+
 <a href="https://ibb.co/Kp4rRRnx"><img src="https://i.ibb.co/PvX633kG/Untitled-12.jpg" alt="Untitled-12" border="0"></a>
 
+El dominio depende de integraciones externas para operar correctamente.
+
+Se identificaron:
+
+1. Sensores IoT ESP32.
+2. Servicio de correo electrónico.
+3. Servicio de notificaciones push.
+4. APIs externas para información de vinos (si aplica).
+
+Esto permitió delimitar qué componentes pertenecen al dominio central y cuáles son dependencias externas.
 
 *Step 9: Aggregates*
 
@@ -198,7 +289,19 @@ Una vez que todos los eventos y comandos están representados, los participantes
 
 <a href="https://ibb.co/kvXSC36"><img src="https://i.ibb.co/mg4cWvF/Untitled-13.jpg" alt="Untitled-13" border="0"></a>
 
+Los agregados permitieron mantener consistencia en las operaciones críticas del dominio.
 
+Se identificaron agregados como:
+
+- wine catalog
+- user sesion 
+- sensor device
+- notification request
+- Inventory Analitycs
+- suscription 
+
+
+Esto ayudó a descubrir límites naturales de consistencia y fue la base para definir posteriormente los Bounded Contexts.
 
 ### 4.2.2. Candidate Context Discovery.
 
@@ -455,80 +558,530 @@ Para cada relación potencial entre Bounded Contexts, el equipo discutió las si
 
 ### 4.3.1. Software Architecture System Landscape Diagram.
 
-<td> <img src="../assets/softwarearchitecture/systemlandscapediagram.jpg" width="550" alt="system landscape diagram"></td>
+<a href="https://ibb.co/KcVnhRyK"><img src="https://i.ibb.co/BHTk3dsn/vinevault-dark-1.png" alt="vinevault-dark-1" border="0"></a>
 
-El System Landscape Diagram proporciona una vista de alto nivel del ecosistema tecnológico en el que opera VineVault, mostrando la interacción del sistema central con los usuarios y los sistemas de software externos.
 
-**Actores (Persons):**
+##### Descripción General
 
-- Usuarios (Coleccionista y Aficionado): Utilizan la aplicación principal para gestionar su inventario o cavas privadas, monitorizando su colección de forma remota.
+VineVault es una plataforma centralizada de gestión de bodegas de vino que integra monitoreo IoT, control de inventario y análisis impulsado por IA generativa. La arquitectura implementa un modelo de capas con clara separación de responsabilidades entre presentación, integración, lógica de negocio, persistencia e IoT.
 
-**Sistemas Internos:**
+##### Actores del Sistema
 
-- VineVault [Container: technology]: Representa la plataforma principal para la gestión integral de cavas y bodegas. Es el núcleo de la solución que orquesta la lógica de negocio.
+**Facility Admin**: Operador de bodega comercial/restaurante que gestiona múltiples sensores, controla inventario y analiza rotación de ventas.
 
-- Database [Container: Technology]: El repositorio central de datos. Almacena de manera persistente la información del inventario (botellas, catálogos) y las métricas de almacenamiento generadas por los sensores.
+**Home User**: Coleccionista privado que monitorea su colección personal, recibe recomendaciones de consumo y supervisa condiciones ambientales.
 
-**Sistemas Externos y Dispositivos:**
+**Support & Maintenance Team**: Equipo interno que gestiona tickets, resuelve incidencias y coordina mantenimiento del producto.
 
-- Dispositivos IoT [Component: technology]: Hardware físico desplegado en las cavas. Son los sensores de temperatura y humedad que envían datos en tiempo real hacia VineVault.
+##### Plataforma VineVault - Arquitectura Interna
 
-- Servicios Cloud [Software System]: Proveedor de infraestructura en la nube que da soporte a las consultas de datos (alojamiento, bases de datos gestionadas, etc.).
+| Componente | Tecnología | Responsabilidad |
+|---|---|---|
+| **Landing Page** | HTML/CSS/JavaScript | Presentación pública de la plataforma |
+| **Web App** | Vue 3 | Aplicación web autenticada para usuarios |
+| **SPA** | Vue 3 | Experiencia cliente con widget de soporte embebido |
+| **API Gateway** | Spring Cloud Gateway | Enrutamiento, rate limiting, seguridad básica |
+| **Platform API** | Spring Boot/Java 25 | Lógica de negocio: IAM, Billing, Inventario, Monitoreo, IA, Notificaciones, Integraciones |
+| **PostgreSQL DB** | PostgreSQL | Persistencia: usuarios, botellas, telemetría, suscripciones, logs integraciones |
+| **ESP32 Device** | C/C++ Firmware | Medición de temperatura/humedad, envío de telemetría vía Wi-Fi |
 
-- Servicio de email [Software System]: Proveedor externo encargado de enviar correos electrónicos transaccionales (verificación de cuentas) y reportes o boletines informativos a los usuarios.
+##### Sistemas Externos - Core Business
 
-- Servicio de notificaciones [Software System]: Sistema externo que gestiona el envío de notificaciones push (alertas críticas en dispositivos móviles) a los usuarios.
+| Sistema | Tipo | Protocolo | Función |
+|---|---|---|---|
+| **Google OAuth2** | Autenticación | OpenID Connect | Login social seguro |
+| **Stripe** | Pagos | REST API/HTTPS | Procesamiento de pagos y suscripciones |
+| **Resend** | Notificaciones | REST API/HTTPS | Emails transaccionales (verificación, alertas, reportes) |
+| **ESP32 Hardware** | IoT | MQTT/HTTPS | Sensores físicos en celda |
+
+#### Inteligencia Artificial Generativa
+
+**Servicio**: OpenAI GPT / Anthropic Claude / Google Gemini
+
+**Entrada**: Métricas de inventario, patrones de consumo, telemetría ambiental
+
+**Salida**: Recomendaciones inteligentes, predicciones de madurez, reportes en lenguaje natural, análisis de tendencias
+
+**Protocolo**: REST API/HTTPS
+
+##### Sistemas de Inventario Externos (Integración)
+
+| Sistema | Protocolo | Capacidad |
+|---|---|---|
+| **QuickBooks** | REST API/HTTPS | Sincronización finanzas y existencias |
+| **Odoo** | REST API/HTTPS | Intercambio inventario y catálogo |
+| **Zoho Inventory** | REST API/HTTPS | Actualizaciones stock y registros botellas |
+
+**Patrón**: Sincronización bidireccional programada o disparada por eventos.
+
+##### Soporte y Mantenimiento
+
+**Ticketing System** (Zendesk/Freshdesk/Jira Service Management):
+- Widget embebido en SPA para crear/rastrear tickets
+- Protocolo: HTTPS/Widget API
+- Notificación automática a Support Team
+
+**Flujo**: Usuario crea ticket → Sistema notifica equipo → Support Team resuelve → Usuario recibe actualizaciones en VineVault.
+
+##### Flujos Principales de Datos
+
+##### Autenticación
+Usuario → Landing Page → Google OAuth2 → API Gateway → Platform API
+→ PostgreSQL (verificación) → Sesión iniciada
+
+##### Monitoreo Ambiental
+ESP32 Device → Sensores → Telemetría (MQTT/HTTPS) → API Gateway
+→ Platform API → PostgreSQL + IA Service → Notificación usuario (Resend)
+
+##### Procesamiento de Pagos
+SPA → API Gateway → Stripe → Webhook → Platform API → PostgreSQL
+→ Email confirmación (Resend)
+
+##### Recomendaciones IA
+Platform API → Recopila datos (inventario, consumo, telemetría)
+→ Generative AI Service → Análisis + Predicciones → PostgreSQL → SPA
+
+##### Integración de Inventario
+Platform API → Sincronización bidireccional
+→ QuickBooks/Odoo/Zoho Inventory → PostgreSQL (actualiza registros)
+
+##### Arquitectura de Capas
+
+| Capa | Componentes | Ubicación | Responsabilidad |
+|---|---|---|---|
+| **Presentación** | Landing Page, Web App, SPA | Navegador cliente | Interfaz usuario e interactividad |
+| **Integración** | API Gateway | Backend | Enrutamiento, seguridad, rate limiting |
+| **Lógica de Negocio** | Platform API | Backend | Procesamiento reglas negocio y orquestación |
+| **Persistencia** | PostgreSQL | Backend | Almacenamiento ACID y recuperación datos |
+| **IoT** | ESP32 Device | Celda física | Captura datos ambientales |
+
+##### Principios de Diseño
+
+- **Separación de responsabilidades**: Cada capa independiente con interfaz clara.
+- **Escalabilidad horizontal**: API Gateway y Platform API sin estado, desplegables en Kubernetes.
+- **Seguridad por capas**: OpenID Connect + HTTPS + API Keys + rate limiting.
+- **Integraciones desacopladas**: APIs REST bidireccionales, sin dependencias críticas.
+- **Observabilidad**: Logs centralizados, métricas y alertas sobre fallos sensor, errores API, caídas servicio.
+
+##### Alineación Estratégica
+
+Esta arquitectura soporta los objetivos estratégicos:
+
+- **Diferenciación**: IA integrada para recomendaciones inteligentes
+- **Escalabilidad**: Soporte simultáneo de usuarios domésticos y comerciales
+- **Confiabilidad**: Monitoreo en tiempo real con alertas automáticas
+- **Extensibilidad**: Nuevos sensores, integraciones y proveedores IA sin rediseño
+- **Operacionalidad**: Gestión de soporte integrada, mantenimiento sin disrupciones
+
 
 
 ### 4.3.2. Software Architecture Context Level Diagrams.
 
-<td> <img src="../assets/softwarearchitecture/contextleveldiagram.jpg" width="550" alt="context level diagram"></td>
+<a href="https://ibb.co/RT9TG1nF"><img src="https://i.ibb.co/whRhZTHk/Vine-Vault-System-Context-dark.png" alt="Vine-Vault-System-Context-dark" border="0"></a>
 
-**Este nivel describe cómo VineVault interactúa con su entorno a un nivel macro.**
+#### Descripción General
 
-- Actores Principales: El sistema atiende a dos perfiles clave. El Coleccionista/Aficionado, que gestiona su colección personal desde la aplicación , y el Usuario de Restaurante/Negocio, que requiere un control riguroso del inventario y alertas tempranas.  
-<br>
+El diagrama de contexto del sistema representa la vista de más alto nivel de la plataforma VineVault, mostrando los límites del sistema, los actores externos que interactúan con él y las principales relaciones de comunicación. Esta vista establece el contexto en el que opera la plataforma dentro del ecosistema empresarial.
 
-- Sistema Central (VineVault): La plataforma integral de gestión de cavas y bodegas.  
-<br>
+#### Actores del Sistema (Personas)
 
-- Sistemas Externos: VineVault se integra con Dispositivos IoT (hardware externo, como microcontroladores ESP32, que envían métricas ambientales) , un Servicio de Email (para verificación de cuentas y envío de reportes) , y un Servicio de Notificaciones Push para alertas críticas en tiempo real.
+##### Facility Admin
+**Rol**: Propietario u operador de bodega comercial, restaurante o instalación con múltiples sensores y botellas.
 
+**Interacciones con VineVault**:
+- Gestión de bodega comercial con múltiples sensores
+- Monitoreo de temperatura y humedad en tiempo real
+- Control de inventario de botellas
+- Visualización de análisis de rotación y ventas
+- Acceso a reportes y analytics avanzados
+
+**Acceso a soporte**:
+- Crea y rastrea tickets de soporte mediante widget embebido en la aplicación
+
+##### Home User
+**Rol**: Entusiasta del vino o coleccionista privado propietario de una bodega personal.
+
+**Interacciones con VineVault**:
+- Gestión de colección personal de vino
+- Monitoreo de condiciones ambientales de su celda
+- Recepción de recomendaciones de consumo inteligentes
+- Acceso a información de madurez del vino
+
+**Acceso a soporte**:
+- Crea y rastrea tickets de soporte mediante widget embebido en la aplicación
+
+##### Support & Maintenance Team
+**Rol**: Equipo interno responsable de gestionar tickets, atender inquietudes y coordinar mantenimiento del producto.
+
+**Interacciones**:
+- Recibe notificaciones de nuevos tickets y escalaciones desde el sistema de ticketing
+- Revisa, gestiona y resuelve tickets dentro de la plataforma externa
+- Realiza mantenimiento, troubleshooting y soporte técnico directo en VineVault
+- Coordina actualizaciones y mejoras del producto
+
+##### Sistema Central: VineVault Platform
+
+**Propósito**: Plataforma centralizada para monitoreo, control y automatización de dispositivos de bodega de vino e inventario.
+
+**Capacidades principales**:
+- Autenticación y gestión de identidad de usuarios
+- Procesamiento de pagos y gestión de suscripciones
+- Catálogo de vinos e inventario de botellas
+- Monitoreo ambiental en tiempo real (temperatura/humedad)
+- Análisis inteligente con recomendaciones impulsadas por IA
+- Gestión centralizada de notificaciones y alertas
+- Integración bidireccional con sistemas de inventario externos
+- Exportación de datos en múltiples formatos
+
+#### Sistemas Externos - Autenticación y Pagos
+
+##### Google OAuth2
+**Tipo**: Servicio externo de autenticación
+
+**Protocolo**: OpenID Connect
+
+**Función**: Proporciona autenticación segura mediante login social. Los usuarios pueden acceder a VineVault utilizando sus credenciales de Google sin crear contraseñas separadas.
+
+**Flujo de interacción**:
+- VineVault → Delega verificación de identidad a Google
+- Google → Verifica credenciales y devuelve token JWT
+- VineVault → Recibe y valida token, inicia sesión de usuario
+
+##### Stripe
+**Tipo**: Plataforma de procesamiento de pagos
+
+**Protocolo**: REST API / Webhooks
+
+**Función**: Procesa pagos de suscripción, gestiona ciclos de facturación, mantiene historial de transacciones e informa cambios de estado mediante webhooks.
+
+**Flujo de interacción**:
+- VineVault → Crea sesión de checkout cuando usuario selecciona plan
+- Stripe → Procesa pago y retorna confirmación
+- Stripe → Envía webhook de confirmación de pago a VineVault
+- VineVault → Actualiza suscripción del usuario basado en webhook
+
+##### Resend
+**Tipo**: Plataforma de entrega de emails transaccionales
+
+**Protocolo**: REST API
+
+**Función**: Envía emails de verificación de cuenta, recuperación de contraseña, alertas de condiciones críticas y reportes periódicos a usuarios.
+
+**Flujo de interacción**:
+- VineVault → Envía solicitud de email con contenido y destinatario
+- Resend → Entrega email al destinatario
+- Resend → Confirma estado de entrega a VineVault
+
+#### Sistemas Externos - IoT y Hardware
+
+##### ESP32 Hardware
+**Tipo**: Dispositivo físico IoT
+
+**Ubicación**: Instalado dentro de la bodega de vino
+
+**Función**: Sensores que capturan datos ambientales en tiempo real.
+
+**Capacidades**:
+- Medición continua de temperatura
+- Medición continua de humedad relativa
+- Almacenamiento temporal de lecturas
+- Conectividad Wi-Fi integrada
+
+##### ESP32 Sensor Device (VineVault)
+**Tipo**: Firmware embebido que ejecuta en el dispositivo ESP32
+
+**Tecnología**: C/C++
+
+**Función**: Software que normaliza lecturas de sensores, valida rangos seguros y publica telemetría a la plataforma cloud.
+
+**Protocolo**: MQTT/HTTPS
+
+**Flujo de interacción**:
+- ESP32 Device → Captura mediciones del hardware
+- ESP32 Device → Valida rangos seguros
+- ESP32 Device → Envía telemetría a API Gateway
+- VineVault → Recibe telemetría
+- VineVault → Envía comandos de configuración al dispositivo
+
+#### Sistemas Externos - Inteligencia Artificial
+
+##### Generative AI Service
+**Tipo**: Servicio externo de IA generativa
+
+**Proveedores soportados**: OpenAI GPT, Anthropic Claude, Google Gemini
+
+**Protocolo**: REST API / HTTPS
+
+**Función**: Genera recomendaciones inteligentes basadas en datos de la bodega, predice madurez de vinos, crea reportes en lenguaje natural e identifica patrones de consumo.
+
+**Datos de entrada**:
+- Métricas de inventario (cantidad de botellas, valor, antigüedad)
+- Patrones de consumo (botellas uncorkidas por período)
+- Telemetría ambiental (historial de temperatura/humedad)
+
+**Salida generada**:
+- Recomendaciones personalizadas de cuándo consumir vinos específicos
+- Predicciones de madurez óptima para botellas
+- Análisis de tendencias de consumo del usuario
+- Reportes narrativos de rotación de stock
+
+**Flujo de interacción**:
+- VineVault → Recopila datos contextuales (inventario, consumo, telemetría)
+- VineVault → Envía prompt estructurado a IA con contexto
+- IA → Procesa datos y genera insights
+- IA → Devuelve recomendaciones
+- VineVault → Almacena resultados y los expone al usuario
+
+#### Sistemas Externos - Integración de Inventario
+
+#### QuickBooks
+**Tipo**: Plataforma de contabilidad y gestión de inventario empresarial
+
+**Protocolo**: REST API / HTTPS
+
+**Función**: Sincroniza datos de inventario entre VineVault y QuickBooks, exporta niveles de stock e integra información contable.
+
+**Patrón de integración**: Bidireccional con sincronización programada o disparada por eventos clave
+
+#### Odoo
+**Tipo**: Sistema ERP y gestión de inventario
+
+**Protocolo**: REST API / HTTPS
+
+**Función**: Intercambia datos de inventario entre plataformas y sincroniza catálogos de productos.
+
+**Patrón de integración**: Bidireccional con sincronización programada o disparada por eventos clave
+
+#### Zoho Inventory
+**Tipo**: Plataforma de gestión de inventario para PYMES
+
+**Protocolo**: REST API / HTTPS
+
+**Función**: Comparte actualizaciones de inventario en tiempo real y exporta registros detallados de botellas.
+
+**Patrón de integración**: Bidireccional con sincronización programada o disparada por eventos clave
+
+#### Sistema de Soporte
+
+##### Ticketing System
+**Tipo**: Plataforma externa de gestión de tickets de soporte
+
+**Ejemplos de proveedores**: Zendesk, Freshdesk, Jira Service Management
+
+**Protocolo**: HTTPS / Widget API
+
+**Función**: Plataforma centralizada que recibe, gestiona y rastrea tickets de soporte creados por usuarios de VineVault.
+
+**Acceso de usuarios**: Widget embebido directamente en la SPA de VineVault permite crear tickets sin salir de la aplicación.
+
+**Flujo de soporte**:
+1. Usuario abre widget de soporte embebido en VineVault SPA
+2. Usuario crea nuevo ticket con descripción del problema
+3. Ticketing System recibe solicitud vía HTTPS/Widget API
+4. Ticketing System notifica automáticamente al Support Team
+5. Support Team revisa ticket en Ticketing System
+6. Support Team resuelve el problema
+7. Usuario recibe actualizaciones en VineVault mediante widget
+
+#### Flujos de Comunicación Principales
+
+ **Autenticación**
+Usuario → Landing Page → Google OAuth2 → JWT → VineVault →  Sesión iniciada
+
+ **Monitoreo Ambiental**
+ESP32 (GPIO/I2C) → MQTT/HTTPS → VineVault → ¿Threshold? → Resend →  Alerta usuario
+
+ **Pagos**
+Usuario → Stripe API → Pago → Webhook → VineVault → Resend →  Confirmación
+
+ **IA Recomendaciones**
+Datos (inventario/consumo/telemetría) → API Generativa → Insights → VineVault →  Usuario ve recomendaciones
+
+ **Sincronización Inventario**
+VineVault ⇄ API (QB/Odoo/Zoho) ⇄ Confirmación →  Estado actualizado
+
+**Tickets Soporte**
+Widget SPA → API Ticketing → Ticket + Notif → Soporte → Resolución →  Usuario rastrea
+
+
+#### Límites del Sistema VineVault
+
+##### Dentro de VineVault (Responsabilidad VineVault)
+- Autenticación y autorización de usuarios (con delegación a Google)
+- Gestión de suscripciones y facturación (orquestación con Stripe)
+- Catálogo de vinos e inventario de botellas
+- Monitoreo ambiental y detección de anomalías
+- Análisis e insights de inventario (con IA)
+- Gestión centralizada de notificaciones
+- Coordinación de integraciones y exportaciones
+
+##### Fuera de VineVault (Responsabilidad de terceros)
+- Verificación de identidad (Google OAuth2)
+- Procesamiento de pagos real (Stripe)
+- Almacenamiento seguro de contraseñas de terceros
+- Hardware físico de sensores (ESP32)
+- Algoritmos de inteligencia artificial avanzada (proveedores IA)
+- Gestión de tickets de soporte (plataforma especializada)
+- Operaciones contables y ERP (sistemas empresariales)
+- Entrega de emails (Resend)
+
+#### Principios de Comunicación
+
+**Seguridad por defecto**: Todas las comunicaciones externas utilizan HTTPS/TLS 1.3. Las credenciales sensibles nunca se almacenan directamente en VineVault.
+
+**Desacoplamiento**: Las integraciones con terceros se realizan mediante APIs REST y webhooks, minimizando dependencias críticas. Si un sistema externo falla temporalmente, VineVault continúa operativo.
+
+**Eventos asincronos**: Cambios importantes (pagos, tickets, alertas) se transmiten vía webhooks para no bloquear operaciones del usuario.
+
+**Sincronización inteligente**: Los datos críticos se sincronizan de forma asincrónica, permitiendo que el usuario continúe trabajando sin esperas.
+
+**Tolerancia a fallos**: Los componentes clave tienen reintentos automáticos y caché local (ESP32) si falla la conexión.
 
 ### 4.3.3. Software Architecture Container Level Diagrams.
 
-<td> <img src="../assets/softwarearchitecture/containerleveldiagram.jpg" width="550" alt="container level diagram"></td>
-
-**En este nivel hacemos un "zoom in" al sistema VineVault para exponer sus piezas de software ejecutables y la tecnología elegida para su implementación.**
-
-- Frontend Web Application (Vue 3): Aplicación Single-Page Application (SPA) construida con Vue 3 que proporciona la interfaz gráfica interactiva, rápida e intuitiva para los usuarios. Se encarga de la visualización del dashboard, gestión del inventario y gráficos históricos.
-<br>
-
-- API Gateway: Punto de entrada único para las peticiones del frontend y de los sensores IoT. Enruta las solicitudes, maneja la limitación de tasa (rate limiting) y centraliza la autenticación antes de pasar al backend.
-<br>
-
-- Backend Core API (C# / .NET): El contenedor principal del sistema. Desarrollado en C#, este monolito modular orquesta toda la lógica de negocio descrita en los Bounded Contexts. Implementa la validación de inventario, el motor analítico de inteligencia y el procesamiento de las reglas de alertas ambientales.
-<br>
+<a href="https://ibb.co/b5CfcZVZ"><img src="https://i.ibb.co/TM7C9SGS/Vine-Vault-Containers-dark.png" alt="Vine-Vault-Containers-dark" border="0"></a>
 
 
-- Database Container: Motor de base de datos relacional (y base de datos de series temporales para telemetría) que almacena de forma segura la información de inventario, perfiles de usuario y las métricas ambientales.
+#### Descripción General
+
+El diagrama de contenedores de VineVault muestra la estructura interna de la plataforma y cómo cada componente trabaja de forma independiente pero conectada. La arquitectura está dividida en frontend, backend, base de datos, dispositivos IoT e integraciones externas.
+
+#### Contenedores de Presentación
+
+##### Landing Page
+- Sitio web público desarrollado con HTML, CSS y JavaScript.
+- Presenta información de VineVault y permite acceder al login.
+- Optimizado para SEO y diseño responsive.
+
+##### Web App
+- Aplicación en Vue 3 encargada de la autenticación.
+- Gestiona sesiones seguras con Google OAuth2 y JWT.
+- Carga la SPA principal tras validar al usuario.
+
+##### SPA (Single Page Application)
+- Interfaz interactiva desarrollada en Vue 3.
+- Permite monitorear inventario, sensores, reportes y recomendaciones IA.
+- Se comunica con el backend mediante API Gateway.
+- Incluye dashboards, gráficos y soporte integrado.
+
+#### Contenedores Backend
+
+##### API Gateway
+- Punto de entrada único del sistema.
+- Maneja seguridad, routing, rate limiting y validación de solicitudes.
+- Recibe tráfico desde SPA, Stripe y dispositivos IoT.
+
+##### Platform API
+- Núcleo de la lógica de negocio desarrollado en Spring Boot.
+- Gestiona autenticación, inventario, facturación, monitoreo ambiental, notificaciones e integraciones.
+- Orquesta la comunicación con PostgreSQL y servicios externos.
+
+##### PostgreSQL Database
+- Base de datos relacional principal.
+- Almacena usuarios, vinos, sensores, facturación, telemetría y auditorías.
+- Soporta transacciones ACID, backups y alta disponibilidad.
+
+#### Contenedor IoT
+
+##### ESP32 Sensor Device
+- Dispositivo físico que captura temperatura y humedad de la cava.
+- Envía telemetría mediante MQTT/HTTPS.
+- Tiene caché local y sincronización automática si falla la conexión.
+
+##### Sistemas Externos
+
+VineVault se integra con:
+- Google OAuth2 (autenticación)
+- Stripe (pagos)
+- Resend (emails)
+- Servicios de IA generativa
+- QuickBooks, Odoo y Zoho Inventory
+
+#### Flujos Principales
+
+##### Flujo de Aplicación
+Usuario → SPA → API Gateway → Platform API → PostgreSQL
+
+#### Flujo IoT
+ESP32 → API Gateway → Platform API → PostgreSQL → Alertas
+
+##### Flujo de Pagos
+SPA → Stripe → Webhook → Platform API → PostgreSQL
+
+#### Flujo de IA
+Platform API → Servicio IA → Recomendaciones → SPA
+
+#### Infraestructura
+
+##### Escalabilidad
+- Backend escalable horizontalmente con múltiples instancias.
+- CDN para frontend.
+- PostgreSQL optimizado con réplicas.
+
+##### Seguridad
+- TLS 1.3
+- OAuth2 y JWT
+- RBAC y auditoría
+- Encriptación AES-256
+
+##### Monitoreo
+- Logs centralizados
+- Prometheus + Grafana
+- Alertas automáticas y trazabilidad distribuida
+
 
 ### 4.3.4. Software Architecture Deployment Diagrams.
 
-<td> <img src="../assets/softwarearchitecture/deploymentdiagram.jpg" width="550" alt="deployment diagram"></td>
+<a href="https://ibb.co/Q78pyWpy"><img src="https://i.ibb.co/KcNbTtbT/Production-dark-1.png" alt="Production-dark-1" border="0"></a>
 
-**Este diagrama ilustra cómo los contenedores de software descritos anteriormente se mapean en la infraestructura física y en la nube.**
 
-- Capa Cliente (User Device): Representa los navegadores web móviles o de escritorio donde se ejecuta la aplicación Frontend (Vue 3).
-<br>
+####  Resumen General
+La plataforma VineVault es un ecosistema de software e IoT diseñado para la gestión integral, monitoreo de condiciones críticas (temperatura y humedad) y optimización inteligente de bodegas de vino de alta gama. 
 
-- Capa Cloud (Proveedor de Nube):Frontend Hosting / CDN: Servidor web distribuido que sirve los archivos estáticos de la aplicación Vue 3 al cliente con baja latencia.
-<br>
 
-- Application Servers: Entorno de ejecución (contenedores o instancias de cómputo) donde se despliega el Backend desarrollado en C#.
-<br>
+####  Vista de Despliegue: Desglose por Capas e Infraestructura
 
-- Database Server: Servicio de base de datos gestionado en la nube que asegura alta disponibilidad, copias de seguridad automáticas y protección de datos en reposo.  IoT 
-<br>
+El diseño adopta una arquitectura de sistemas distribuidos, estructurada bajo el patrón de **Capas Lógicas Desacopladas (N-Tier Architecture)**, garantizando que el fallo de un componente no comprometa la disponibilidad total del ecosistema.
 
-- Gateway: Punto de conexión de red que recibe la ingesta continua de datos (MQTT/HTTP) proveniente de los microcontroladores ESP32 desplegados en las cavas físicas. 
+##### Capa de Presentación y Distribución (Web Hosting)
+Orientada a optimizar la experiencia de usuario (UX), el tiempo de carga y el SEO.
+* **Landing Page:** Nodo estático optimizado para el tráfico público e indexación de motores de búsqueda. Implementa una redirección segura (HTTPS) hacia la aplicación web central al iniciar sesión.
+* **Web App:** Servidor de distribución encargado exclusivamente de servir los artefactos del cliente web.
+* **Single Page Application (SPA):** Ejecutada del lado del navegador del cliente (*Client-side execution*). Descarga la lógica de renderizado del servidor, interactuando de forma completamente asíncrona con el backend mediante peticiones HTTPS REST/GraphQL a través del API Gateway.
+
+#####  Capa de Ingestión y Periferia IoT (ESP32 Device Layer)
+El hardware físico es un pilar crítico para la captura de telemetría en tiempo real.
+* **ESP32 Hardware (Dispositivo Físico):** Sensor físico de temperatura y humedad de alta precisión instalado directamente en las bodegas de vino.
+* **ESP32 Sensor Device (Firmware):** Microcontrolador que ejecuta software embebido encargado de leer periódicamente las métricas ambientales, aplicar filtros de ruido en los datos y transmitir la telemetría cifrada hacia la nube de VineVault de manera persistente o por eventos parametrizados.
+
+#### Núcleo del Sistema y Orquestación (VineVault Cloud)
+Aislado dentro de una red privada virtual (VPC) para mitigar vectores de ataque directos.
+
+1.  **Gateway Container (API Gateway):**
+    * *Justificación:* Actúa como el único punto de entrada (*Reverse Proxy*) para todo el tráfico externo (tanto de la SPA como de los dispositivos IoT).
+    * *Funcionalidades:* Enrutamiento dinámico de peticiones (`Route Requests`), terminación de TLS/SSL, abstracción de microservicios, y enmascaramiento de la topología interna del backend. Protege al núcleo de ataques distribuidos (DDoS) mediante políticas de *Rate Limiting*.
+2.  **Java Virtual Machine (Platform API Container):**
+    * *Justificación:* Se seleccionó la plataforma JVM por su robustez en entornos empresariales, excelente manejo de concurrencia multi-hilo (esencial para la ingesta simultánea de miles de sensores IoT) y madurez de su ecosistema de seguridad.
+    * *Responsabilidades:* Orquestación de la lógica de negocio, procesamiento de telemetría entrante, validación de reglas de inventario, cálculo de alertas por desviaciones térmicas y coordinación con servicios externos.
+3.  **Database Server Container (PostgreSQL Database):**
+    * *Justificación:* Sistema de gestión de bases de datos relacionales (RDBMS) elegido por su estricto cumplimiento de las propiedades ACID, asegurando la consistencia transaccional del inventario de vinos y los movimientos de stock.
+    * *Estructura de Datos:* Almacena información de usuarios, histórico denso de telemetría de sensores, movimientos de inventario, umbrales de alerta física, suscripciones de pago y logs operativos.
+
+
+
+####  Estrategia de Integración de Servicios Externos (SaaS)
+
+Para mantener el principio de **Responsabilidad Única (Single Responsibility Principle)** y acelerar el *Time-to-Market*, se delegaron las capacidades genéricas del sistema a proveedores líderes en el mercado a través de integraciones seguras desde la *Platform API*:
+
+| Servicio Externo | Tipo de Componente | Propósito y Justificación Arquitectónica |
+| :--- | :--- | :--- |
+| **Google OAuth2** | Identidad (IdP) | Autenticación remota y social login seguro. Evita almacenar credenciales sensibles en la base de datos local, reduciendo el riesgo normativo y elevando la seguridad. |
+| **Resend** | Notificaciones (Mailing) | Motor de entrega de correos electrónicos transaccionales de alta disponibilidad. Utilizado para notificaciones críticas e inmediatas de alertas térmicas y reportes automatizados. |
+| **Stripe** | Pasarela de Pagos | Procesamiento de checkout y gestión de suscripciones de los clientes. Cumple con la normativa PCI-DSS de manera nativa, aislando a VineVault de la manipulación directa de datos financieros. Envía confirmaciones asíncronas vía *Webhooks*. |
+| **Generative AI Service** | Inteligencia Artificial | Conexión con LLMs de última generación (Gemini, GPT, Claude). Orquesta datos analíticos del inventario y telemetría para generar layouts inteligentes de bodegas, predicciones de maduración y reportes analíticos en lenguaje natural. |
+
+
+####  Flujos Críticos de Información
+
+1.  **Flujo de Telemetría:** `ESP32 Sensor Device` $\rightarrow$ `API Gateway` $\rightarrow$ `Platform API (JVM)` $\rightarrow$ Escritura en `PostgreSQL Database`. Si se detecta una anomalía, la API dispara un evento asíncrono a `Resend` para alertar al sommelier/administrador.
+2.  **Flujo de Consulta Inteligente (AI):** `SPA Cliente` $\rightarrow$ `Gateway` $\rightarrow$ `Platform API`. La API extrae métricas históricas de `PostgreSQL`, estructura un *prompt* enriquecido con contexto del negocio y lo envía al `Generative AI Service`, devolviendo recomendaciones de conservación personalizadas a la interfaz de usuario en segundos.
