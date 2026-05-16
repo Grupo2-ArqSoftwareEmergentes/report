@@ -244,7 +244,49 @@ La estructura principal se compone de:
 
 ## 6.4. Applications UX/UI Design.
 
+Esta sección está dedicada al diseño de la experiencia de usuario (UX) y la interfaz de usuario (UI) de las aplicaciones que conforman la solución. El objetivo es crear interfaces funcionales, accesibles y visualmente coherentes que respondan a las necesidades y expectativas de los usuarios finales.
+
 ### 6.4.1. Applications Wireframes.
+
+En esta sección se presentan los wireframes de las aplicaciones, que muestran el diseño estructural y la disposición de los elementos clave para la experiencia de usuario.
+
+Web Application
+
+**Login**
+
+<br /><img src="../assets/Wireframes/Wireframe1.png" alt="Wireframe1.png" width="600">
+
+La interfaz de autenticación presenta un diseño centralizado y minimalista que prioriza la claridad funcional. El wireframe utiliza un contenedor de bordes definidos sobre un fondo neutro, integrando campos de entrada directos para credenciales y un botón de acción de alto contraste, lo que refuerza una estética tecnológica y ordenada coherente con el ecosistema de Vinevault.
+
+**Register**
+
+<br /><img src="../assets/Wireframes/Wireframe2.png" alt="Wireframe2.png" width="600">
+
+El diseño de registro mantiene la coherencia visual mediante una estructura vertical limpia que facilita el flujo de usuario. Este wireframe integra campos de entrada estándar, un selector para términos legales, logrando un equilibrio entre simplicidad y funcionalidad bajo una estética técnica y minimalista.
+
+**Inventory**
+
+<br /><img src="../assets/Wireframes/Wireframe3.png" alt="Wireframe2.png" width="600">
+
+El diseño de inventario (Inventory) presenta una interfaz de gestión de datos estructurada en dos niveles: un panel superior de indicadores clave (KPI) y una tabla de listado dinámico. Este wireframe prioriza la eficiencia operativa mediante filtros combinados, columnas ordenables y acciones directas por fila. La organización por zonas de cava, tipo de vino y rastreo por código refuerza el control total sobre colecciones de vino premium, manteniendo una estética funcional y orientada a datos en tiempo real.
+
+**Cava Inteligente**
+
+<img src="../assets/Wireframes/Wireframe4.png" alt="Wireframe4.png" width="600">
+
+El diseño de Cava Inteligente presenta una interfaz de exploración y análisis detallado, estructurada en un panel de navegación principal, un explorador de colección con filtros avanzados y un área de visualización lateral para ítems seleccionados. Este wireframe integra una línea de tiempo de maduración, indicadores de valor y rareza (con asistencia de IA), así como sensores ambientales en tiempo real (temperatura, humedad). La disposición combina la exploración por regiones, añadas y variedades con una vitrina de recomendaciones por denominación de origen, logrando un equilibrio entre descubrimiento y control técnico del cava.
+
+**Ambiente**
+
+<img src="../assets/Wireframes/Wireframe5.png" alt="Wireframe5.png" width="600">
+
+El diseño de Ambiente presenta una interfaz de monitoreo ambiental en tiempo real, estructurada en un panel de métricas de precisión, gráfico de estabilidad térmica, tabla de zonas activas, indicadores de humedad y un listado de alertas operativas. Este wireframe integra sensores de temperatura y humedad por zona, umbrales críticos, y acciones de reconocimiento/descartes sobre incidencias. La disposición permite supervisar ciclos de enfriamiento, ventilación automática y calibración de sensores, priorizando el control climatológico de cavas inteligentes bajo una estética técnica y orientada a la prevención.
+
+**Analítica**
+
+<img src="../assets/Wireframes/Wireframe12.png" alt="Wireframe12.png" width="600">
+
+El diseño de Analítica presenta una interfaz de inteligencia de datos para la supervisión predictiva de la cava, estructurada en un panel de indicadores clave (KPI), gráfico de fluctuación térmica histórica, resumen inteligente con recomendaciones automáticas, bloque de predicción de madurez y consumo, y un reporte mensual de salud de bodega. Este wireframe integra alertas predictivas por riesgo climático, plusvalía estimada de colecciones, ventanas de consumo óptimo y métricas IoT (estabilidad térmica, rotación de stock, humedad relativa, sincronización). La disposición prioriza la anticipación a incidentes y la toma de decisiones basada en datos bajo una estética técnica y analítica.
 
 ### 6.4.2. Applications Wireflow Diagrams.
 
