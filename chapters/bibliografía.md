@@ -10,6 +10,8 @@ Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202121
 
 Link del miro: https://miro.com/app/board/uXjVHXRgC6E=/?share_link_id=317409539991
 
+Link repositorio:https://github.com/Grupo2-ArqSoftwareEmergentes/report.git
+
 
 
 
