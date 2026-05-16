@@ -40,7 +40,7 @@ Color base principal de la interfaz utilizado en fondos, sidebars, contenedores 
 
 La combinación de colores neutros profundo, tonos vino y detalles dorados crea una atmósfera premium alineada con el concepto de conservación de vinos de lujo.
 
-<br /><img src="../assets/images/color.png" alt="colors.png" width="600">
+<br /><img src="../assets/images/colors.png" alt="colors.png" width="600">
 
 Tipografía
 
