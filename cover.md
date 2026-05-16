@@ -33,7 +33,7 @@
   <p style="margin: 4px 0;"><code>U20211G499</code> - Moscoso Bejar, Stephano</p>
   <p style="margin: 4px 0;"><code>U201912407</code> - Shimabukuro Uku, Carlos Joel</p>
 
-  <p style="margin-top: 25px;"><strong>Lima - abril 2026</strong></p>
+  <p style="margin-top: 25px;"><strong>Lima - mayo 2026</strong></p>
 
 </div>
 
