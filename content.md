@@ -38,6 +38,22 @@
   - [4.1. Strategic-Level Atribute-Driven Design](chapters/chapter4.md#41-strategic-level-atribute-driven-design)              
   - [4.2. Strategic-Level Domain-Driven Design](chapters/chapter4.md#42-Strategic-level-domain-driven-design)
   - [4.3. Software Architecture](chapters/chapter4.md#42-software-architecture)
+
+[**Capítulo V: Tactical-Level Software Design**](chapters/chapter5.md)
+  - [5.1.Bounded Context: Identity & Access Management](chapters/chapter5.md)    
+  - [5.2.Bounded Context: Billing](chapters/chapter5.md)    
+  - [5.3.Bounded Context: Notification](chapters/chapter5.md)    
+  - [5.4.Bounded Context: Wine Inventory](chapters/chapter5.md)    
+  - [5.5.Bounded Context: Environmental Monitoring](chapters/chapter5.md)    
+  - [5.6.Bounded Context: Inventory Intelligence](chapters/chapter5.md)    
+  
+
+[**Capítulo VI: Solution UX Design**](chapters/chapter6.md)
+  - [6.1. Style Guidelines](chapters/chapter6.md)
+  - [6.2. Information Architecture](chapters/chapter6.md)
+  - [6.3. Landing Page UI Design](chapters/chapter6.md)
+  - [6.4. Applications UX/UI Design](chapters/chapter6.md)
+  - [6.5. Applications Prototyping](chapters/chapter6.md)  
       
 [**Bibliografía**](chapters/bibliografía.md)
 
