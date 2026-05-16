@@ -196,6 +196,38 @@ Para optimizar la visibilidad de VineVault en motores de búsqueda web, se imple
 
 ### 6.3.1 Landing Page Wireframe.
 
+El wireframe de la landing page de VineVault representa la estructura esquemática de baja fidelidad, priorizando la jerarquía de información y los puntos de interacción clave para maximizar la conversión. Orientado a coleccionistas particulares y empresas.
+
+**Estructura por bloques (de arriba abajo):**
+
+1. **Hero**
+   - Logotipo + menú principal (Funcionalidades, Planes, Contacto)
+   - Título principal + texto de valor (placeholder)
+   - CTA primario: "Probar VineVault"   
+
+2. **Impacto de conservación**
+   - Subtítulo explicativo
+   - Indicadores 
+
+3. **Funcionalidades principales**
+   - Grid de 3 columnas
+   - Cada celda: `[icono]` + título + línea de descripción   
+
+4. **Planes de suscripción**
+   - Tarjetas: Básico / Premiun
+   - Cada tarjeta: nombre, precio, caulidades, CTA "Seleccionar"
+   - Plan recomendado destacado visualmente
+
+5. **Formulario de contacto**
+   - Campos: nombre, email, mensaje
+   - Botón de envío
+   - Texto de privacidad breve
+
+6. **Footer institucional**      
+   - Copyright
+
+<br /><img src="../assets/landingpage/landingpageW.png" alt="landingpage.png" width="600">
+
 ### 6.3.2 Landing Page Mock-up.
 
 La landing page de VineVault se diseñó como un punto de conversión estratégico, orientado a proyectar valores de exclusividad e innovación, así como a garantizar una protección eficiente tanto para coleccionistas particulares como para empresas.<br/>
