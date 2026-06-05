@@ -362,6 +362,7 @@ La pantalla de Analíticas funciona como un panel de control ejecutivo de alto n
 
 
 
+
 ## 6.5. Applications Prototyping.
 
 En esta sección se presentan los prototipos interactivos de las aplicaciones, que permiten visualizar y probar la experiencia de usuario antes del desarrollo final.
