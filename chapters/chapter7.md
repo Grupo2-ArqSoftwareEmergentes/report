@@ -51,21 +51,31 @@ Tareas (pedir al participante realizarlas en el prototipo)
 	- Métricas: éxito, pasos necesarios, errores de confirmación.
 	- Preguntas: ¿El flujo es rápido y seguro? ¿Qué le haría confiar más en el registro?
 
-Preguntas generales de validación del prototipo (al final)
+Al ser un prototipo las Preguntas generales de validación del prototipo son para ambos segmentos (al final)
+
+
+#### PREGUNTAS PARA EL SEGMENTO 1: Coleccionistas / aficionados.
 
 - ¿Cuál consideras que es el objetivo principal de esta plataforma?
-- ¿Te resultó fácil navegar por las pantallas?
+- ¿es fácil navegar por las pantallas?
 - ¿Hubo alguna parte que te confundiera?
 - ¿Las funciones presentadas cumplen con lo que esperabas?
 - ¿Este sistema resolvería un problema real para ti?
 - ¿Qué mejoras sugerirías antes del desarrollo final?
-- ¿Cuál fue la tarea más fácil y la más difícil? ¿Por qué?
 - ¿Qué característica le aportó mayor valor inmediato?
+- ¿crees que sera optimo para personas de personas en la industria?
 
 
+#### PREGUNTAS PARA EL SEGMENTO 2: Dueños/administradores de restaurantes y cavas comerciales
 
-N
-
+- ¿Cuál consideras que es el objetivo principal de esta plataforma?
+- ¿es fácil navegar por las pantallas?
+- ¿Hubo alguna parte que te confundiera?
+- ¿Las funciones presentadas cumplen con lo que esperabas?
+- ¿Este sistema resolvería un problema real para ti?
+- ¿Qué mejoras sugerirías antes del desarrollo final?
+- ¿Qué característica le aportó mayor valor inmediato?
+- ¿crees que sera optimo para personas de personas en la industria?
 
 
 ## 7.3.2. Plantilla de resumen de entrevista (a incluir en el informe)
@@ -133,5 +143,3 @@ Checklist rápida para la auditoría heurística
 - [ ] Relación con métricas/KPIs del experimento (si aplica)
 - [ ] Inclusión de remediaciones rápidas (quick wins)
 
----
-NOTA: La rúbrica del curso exige que las evaluaciones heurísticas estén organizadas en el anexo correspondiente, con capturas y enlaces a videos; asegúrese de cumplir con el formato del Anexo D del documento de rúbrica.
