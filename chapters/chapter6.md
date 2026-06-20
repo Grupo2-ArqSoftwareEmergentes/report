@@ -360,6 +360,31 @@ La pantalla de Analíticas funciona como un panel de control ejecutivo de alto n
 
 ### 6.4.4. Applications User Flow Diagrams.
 
+**Userflow 1: Onboarding y Gestión de Colección**
+
+Flujo: Landing → Registro → Inventario
+
+<img src="../assets/Userflow/userflow.png" alt="wireflow1.png" width="600">
+
+Recorrido típico:
+
+1. Conoce la propuesta en Landing Page
+2. Usuario se registra en Register
+3. Accede a su colección en Inventory
+
+**Userflow 2: Monitoreo y Control de Cava**
+
+Flujo: Inventario → Cava Inteligente → Ambiente → Analítica
+
+<img src="../assets/Userflow/userflow2.png" alt="wireflow2.png" width="600">
+
+Recorrido típico:
+
+1. Desde el listado de Inventory, selecciona un vino
+2. Explora detalles y maduración en Cava Inteligente
+3. Revisa condiciones ambientales en Ambiente
+4. Analiza tendencias y reportes en Analítica
+
 
 
 
