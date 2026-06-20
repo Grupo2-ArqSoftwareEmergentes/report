@@ -317,7 +317,51 @@ Recorrido típico:
 
 ### 6.4.3. Applications Mock-ups.
 
+Esta sección presenta los mock-ups de las aplicaciones, los cuales detallan el acabado visual, la paleta de colores y la disposición definitiva de los elementos que componen la experiencia de usuario.
+
+
+**Login**
+
+<br /><img src="../assets/mockups/login.png" alt="login.png" width="600">
+
+La interfaz de autenticación presenta un diseño elegante y sofisticado que refleja la exclusividad del servicio. El mock-up destaca por su paleta cromática oscura y minimalista, que organiza los campos de credenciales y los elementos de navegación de forma jerárquica y clara, garantizando una experiencia de usuario intuitiva y visualmente coherente con la identidad premium de VineVault.
+
+**Register**
+
+<br /><img src="../assets/mockups/create_account.png" alt="create_account.png" width="600">
+
+La interfaz de registro adopta un enfoque estructurado y profesional, diseñado para facilitar la captura de datos complejos mediante una organización lógica de formularios. El mock-up utiliza una disposición limpia y segmentada que diferencia claramente la información corporativa de las credenciales de acceso, manteniendo la sobriedad visual y la elegancia que caracterizan a VineVault, lo que asegura una experiencia de alta gama para el usuario desde el primer contacto.
+
+
+**Inventory**
+
+<br /><img src="../assets/mockups/inventary.png" alt="inventary.png" width="600">
+
+La interfaz de gestión de inventario de VineVault está diseñada para ofrecer un control preciso y profesional, integrando campos de datos detallados con una función inteligente de recomendación de ubicación basada en parámetros de conservación óptimos. Su mock-up combina una estructura funcional y limpia, que permite registrar lotes de vinos de alta gama de manera ágil, manteniendo la identidad visual sobria y tecnológica del ecosistema para garantizar una administración técnica impecable de la cava.
+
+**Cava Inteligente**
+
+<img src="../assets/mockups/cavas.png" alt="cavas.png" width="600">
+
+La sección de "Cavas Inteligentes" se presenta como un explorador de alta precisión, donde el mock-up organiza la colección mediante una interfaz de tarjetas visualmente atractivas y filtros avanzados de búsqueda. Este diseño no solo facilita la gestión técnica del inventario, sino que integra de forma elegante paneles laterales de "Perspectivas Rápidas" y monitoreo en tiempo real, consolidando una herramienta potente y sofisticada que permite al usuario supervisar tanto el estado de conservación como el valor estratégico de sus etiquetas premium con total claridad.
+
+**Ambiente**
+
+<img src="../assets/mockups/principal_panel.png" alt="principal_panel.png" width="600">
+
+La interfaz de Ambiente actúa como un centro neurálgico de alta precisión, donde el mock-up prioriza la visualización de datos críticos mediante gráficos dinámicos de estabilidad térmica y niveles de humedad en tiempo real. Esta estructura se complementa con tablas detalladas de zonas activas y un panel de alertas inmediatas, logrando una arquitectura de información intuitiva que permite al usuario supervisar y gestionar proactivamente las condiciones climáticas del entorno vitivinícola con una claridad técnica absoluta.
+
+**Analítica**
+
+<img src="../assets/mockups/Analitycs.png" alt="Analitycs.png" width="600">
+
+La pantalla de Analíticas funciona como un panel de control ejecutivo de alto nivel, donde el mock-up despliega información estratégica mediante indicadores clave de rendimiento (KPIs), proyecciones de madurez de las etiquetas y un reporte de salud global de la bodega. Esta disposición permite al usuario visualizar tendencias, riesgos climáticos y oportunidades de inversión de manera unificada, combinando gráficos de datos históricos con resúmenes inteligentes que facilitan una toma de decisiones informada y profesional sobre su colección premium.
+
+
 ### 6.4.4. Applications User Flow Diagrams.
+
+
+
 
 ## 6.5. Applications Prototyping.
 
